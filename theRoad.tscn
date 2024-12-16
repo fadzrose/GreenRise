@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1mkiu7wv0o8t"]
+
+[ext_resource type="Texture2D" uid="uid://bcitrts2qes7a" path="res://background/road.png" id="1_720e7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l8drv"]
+size = Vector2(1302, 240)
+
+[node name="TheRoad" type="Area2D"]
+
+[node name="Road3" type="Sprite2D" parent="."]
+position = Vector2(1107.97, 590.566)
+scale = Vector2(0.245868, 0.263767)
+texture = ExtResource("1_720e7")
+
+[node name="Road2" type="Sprite2D" parent="."]
+position = Vector2(824.233, 590.5)
+scale = Vector2(0.300799, 0.263889)
+texture = ExtResource("1_720e7")
+
+[node name="Road" type="Sprite2D" parent="."]
+position = Vector2(264, 590)
+scale = Vector2(0.283333, 0.264815)
+texture = ExtResource("1_720e7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(644, 589)
+shape = SubResource("RectangleShape2D_l8drv")

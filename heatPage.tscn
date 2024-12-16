@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://ch03o187ggxbv"]
+
+[ext_resource type="Texture2D" uid="uid://cg0fta3e2x2ui" path="res://background/heat page.png" id="1_44qnw"]
+[ext_resource type="PackedScene" uid="uid://c1mkiu7wv0o8t" path="res://theRoad.tscn" id="2_bogxy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hc7gx"]
+size = Vector2(110, 531)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_loo8i"]
+size = Vector2(1333.25, 121)
+
+[node name="heatPage" type="Node2D"]
+
+[node name="HeatPage" type="Sprite2D" parent="."]
+position = Vector2(649, 179)
+scale = Vector2(0.679948, 0.492593)
+texture = ExtResource("1_44qnw")
+
+[node name="TheRoad" parent="." instance=ExtResource("2_bogxy")]
+position = Vector2(0, -4)
+
+[node name="Border" type="Node2D" parent="."]
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Border"]
+position = Vector2(1270, 1570)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border/StaticBody2D4"]
+position = Vector2(65, -988)
+shape = SubResource("RectangleShape2D_hc7gx")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Border"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border/StaticBody2D3"]
+position = Vector2(635, 785)
+shape = SubResource("RectangleShape2D_loo8i")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Border"]
+position = Vector2(635, 785)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border/StaticBody2D2"]
+position = Vector2(-691, -197)
+shape = SubResource("RectangleShape2D_hc7gx")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Border"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border/StaticBody2D"]
+position = Vector2(637.25, 382)
+shape = SubResource("RectangleShape2D_loo8i")
