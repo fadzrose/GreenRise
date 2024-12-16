@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://xtgq5680nsaj"]
+
+[ext_resource type="Texture2D" uid="uid://b0r3btusbfe7s" path="res://background/splash page.png" id="1_lc0kf"]
+[ext_resource type="Texture2D" uid="uid://chkqdcx5bhmf" path="res://text/GreenRise.png" id="2_vwlla"]
+
+[node name="SplashPage" type="Node2D"]
+
+[node name="SplashPage" type="Sprite2D" parent="."]
+position = Vector2(635.75, 443.25)
+scale = Vector2(1.60562, 1.4825)
+texture = ExtResource("1_lc0kf")
+
+[node name="GreenRise" type="Sprite2D" parent="."]
+position = Vector2(631, 366)
+scale = Vector2(1.32883, 1.47867)
+texture = ExtResource("2_vwlla")

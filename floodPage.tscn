@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://byanxxs1iep32"]
+
+[ext_resource type="Texture2D" uid="uid://dmi4gh34c8q8g" path="res://background/flood page.png" id="1_dh8wn"]
+
+[node name="FloodPage" type="Node2D"]
+
+[node name="FloodPage" type="Sprite2D" parent="."]
+position = Vector2(642.5, 260.25)
+scale = Vector2(2.09967, 2.12857)
+texture = ExtResource("1_dh8wn")
