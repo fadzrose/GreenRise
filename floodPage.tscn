@@ -1,15 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://h2eilr7qi1d6"]
 
-[ext_resource type="Texture2D" uid="uid://dmi4gh34c8q8g" path="res://background/flood page.png" id="1_dh8wn"]
 [ext_resource type="Script" path="res://floodPage.gd" id="1_j5or1"]
+[ext_resource type="Texture2D" uid="uid://casmg0dmx2sx5" path="res://background/Untitled design (4).png" id="2_7b2pc"]
 
 [node name="FloodPage" type="Node2D"]
 script = ExtResource("1_j5or1")
 
-[node name="FloodPage" type="Sprite2D" parent="."]
-position = Vector2(643, 255)
-scale = Vector2(2.09967, 2.12857)
-texture = ExtResource("1_dh8wn")
+[node name="UntitledDesign(4)" type="Sprite2D" parent="."]
+position = Vector2(640, 361)
+texture = ExtResource("2_7b2pc")
 
 [node name="TimerRain" type="Timer" parent="."]
 
