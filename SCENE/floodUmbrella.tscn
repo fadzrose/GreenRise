@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://c6rxarbmcv0at"]
+[gd_scene load_steps=3 format=3 uid="uid://qil7yo2wt02q"]
 
 [ext_resource type="Texture2D" uid="uid://bpgj7im7glyfq" path="res://Home/payung.png" id="1_3vn73"]
 [ext_resource type="Script" path="res://floodUmbrella.gd" id="1_v0ohc"]

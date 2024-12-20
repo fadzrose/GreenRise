@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://h2eilr7qi1d6"]
+[gd_scene load_steps=3 format=3 uid="uid://byanxxs1iep32"]
 
 [ext_resource type="Texture2D" uid="uid://dmi4gh34c8q8g" path="res://background/flood page.png" id="1_dh8wn"]
 [ext_resource type="Script" path="res://floodPage.gd" id="1_j5or1"]
@@ -16,5 +16,5 @@ texture = ExtResource("1_dh8wn")
 [node name="rainDrops" type="Node2D" parent="."]
 position = Vector2(70, -257)
 
-[connection signal="timeout" from="TimerRain" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="TimerRain" to="." method="_on_timer_rain_timeout"]
+[connection signal="timeout" from="TimerRain" to="." method="_on_timer_timeout"]

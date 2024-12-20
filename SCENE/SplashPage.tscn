@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://d0wv3qbdo88ul"]
+
+[ext_resource type="Script" path="res://SCENE/SplashPage.gd" id="1_mk5ml"]
+[ext_resource type="Texture2D" uid="uid://b0r3btusbfe7s" path="res://background/splash page.png" id="2_75qa0"]
+[ext_resource type="Texture2D" uid="uid://chkqdcx5bhmf" path="res://text/GreenRise.png" id="3_6j3km"]
+[ext_resource type="PackedScene" uid="uid://ctyygnkhq4iq0" path="res://SCENE/buttonPLAY.tscn" id="4_undxj"]
+
+[node name="SplashPage" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_mk5ml")
+
+[node name="SplashPage" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -10.0
+offset_right = 799.0
+offset_bottom = 590.0
+scale = Vector2(1.60562, 1.4825)
+texture = ExtResource("2_75qa0")
+expand_mode = 2
+stretch_mode = 1
+
+[node name="GreenRise" type="Sprite2D" parent="."]
+position = Vector2(665, 286)
+scale = Vector2(1.32883, 1.47867)
+texture = ExtResource("3_6j3km")
+
+[node name="Button" parent="." instance=ExtResource("4_undxj")]
+layout_mode = 0
+offset_left = 529.0
+offset_top = 376.0
+offset_right = 857.0
+offset_bottom = 547.0

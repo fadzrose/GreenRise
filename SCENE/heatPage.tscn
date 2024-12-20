@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://hde5jku8x52v"]
+[gd_scene load_steps=5 format=3 uid="uid://ch03o187ggxbv"]
 
 [ext_resource type="Texture2D" uid="uid://cg0fta3e2x2ui" path="res://background/heat page.png" id="1_44qnw"]
-[ext_resource type="PackedScene" uid="uid://oxjsa60kvwxo" path="res://theRoad.tscn" id="2_bogxy"]
+[ext_resource type="PackedScene" uid="uid://c1mkiu7wv0o8t" path="res://theRoad.tscn" id="2_bogxy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hc7gx"]
 size = Vector2(110, 531)

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2xdnnifi2gmv"]
+
+[ext_resource type="Script" path="res://SlotFlood.gd" id="1_gmyqv"]
+[ext_resource type="Texture2D" uid="uid://qu246hby46l8" path="res://flood/SlotFlood.png" id="2_3d60c"]
+
+[node name="SlotFlood" type="Button"]
+offset_left = -135.0
+offset_top = -274.0
+offset_right = 165.0
+offset_bottom = 117.0
+script = ExtResource("1_gmyqv")
+
+[node name="SlotFlood" type="Sprite2D" parent="."]
+position = Vector2(145, 191)
+texture = ExtResource("2_3d60c")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

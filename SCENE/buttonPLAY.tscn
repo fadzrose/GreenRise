@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctyygnkhq4iq0"]
+
+[ext_resource type="Theme" uid="uid://bi7hy7diwx5dn" path="res://THEME/btnHIJAU.tres" id="1_qpk7k"]
+[ext_resource type="Script" path="res://SCENE/buttonPLAY.gd" id="2_x78aw"]
+
+[node name="Button" type="Button"]
+offset_left = 481.0
+offset_top = 420.0
+offset_right = 809.0
+offset_bottom = 591.0
+theme = ExtResource("1_qpk7k")
+text = "MAIN"
+script = ExtResource("2_x78aw")
+
+[connection signal="button_up" from="." to="." method="_on_button_up"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

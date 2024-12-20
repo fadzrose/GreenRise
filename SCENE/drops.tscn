@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://bvul43lwr7jx6"]
+[gd_scene load_steps=3 format=3 uid="uid://cp4pq1laotl16"]
 
 [ext_resource type="Texture2D" uid="uid://ds8278wx5cyuk" path="res://flood/rain drop.png" id="1_ffyb3"]
 [ext_resource type="Script" path="res://drops.gd" id="1_rqq20"]
