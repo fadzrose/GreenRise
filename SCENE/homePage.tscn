@@ -11,8 +11,8 @@ scale = Vector2(1.53837, 1.448)
 texture = ExtResource("1_lf6x3")
 
 [node name="FloodUmbrella" parent="." instance=ExtResource("2_jtbsk")]
-offset_left = 790.0
-offset_top = 499.0
-offset_right = 845.0
-offset_bottom = 593.0
-scale = Vector2(0.787276, 0.717888)
+offset_left = 755.0
+offset_top = 455.0
+offset_right = 810.0
+offset_bottom = 549.0
+scale = Vector2(1.02728, 1.2112)

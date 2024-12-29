@@ -1,7 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://h2eilr7qi1d6"]
+[gd_scene load_steps=7 format=3 uid="uid://h2eilr7qi1d6"]
 
 [ext_resource type="Script" path="res://floodPage.gd" id="1_j5or1"]
 [ext_resource type="Texture2D" uid="uid://casmg0dmx2sx5" path="res://background/Untitled design (4).png" id="2_7b2pc"]
+[ext_resource type="PackedScene" uid="uid://bcrmxl8ta08k0" path="res://SCENE/panelFlood.tscn" id="3_lhcjh"]
+[ext_resource type="Texture2D" uid="uid://b7ucmxi37h6c7" path="res://flood/rabbit.png" id="4_4woqy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ye0pf"]
+bg_color = Color(1, 0.968627, 0.384314, 1)
+border_width_left = 10
+border_width_top = 60
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="Theme" id="Theme_5iph3"]
+resource_local_to_scene = true
+Panel/styles/panel = SubResource("StyleBoxFlat_ye0pf")
 
 [node name="FloodPage" type="Node2D"]
 script = ExtResource("1_j5or1")
@@ -14,6 +32,13 @@ texture = ExtResource("2_7b2pc")
 
 [node name="rainDrops" type="Node2D" parent="."]
 position = Vector2(70, -257)
+
+[node name="Panel" parent="." instance=ExtResource("3_lhcjh")]
+theme = SubResource("Theme_5iph3")
+
+[node name="Rabbit" type="Sprite2D" parent="."]
+position = Vector2(254, 340)
+texture = ExtResource("4_4woqy")
 
 [connection signal="timeout" from="TimerRain" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="TimerRain" to="." method="_on_timer_rain_timeout"]
