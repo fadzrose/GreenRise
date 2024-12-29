@@ -1,4 +1,6 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://f4f8jxrwk15k"]
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://f4f8jxrwk15k"]
+
+[ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="1_8ecij"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ye0pf"]
 bg_color = Color(1, 0.968627, 0.384314, 1)
@@ -14,4 +16,6 @@ corner_radius_bottom_left = 15
 
 [resource]
 resource_local_to_scene = true
+default_font = ExtResource("1_8ecij")
+default_font_size = 35
 Panel/styles/panel = SubResource("StyleBoxFlat_ye0pf")

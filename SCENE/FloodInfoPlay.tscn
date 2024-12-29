@@ -1,0 +1,71 @@
+[gd_scene load_steps=9 format=3 uid="uid://btvaobussioxj"]
+
+[ext_resource type="Texture2D" uid="uid://casmg0dmx2sx5" path="res://background/Untitled design (4).png" id="1_m13b8"]
+[ext_resource type="Theme" uid="uid://f4f8jxrwk15k" path="res://THEME/panel.tres" id="2_vwgpa"]
+[ext_resource type="Texture2D" uid="uid://b7ucmxi37h6c7" path="res://flood/rabbit.png" id="3_b1bcw"]
+[ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="4_ha07w"]
+[ext_resource type="Theme" uid="uid://bi7hy7diwx5dn" path="res://THEME/btnHIJAU.tres" id="5_ls7lc"]
+[ext_resource type="Theme" uid="uid://c140qw8f4kc2q" path="res://THEME/btnBiru2.tres" id="6_xlfx8"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_yabtl"]
+keycode = 4194309
+
+[sub_resource type="Shortcut" id="Shortcut_a2q6r"]
+events = [SubResource("InputEventKey_yabtl")]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="UntitledDesign(4)" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("1_m13b8")
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 305.0
+offset_top = 143.0
+offset_right = 987.0
+offset_bottom = 510.0
+theme = ExtResource("2_vwgpa")
+
+[node name="Rabbit" type="Sprite2D" parent="."]
+position = Vector2(254, 340)
+texture = ExtResource("3_b1bcw")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 401.0
+offset_top = 221.0
+offset_right = 946.0
+offset_bottom = 419.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_ha07w")
+theme_override_font_sizes/font_size = 35
+text = "Kita perlu menanam 
+beberapa pokok untuk 
+mengurangkan takungan 
+air yang boleh menyebabkan 
+banjir."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+offset_left = 736.0
+offset_top = 420.0
+offset_right = 918.0
+offset_bottom = 485.0
+theme = ExtResource("5_ls7lc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_ha07w")
+theme_override_font_sizes/font_size = 35
+shortcut = SubResource("Shortcut_a2q6r")
+text = "Main"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 445.0
+offset_top = 422.0
+offset_right = 627.0
+offset_bottom = 487.0
+theme = ExtResource("6_xlfx8")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_ha07w")
+theme_override_font_sizes/font_size = 35
+shortcut = SubResource("Shortcut_a2q6r")
+text = "Info"

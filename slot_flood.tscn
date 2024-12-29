@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://bqlpncpyxg1nj"]
+[gd_scene load_steps=3 format=3 uid="uid://dorx5tqgl84iq"]
 
 [ext_resource type="Script" path="res://SlotFlood.gd" id="1_gmyqv"]
 [ext_resource type="Texture2D" uid="uid://qu246hby46l8" path="res://flood/SlotFlood.png" id="2_3d60c"]

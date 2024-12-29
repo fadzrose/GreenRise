@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dfpsmt4685y03"]
 
 [ext_resource type="Texture2D" uid="uid://dsnd7i5troisb" path="res://background/home.png" id="1_lf6x3"]
-[ext_resource type="PackedScene" uid="uid://c6rxarbmcv0at" path="res://floodUmbrella.tscn" id="2_0sy8c"]
+[ext_resource type="PackedScene" uid="uid://4dbycie8sr7r" path="res://floodUmbrella.tscn" id="2_0sy8c"]
 
 [node name="HomePage" type="Node2D"]
 

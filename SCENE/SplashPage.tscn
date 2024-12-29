@@ -1,9 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://d0wv3qbdo88ul"]
+[gd_scene load_steps=9 format=3 uid="uid://d0wv3qbdo88ul"]
 
 [ext_resource type="Script" path="res://SCENE/SplashPage.gd" id="1_mk5ml"]
 [ext_resource type="Texture2D" uid="uid://b0r3btusbfe7s" path="res://background/splash page.png" id="2_75qa0"]
 [ext_resource type="Texture2D" uid="uid://chkqdcx5bhmf" path="res://text/GreenRise.png" id="3_6j3km"]
 [ext_resource type="PackedScene" uid="uid://ctyygnkhq4iq0" path="res://SCENE/buttonPLAY.tscn" id="4_undxj"]
+[ext_resource type="Theme" uid="uid://b77pfuc2ykjdy" path="res://THEME/btnBiru.tres" id="5_axshl"]
+[ext_resource type="Texture2D" uid="uid://c6an2081pm6sh" path="res://icon/btn_on-removebg-preview.png" id="6_cb7fa"]
+[ext_resource type="Texture2D" uid="uid://bai65wblrkgjf" path="res://icon/setting-removebg-preview.png" id="7_j2gwk"]
+[ext_resource type="Texture2D" uid="uid://bbwmr0ulpoh18" path="res://icon/credit-removebg-preview.png" id="8_ywanh"]
 
 [node name="SplashPage" type="Control"]
 layout_mode = 3
@@ -22,13 +26,46 @@ expand_mode = 2
 stretch_mode = 1
 
 [node name="GreenRise" type="Sprite2D" parent="."]
-position = Vector2(665, 286)
-scale = Vector2(1.32883, 1.47867)
+position = Vector2(653, 266)
+scale = Vector2(1.11487, 1.14734)
 texture = ExtResource("3_6j3km")
 
 [node name="Button" parent="." instance=ExtResource("4_undxj")]
 layout_mode = 0
-offset_left = 529.0
-offset_top = 376.0
-offset_right = 857.0
-offset_bottom = 547.0
+offset_left = 587.0
+offset_top = 335.0
+offset_right = 827.0
+offset_bottom = 442.0
+
+[node name="btnPower" type="Button" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 618.0
+offset_right = 121.0
+offset_bottom = 708.0
+theme = ExtResource("5_axshl")
+icon = ExtResource("6_cb7fa")
+icon_alignment = 1
+expand_icon = true
+
+[node name="btnSetting" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1058.0
+offset_top = 622.0
+offset_right = 1163.0
+offset_bottom = 712.0
+theme = ExtResource("5_axshl")
+icon = ExtResource("7_j2gwk")
+icon_alignment = 1
+expand_icon = true
+
+[node name="btnCredit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1170.0
+offset_top = 621.0
+offset_right = 1275.0
+offset_bottom = 711.0
+theme = ExtResource("5_axshl")
+icon = ExtResource("8_ywanh")
+icon_alignment = 1
+expand_icon = true

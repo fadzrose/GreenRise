@@ -1,16 +1,35 @@
-[gd_scene load_steps=8 format=3 uid="uid://bcrmxl8ta08k0"]
+[gd_scene load_steps=8 format=3 uid="uid://dxv5ryq8cvyb4"]
 
 [ext_resource type="Theme" uid="uid://f4f8jxrwk15k" path="res://THEME/panel.tres" id="1_384lw"]
-[ext_resource type="Script" path="res://SCENE/panelFlood.gd" id="2_b6wea"]
 [ext_resource type="FontFile" uid="uid://c23n63c641mgo" path="res://fonts/8bitOperatorPlus8-Bold.ttf" id="2_wye0r"]
-[ext_resource type="Script" path="res://SCENE/LabelFloodInstruction.gd" id="4_jqof6"]
 [ext_resource type="FontFile" uid="uid://cuoi1w3thq0pw" path="res://fonts/8bitOperatorPlus-Bold.ttf" id="6_4liqs"]
+
+[sub_resource type="GDScript" id="GDScript_ljoin"]
+script/source = "extends Panel
+
+var dialog_system = preload(\"res://SCENE/dialog.tscn\").instantiate()
+
+
+func _on_next_pressed():
+	if not has_node(\"VSplitContainer/Dialog\"):
+		add_child(dialog_system)
+	
+	if has_node(\"VSplitContainer/Label\"):
+		var label_node = $VSplitContainer/Label
+		label_node.visible = false  # Make the label invisible
+	dialog_system.add_new_output(\"Mengikut ramalan cuaca, \\nhujan lebat akan turun \\ndi kawasan kita. Nyeiii\")
+"
 
 [sub_resource type="LabelSettings" id="LabelSettings_8f2tb"]
 line_spacing = 13.0
 font = ExtResource("2_wye0r")
 font_size = 30
 font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="GDScript" id="GDScript_fqeyc"]
+script/source = "extends Label
+
+"
 
 [sub_resource type="Theme" id="Theme_88kv6"]
 default_font = ExtResource("6_4liqs")
@@ -21,7 +40,7 @@ offset_top = 143.0
 offset_right = 984.0
 offset_bottom = 511.0
 theme = ExtResource("1_384lw")
-script = ExtResource("2_b6wea")
+script = SubResource("GDScript_ljoin")
 
 [node name="VSplitContainer" type="VSplitContainer" parent="."]
 layout_mode = 0
@@ -37,7 +56,7 @@ hujan lebat akan turun
 di kawasan kita."
 label_settings = SubResource("LabelSettings_8f2tb")
 horizontal_alignment = 1
-script = ExtResource("4_jqof6")
+script = SubResource("GDScript_fqeyc")
 
 [node name="next" type="Button" parent="."]
 layout_mode = 0

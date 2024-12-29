@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cfx11mla5wt4"]
 
 [ext_resource type="Texture2D" uid="uid://dsnd7i5troisb" path="res://background/home.png" id="1_lf6x3"]
-[ext_resource type="PackedScene" uid="uid://qil7yo2wt02q" path="res://SCENE/floodUmbrella.tscn" id="2_jtbsk"]
+[ext_resource type="PackedScene" uid="uid://dhkvgkuwc8r2l" path="res://SCENE/floodUmbrella.tscn" id="2_jtbsk"]
 
 [node name="HomePage" type="Node2D"]
 
@@ -13,6 +13,6 @@ texture = ExtResource("1_lf6x3")
 [node name="FloodUmbrella" parent="." instance=ExtResource("2_jtbsk")]
 offset_left = 755.0
 offset_top = 455.0
-offset_right = 810.0
-offset_bottom = 549.0
+offset_right = 794.0
+offset_bottom = 539.0
 scale = Vector2(1.02728, 1.2112)

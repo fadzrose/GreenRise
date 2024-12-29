@@ -12,4 +12,4 @@ func _process(delta):
 
 
 func _on_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://SCENE/floodGamePage.tscn")

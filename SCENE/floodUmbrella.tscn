@@ -1,14 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://qil7yo2wt02q"]
+[gd_scene load_steps=3 format=3 uid="uid://dhkvgkuwc8r2l"]
 
 [ext_resource type="Texture2D" uid="uid://bpgj7im7glyfq" path="res://Home/payung.png" id="1_3vn73"]
-[ext_resource type="Script" path="res://floodUmbrella.gd" id="1_v0ohc"]
+[ext_resource type="Script" path="res://SCENE/floodUmbrella.gd" id="1_24e03"]
 
 [node name="FloodUmbrella" type="Button"]
 offset_left = -27.0
 offset_top = -38.0
 offset_right = 10.0
 offset_bottom = 43.0
-script = ExtResource("1_v0ohc")
+script = ExtResource("1_24e03")
 
 [node name="Payung" type="Sprite2D" parent="."]
 position = Vector2(23, 35)
