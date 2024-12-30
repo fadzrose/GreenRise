@@ -1,0 +1,80 @@
+[gd_scene load_steps=10 format=3 uid="uid://cvr07tppbk0l0"]
+
+[ext_resource type="Texture2D" uid="uid://casmg0dmx2sx5" path="res://background/Untitled design (4).png" id="1_hdfg4"]
+[ext_resource type="Theme" uid="uid://bjcp5fvdx3jse" path="res://THEME/panelInfo.tres" id="2_8ja3q"]
+[ext_resource type="Texture2D" uid="uid://b7ucmxi37h6c7" path="res://flood/rabbit.png" id="3_notev"]
+[ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="4_ph0vy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dg5gs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t8ful"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4vrmd"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_yabtl"]
+keycode = 4194309
+
+[sub_resource type="Shortcut" id="Shortcut_0ehv8"]
+events = [SubResource("InputEventKey_yabtl")]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="UntitledDesign(4)" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("1_hdfg4")
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 305.0
+offset_top = 143.0
+offset_right = 987.0
+offset_bottom = 510.0
+theme = ExtResource("2_8ja3q")
+
+[node name="Rabbit" type="Sprite2D" parent="."]
+position = Vector2(254, 340)
+texture = ExtResource("3_notev")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 436.0
+offset_top = 253.0
+offset_right = 955.0
+offset_bottom = 451.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_ph0vy")
+theme_override_font_sizes/font_size = 28
+text = "Kanopi daun, dahan dan batang 
+pokok dapat memperlahankan 
+hujan sebelum mencecah tanah 
+(pemintasan hujan). Jadi 30% 
+air akan tersejat semula dari 
+kanopi tanpa jejak ke tanah, 
+sekali gus mengurangkan 
+takungan air di permukaan."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+offset_left = 811.0
+offset_top = 153.0
+offset_right = 966.0
+offset_bottom = 199.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_ph0vy")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxEmpty_dg5gs")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_t8ful")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4vrmd")
+shortcut = SubResource("Shortcut_0ehv8")
+text = "Back >>"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 421.0
+offset_top = 159.0
+offset_right = 682.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_ph0vy")
+theme_override_font_sizes/font_size = 35
+text = "Game Information"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,96 @@
+[gd_scene load_steps=13 format=3 uid="uid://cjh4radi30gc0"]
+
+[ext_resource type="Texture2D" uid="uid://casmg0dmx2sx5" path="res://background/Untitled design (4).png" id="1_smb2r"]
+[ext_resource type="Theme" uid="uid://f4f8jxrwk15k" path="res://THEME/panel.tres" id="2_rvccm"]
+[ext_resource type="Texture2D" uid="uid://b7ucmxi37h6c7" path="res://flood/rabbit.png" id="3_3lcqh"]
+[ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="4_uj4km"]
+[ext_resource type="Theme" uid="uid://bi7hy7diwx5dn" path="res://THEME/btnHIJAU.tres" id="5_503rd"]
+[ext_resource type="Theme" uid="uid://b77pfuc2ykjdy" path="res://THEME/btnBiru.tres" id="6_8dd81"]
+[ext_resource type="Texture2D" uid="uid://ocnpjjohwrwc" path="res://icon/info-removebg-preview.png" id="7_burnt"]
+[ext_resource type="PackedScene" uid="uid://uviapy7rs0go" path="res://panelTree.tscn" id="8_53yw4"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_yabtl"]
+keycode = 4194309
+
+[sub_resource type="Shortcut" id="Shortcut_s8biy"]
+events = [SubResource("InputEventKey_yabtl")]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ye0pf"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.360784, 0.52549, 0.0862745, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="Theme" id="Theme_s1tfv"]
+resource_local_to_scene = true
+default_font = ExtResource("4_uj4km")
+default_font_size = 35
+Panel/styles/panel = SubResource("StyleBoxFlat_ye0pf")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="UntitledDesign(4)" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("1_smb2r")
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 305.0
+offset_top = 143.0
+offset_right = 987.0
+offset_bottom = 510.0
+theme = ExtResource("2_rvccm")
+metadata/_edit_use_anchors_ = true
+
+[node name="Rabbit" type="Sprite2D" parent="."]
+position = Vector2(254, 340)
+texture = ExtResource("3_3lcqh")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 421.0
+offset_top = 220.0
+offset_right = 973.0
+offset_bottom = 418.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_uj4km")
+theme_override_font_sizes/font_size = 32
+text = "Dalam masa 2 minit, 
+anda perlu tarik dan tanam 
+pokok ini. Setiap pokok 
+mempunyai kemampuan 
+menadah air hujan yang 
+berbeza berdasarkan saiznya."
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="PlayBtn" type="Button" parent="."]
+offset_left = 736.0
+offset_top = 420.0
+offset_right = 918.0
+offset_bottom = 485.0
+theme = ExtResource("5_503rd")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_uj4km")
+theme_override_font_sizes/font_size = 35
+shortcut = SubResource("Shortcut_s8biy")
+text = "Main"
+metadata/_edit_use_anchors_ = true
+
+[node name="btnInfo" type="Button" parent="."]
+offset_left = 1199.0
+offset_top = 11.0
+offset_right = 1269.0
+offset_bottom = 74.0
+theme = ExtResource("6_8dd81")
+icon = ExtResource("7_burnt")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Panel" parent="." instance=ExtResource("8_53yw4")]
+theme = SubResource("Theme_s1tfv")

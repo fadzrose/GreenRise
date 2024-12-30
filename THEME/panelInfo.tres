@@ -1,0 +1,21 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://bjcp5fvdx3jse"]
+
+[ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="1_tl0d3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ye0pf"]
+bg_color = Color(0.447059, 0.764706, 0.94902, 1)
+border_width_left = 10
+border_width_top = 60
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[resource]
+resource_local_to_scene = true
+default_font = ExtResource("1_tl0d3")
+default_font_size = 35
+Panel/styles/panel = SubResource("StyleBoxFlat_ye0pf")

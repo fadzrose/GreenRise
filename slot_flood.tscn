@@ -5,13 +5,14 @@
 
 [node name="SlotFlood" type="Button"]
 offset_left = -135.0
-offset_top = -274.0
-offset_right = 165.0
+offset_top = -45.0
+offset_right = 10.0
 offset_bottom = 117.0
 script = ExtResource("1_gmyqv")
 
 [node name="SlotFlood" type="Sprite2D" parent="."]
-position = Vector2(145, 191)
+position = Vector2(66.125, 80)
+scale = Vector2(0.484694, 0.447242)
 texture = ExtResource("2_3d60c")
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

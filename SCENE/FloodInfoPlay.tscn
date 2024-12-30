@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://btvaobussioxj"]
+[gd_scene load_steps=10 format=3 uid="uid://btvaobussioxj"]
 
+[ext_resource type="Script" path="res://SCENE/FloodInfoPlay.gd" id="1_6leqx"]
 [ext_resource type="Texture2D" uid="uid://casmg0dmx2sx5" path="res://background/Untitled design (4).png" id="1_m13b8"]
 [ext_resource type="Theme" uid="uid://f4f8jxrwk15k" path="res://THEME/panel.tres" id="2_vwgpa"]
 [ext_resource type="Texture2D" uid="uid://b7ucmxi37h6c7" path="res://flood/rabbit.png" id="3_b1bcw"]
@@ -14,6 +15,7 @@ keycode = 4194309
 events = [SubResource("InputEventKey_yabtl")]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_6leqx")
 
 [node name="UntitledDesign(4)" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
@@ -25,6 +27,7 @@ offset_top = 143.0
 offset_right = 987.0
 offset_bottom = 510.0
 theme = ExtResource("2_vwgpa")
+metadata/_edit_use_anchors_ = true
 
 [node name="Rabbit" type="Sprite2D" parent="."]
 position = Vector2(254, 340)
@@ -45,8 +48,9 @@ air yang boleh menyebabkan
 banjir."
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
-[node name="Button" type="Button" parent="."]
+[node name="PlayBtn" type="Button" parent="."]
 offset_left = 736.0
 offset_top = 420.0
 offset_right = 918.0
@@ -54,11 +58,12 @@ offset_bottom = 485.0
 theme = ExtResource("5_ls7lc")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_ha07w")
-theme_override_font_sizes/font_size = 35
+theme_override_font_sizes/font_size = 28
 shortcut = SubResource("Shortcut_a2q6r")
-text = "Main"
+text = "Bersedia"
+metadata/_edit_use_anchors_ = true
 
-[node name="Button2" type="Button" parent="."]
+[node name="Info" type="Button" parent="."]
 offset_left = 445.0
 offset_top = 422.0
 offset_right = 627.0
@@ -69,3 +74,7 @@ theme_override_fonts/font = ExtResource("4_ha07w")
 theme_override_font_sizes/font_size = 35
 shortcut = SubResource("Shortcut_a2q6r")
 text = "Info"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="PlayBtn" to="." method="_on_play_btn_pressed"]
+[connection signal="pressed" from="Info" to="." method="_on_info_pressed"]
