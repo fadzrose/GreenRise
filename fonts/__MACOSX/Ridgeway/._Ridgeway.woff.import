@@ -15,6 +15,7 @@ dest_files=["res://.godot/imported/._Ridgeway.woff-09f8187c8bb4e784067124b582f38
 Rendering=null
 antialiasing=1
 generate_mipmaps=false
+disable_embedded_bitmaps=true
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48
