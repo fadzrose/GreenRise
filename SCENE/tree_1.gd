@@ -4,10 +4,14 @@ var is_dragging = false
 var mouse_offset
 var delay = 1
 
+var is_inside_dropable = false
+var body_ref
+
 func _physics_process(delta):
 	if is_dragging == true:
 		var tween = get_tree().create_tween()
 		tween.tween_property(self, "position", get_global_mouse_position()-mouse_offset, delay * delta)
+
 
 func _input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
