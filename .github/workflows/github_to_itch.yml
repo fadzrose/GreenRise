@@ -32,21 +32,21 @@ jobs:
   
   - name: Download + Authorize Godot
     run: |
-       curl -L -o godot.zip https://downloads.tuxfamily.org/godotengine/4.3/Godot_v4.3-stable_linux.x86_64.zip
+       curl -L -o godot.zip https://downloads.tuxfamily.org/godotengine/4.0/Godot_v4.0-stable_linux.x86_64.zip
        unzip godot.zip
-       mv Godot_v4.3-stable_linux.x86_64 godot
+       mv Godot_v4.0-stable_linux.x86_64 godot
        ls
        chmod +x godot
  
   - name: Download Export Templates
     run: |
-     curl -L -o export_templates.zip https://downloads.tuxfamily.org/godotengine/4.3/Godot_v4.3-stable_export_templates.tpz
+     curl -L -o export_templates.zip https://downloads.tuxfamily.org/godotengine/4.0/Godot_v4.0-stable_export_templates.tpz
      unzip export_templates.zip
   
   - name: Install Export Templates
     run: |
-     mkdir -p ~/.local/share/godot/export_templates/4.3.stable
-     mv ./templates/* ~/.local/share/godot/export_templates/4.3.stable
+     mkdir -p ~/.local/share/godot/export_templates/4.0.stable
+     mv ./templates/* ~/.local/share/godot/export_templates/4.0.stable
   
 
   - uses: actions/upload-artifact@v2
