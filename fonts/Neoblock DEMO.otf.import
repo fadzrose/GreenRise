@@ -15,6 +15,7 @@ dest_files=["res://.godot/imported/Neoblock DEMO.otf-dd5baec96759795b973ab436d0e
 Rendering=null
 antialiasing=1
 generate_mipmaps=false
+disable_embedded_bitmaps=true
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48
