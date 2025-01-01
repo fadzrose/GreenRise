@@ -69,5 +69,5 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_2tfom")
 shortcut = SubResource("Shortcut_tudpq")
 text = "Next >>"
 
-[connection signal="timeout" from="TimerRain" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="TimerRain" to="." method="_on_timer_rain_timeout"]
+[connection signal="timeout" from="TimerRain" to="." method="_on_timer_timeout"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cjh4radi30gc0"]
+[gd_scene load_steps=22 format=3 uid="uid://cjh4radi30gc0"]
 
 [ext_resource type="Texture2D" uid="uid://casmg0dmx2sx5" path="res://background/Untitled design (4).png" id="1_smb2r"]
 [ext_resource type="Theme" uid="uid://f4f8jxrwk15k" path="res://THEME/panel.tres" id="2_rvccm"]
@@ -8,6 +8,15 @@
 [ext_resource type="Theme" uid="uid://b77pfuc2ykjdy" path="res://THEME/btnBiru.tres" id="6_8dd81"]
 [ext_resource type="Texture2D" uid="uid://ocnpjjohwrwc" path="res://icon/info-removebg-preview.png" id="7_burnt"]
 [ext_resource type="PackedScene" uid="uid://uviapy7rs0go" path="res://panelTree.tscn" id="8_53yw4"]
+[ext_resource type="Theme" uid="uid://cae3dhhybmss4" path="res://THEME/btnBiru3.tres" id="9_bc756"]
+[ext_resource type="FontFile" uid="uid://c23n63c641mgo" path="res://fonts/8bitOperatorPlus8-Bold.ttf" id="10_riplk"]
+[ext_resource type="Texture2D" uid="uid://de0o3qj5o0p6r" path="res://flood/New Piskel-1.png.png" id="11_dfdrp"]
+[ext_resource type="Texture2D" uid="uid://bpbf0be20b7tu" path="res://flood/New Piskel-2.png (1).png" id="12_m3fgm"]
+[ext_resource type="Texture2D" uid="uid://iq2wgd3n8h60" path="res://flood/New Piskel-2.png.png" id="13_vxy62"]
+[ext_resource type="Texture2D" uid="uid://dnld16r688hpo" path="res://flood/New Piskel-4.png.png" id="14_0n8e5"]
+[ext_resource type="Texture2D" uid="uid://cgex1l3w46bu8" path="res://flood/New Piskel-5.png (1).png" id="15_8m1lo"]
+[ext_resource type="Texture2D" uid="uid://chhj241bdv4t4" path="res://flood/New Piskel-5.png.png" id="16_lalli"]
+[ext_resource type="Texture2D" uid="uid://bjsv2lb5g8u51" path="res://flood/New Piskel-6.png.png" id="17_7tpvk"]
 
 [sub_resource type="InputEventKey" id="InputEventKey_yabtl"]
 keycode = 4194309
@@ -27,7 +36,7 @@ corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
-[sub_resource type="Theme" id="Theme_s1tfv"]
+[sub_resource type="Theme" id="Theme_4iy5i"]
 resource_local_to_scene = true
 default_font = ExtResource("4_uj4km")
 default_font_size = 35
@@ -83,14 +92,60 @@ text = "Main"
 metadata/_edit_use_anchors_ = true
 
 [node name="btnInfo" type="Button" parent="."]
-offset_left = 1199.0
+offset_left = 1191.0
 offset_top = 11.0
 offset_right = 1269.0
-offset_bottom = 74.0
+offset_bottom = 84.0
 theme = ExtResource("6_8dd81")
 icon = ExtResource("7_burnt")
 icon_alignment = 1
 expand_icon = true
 
 [node name="Panel" parent="." instance=ExtResource("8_53yw4")]
-theme = SubResource("Theme_s1tfv")
+theme = SubResource("Theme_4iy5i")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 1008.0
+offset_top = 13.0
+offset_right = 1185.0
+offset_bottom = 84.0
+theme = ExtResource("9_bc756")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_riplk")
+theme_override_font_sizes/font_size = 45
+text = "2:00"
+
+[node name="NewPiskel-1png" type="Sprite2D" parent="."]
+position = Vector2(151.75, 621.25)
+scale = Vector2(4.45313, 5.07813)
+texture = ExtResource("11_dfdrp")
+
+[node name="NewPiskel-2png(1)" type="Sprite2D" parent="."]
+position = Vector2(1132, 625.5)
+scale = Vector2(4.25, 5.03125)
+texture = ExtResource("12_m3fgm")
+
+[node name="NewPiskel-2png" type="Sprite2D" parent="."]
+position = Vector2(971, 624)
+scale = Vector2(4.4375, 5.125)
+texture = ExtResource("13_vxy62")
+
+[node name="NewPiskel-4png" type="Sprite2D" parent="."]
+position = Vector2(811.5, 625.5)
+scale = Vector2(4.28125, 5.03125)
+texture = ExtResource("14_0n8e5")
+
+[node name="NewPiskel-5png(1)" type="Sprite2D" parent="."]
+position = Vector2(647, 625.5)
+scale = Vector2(4.125, 4.90625)
+texture = ExtResource("15_8m1lo")
+
+[node name="NewPiskel-5png" type="Sprite2D" parent="."]
+position = Vector2(481, 625.75)
+scale = Vector2(4.25, 5.14063)
+texture = ExtResource("16_lalli")
+
+[node name="NewPiskel-6png" type="Sprite2D" parent="."]
+position = Vector2(318, 623.5)
+scale = Vector2(4.375, 4.96875)
+texture = ExtResource("17_7tpvk")
