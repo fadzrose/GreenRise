@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsek3ecpsgtru"
-path="res://.godot/imported/homeShelfR.png-ad6655586e43aab318c8b8521fa3ed5d.ctex"
+uid="uid://5smkkxgogdk8"
+path="res://.godot/imported/hatHome.png-9ed986d84f7499b2b52b4671ddeff4c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Home/homeShelfR.png"
-dest_files=["res://.godot/imported/homeShelfR.png-ad6655586e43aab318c8b8521fa3ed5d.ctex"]
+source_file="res://Home/hatHome.png"
+dest_files=["res://.godot/imported/hatHome.png-9ed986d84f7499b2b52b4671ddeff4c9.ctex"]
 
 [params]
 

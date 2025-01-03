@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dsnd7i5troisb" path="res://background/home.png" id="1_lf6x3"]
 [ext_resource type="PackedScene" uid="uid://4dbycie8sr7r" path="res://floodUmbrella.tscn" id="2_0sy8c"]
-[ext_resource type="Texture2D" uid="uid://dsek3ecpsgtru" path="res://Home/homeShelfR.png" id="3_2p57j"]
+[ext_resource type="Texture2D" uid="uid://dsek3ecpsgtru" path="res://Home/homeShelf.png" id="3_2p57j"]
 [ext_resource type="Texture2D" uid="uid://bbbk3kqpdc0n0" path="res://Home/flower1.png" id="4_ais0l"]
 [ext_resource type="Texture2D" uid="uid://cwa38dnf1qn3q" path="res://Home/flower2.png" id="5_ma7fv"]
 [ext_resource type="Texture2D" uid="uid://bvnmvfejiijyn" path="res://Home/flower3.png" id="6_843he"]
