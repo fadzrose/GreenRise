@@ -1,4 +1,16 @@
-[gd_scene format=3 uid="uid://b1f7dnqu1j5pm"]
+[gd_scene load_steps=8 format=3 uid="uid://b1f7dnqu1j5pm"]
+
+[ext_resource type="Theme" uid="uid://bvfpe7qu6csns" path="res://THEME/blurBG.tres" id="1_nue71"]
+[ext_resource type="Theme" uid="uid://cfhgrew07lj21" path="res://THEME/panelHijau.tres" id="2_5h1fh"]
+[ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="3_3tf78"]
+[ext_resource type="Theme" uid="uid://bi7hy7diwx5dn" path="res://THEME/btnHIJAU.tres" id="4_glh8n"]
+[ext_resource type="Theme" uid="uid://cbwtdamqxxq7s" path="res://THEME/btnMerah.tres" id="5_h57gs"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_yabtl"]
+keycode = 4194309
+
+[sub_resource type="Shortcut" id="Shortcut_i41ww"]
+events = [SubResource("InputEventKey_yabtl")]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -7,3 +19,54 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 1285.0
+offset_bottom = 724.0
+theme = ExtResource("1_nue71")
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 305.0
+offset_top = 143.0
+offset_right = 987.0
+offset_bottom = 510.0
+theme = ExtResource("2_5h1fh")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 401.0
+offset_top = 221.0
+offset_right = 946.0
+offset_bottom = 419.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_3tf78")
+theme_override_font_sizes/font_size = 35
+text = "Anda pasti ingin keluar?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="tidak" type="Button" parent="."]
+offset_left = 736.0
+offset_top = 420.0
+offset_right = 918.0
+offset_bottom = 485.0
+theme = ExtResource("4_glh8n")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_3tf78")
+theme_override_font_sizes/font_size = 35
+shortcut = SubResource("Shortcut_i41ww")
+text = "Tidak"
+metadata/_edit_use_anchors_ = true
+
+[node name="ya" type="Button" parent="."]
+offset_left = 445.0
+offset_top = 422.0
+offset_right = 627.0
+offset_bottom = 487.0
+theme = ExtResource("5_h57gs")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_3tf78")
+theme_override_font_sizes/font_size = 35
+shortcut = SubResource("Shortcut_i41ww")
+text = "Ya"
+metadata/_edit_use_anchors_ = true

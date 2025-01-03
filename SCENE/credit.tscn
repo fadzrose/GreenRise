@@ -1,4 +1,12 @@
-[gd_scene format=3 uid="uid://deatwhp0663mg"]
+[gd_scene load_steps=6 format=3 uid="uid://deatwhp0663mg"]
+
+[ext_resource type="Theme" uid="uid://bvfpe7qu6csns" path="res://THEME/blurBG.tres" id="1_qykpw"]
+[ext_resource type="Theme" uid="uid://cfhgrew07lj21" path="res://THEME/panelHijau.tres" id="2_7h6ty"]
+[ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="3_naw63"]
+[ext_resource type="FontFile" uid="uid://cuoi1w3thq0pw" path="res://fonts/8bitOperatorPlus-Bold.ttf" id="4_hu6wh"]
+
+[sub_resource type="Theme" id="Theme_ygn5n"]
+default_font = ExtResource("4_hu6wh")
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -7,3 +15,37 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_right = 1285.0
+offset_bottom = 724.0
+theme = ExtResource("1_qykpw")
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 305.0
+offset_top = 143.0
+offset_right = 987.0
+offset_bottom = 510.0
+theme = ExtResource("2_7h6ty")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 401.0
+offset_top = 221.0
+offset_right = 946.0
+offset_bottom = 419.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_naw63")
+theme_override_font_sizes/font_size = 35
+text = "Anda pasti ingin keluar?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="next" type="Button" parent="."]
+offset_left = 684.0
+offset_top = 144.0
+offset_right = 983.0
+offset_bottom = 202.0
+theme = SubResource("Theme_ygn5n")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Kembali >>"
+flat = true

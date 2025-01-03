@@ -19,6 +19,7 @@ anchors_preset = 0
 script = ExtResource("1_6leqx")
 
 [node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
 offset_left = 305.0
 offset_top = 143.0
 offset_right = 987.0
@@ -31,6 +32,7 @@ position = Vector2(254, 340)
 texture = ExtResource("3_b1bcw")
 
 [node name="Label" type="Label" parent="."]
+layout_mode = 0
 offset_left = 401.0
 offset_top = 221.0
 offset_right = 946.0
@@ -48,6 +50,7 @@ vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="PlayBtn" type="Button" parent="."]
+layout_mode = 0
 offset_left = 736.0
 offset_top = 420.0
 offset_right = 918.0
@@ -61,6 +64,7 @@ text = "Bersedia"
 metadata/_edit_use_anchors_ = true
 
 [node name="Info" type="Button" parent="."]
+layout_mode = 0
 offset_left = 445.0
 offset_top = 422.0
 offset_right = 627.0
