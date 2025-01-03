@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dfpsmt4685y03"]
+[gd_scene load_steps=9 format=3 uid="uid://dfpsmt4685y03"]
 
 [ext_resource type="Texture2D" uid="uid://dsnd7i5troisb" path="res://background/home.png" id="1_lf6x3"]
 [ext_resource type="PackedScene" uid="uid://4dbycie8sr7r" path="res://floodUmbrella.tscn" id="2_0sy8c"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cwa38dnf1qn3q" path="res://Home/flower2.png" id="5_ma7fv"]
 [ext_resource type="Texture2D" uid="uid://bvnmvfejiijyn" path="res://Home/flower3.png" id="6_843he"]
 [ext_resource type="Texture2D" uid="uid://c2j88f8kkwir" path="res://Home/flower4.png" id="7_8aonu"]
+[ext_resource type="Texture2D" uid="uid://5smkkxgogdk8" path="res://Home/hatHome.png" id="8_1qnpi"]
 
 [node name="HomePage" type="Node2D"]
 
@@ -16,10 +17,10 @@ scale = Vector2(1.53837, 1.448)
 texture = ExtResource("1_lf6x3")
 
 [node name="FloodUmbrella" parent="." instance=ExtResource("2_0sy8c")]
-offset_left = 758.0
-offset_top = 475.0
-offset_right = 797.0
-offset_bottom = 558.0
+offset_left = 792.0
+offset_top = 481.0
+offset_right = 831.0
+offset_bottom = 564.0
 
 [node name="HomeShelf" type="Sprite2D" parent="."]
 position = Vector2(1183, 485)
@@ -45,3 +46,8 @@ texture = ExtResource("6_843he")
 position = Vector2(1169, 632)
 scale = Vector2(0.25, 0.175781)
 texture = ExtResource("7_8aonu")
+
+[node name="HatHome" type="Sprite2D" parent="."]
+position = Vector2(640, 338)
+scale = Vector2(1.032, 1.12)
+texture = ExtResource("8_1qnpi")
