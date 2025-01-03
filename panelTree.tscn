@@ -16,6 +16,7 @@ offset_left = 84.0
 offset_top = 19.0
 offset_right = 221.0
 offset_bottom = 184.0
+script = null
 
 [node name="SlotFlood" parent="." instance=ExtResource("2_wkm8l")]
 layout_mode = 0
@@ -23,6 +24,7 @@ offset_left = 246.0
 offset_top = 19.0
 offset_right = 383.0
 offset_bottom = 184.0
+script = null
 
 [node name="SlotFlood3" parent="." instance=ExtResource("2_wkm8l")]
 layout_mode = 0
@@ -30,6 +32,7 @@ offset_left = 409.0
 offset_top = 19.0
 offset_right = 546.0
 offset_bottom = 184.0
+script = null
 
 [node name="SlotFlood4" parent="." instance=ExtResource("2_wkm8l")]
 layout_mode = 0
@@ -37,6 +40,7 @@ offset_left = 571.0
 offset_top = 19.0
 offset_right = 708.0
 offset_bottom = 184.0
+script = null
 
 [node name="SlotFlood5" parent="." instance=ExtResource("2_wkm8l")]
 layout_mode = 0
@@ -44,6 +48,7 @@ offset_left = 734.0
 offset_top = 19.0
 offset_right = 871.0
 offset_bottom = 184.0
+script = null
 
 [node name="SlotFlood6" parent="." instance=ExtResource("2_wkm8l")]
 layout_mode = 0
@@ -51,6 +56,7 @@ offset_left = 896.0
 offset_top = 19.0
 offset_right = 1033.0
 offset_bottom = 184.0
+script = null
 
 [node name="SlotFlood7" parent="." instance=ExtResource("2_wkm8l")]
 layout_mode = 0
@@ -58,3 +64,4 @@ offset_left = 1057.0
 offset_top = 19.0
 offset_right = 1194.0
 offset_bottom = 184.0
+script = null
