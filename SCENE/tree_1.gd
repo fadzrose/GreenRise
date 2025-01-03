@@ -7,6 +7,21 @@ var delay = 1
 var is_inside_dropable = false
 var body_ref
 
+#show spot to plant
+func _on_area_2d_body_entered(body:StaticBody2D):
+	if body.is_in_group('dropable'):
+		is_inside_dropable = true
+		body.modulate = Color(Color.REBECCA_PURPLE, 1)
+		body_ref = body
+
+func _on_area_2d_body_exited(body):
+	if body.is_in_group('dropable'):
+		is_inside_dropable = false
+		body.modulate = Color(Color.REBECCA_PURPLE, 0.7)
+		
+
+
+#dragging works
 func _physics_process(delta):
 	if is_dragging == true:
 		var tween = get_tree().create_tween()

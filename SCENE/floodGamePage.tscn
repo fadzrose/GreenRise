@@ -56,9 +56,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Button" type="Button" parent="."]
-offset_left = 811.0
+offset_left = 722.0
 offset_top = 153.0
-offset_right = 966.0
+offset_right = 977.0
 offset_bottom = 199.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_00yfj")
@@ -67,7 +67,8 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_o6pwf")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_eg436")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_2tfom")
 shortcut = SubResource("Shortcut_tudpq")
-text = "Next >>"
+text = "Seterusnya >>"
 
-[connection signal="timeout" from="TimerRain" to="." method="_on_timer_rain_timeout"]
 [connection signal="timeout" from="TimerRain" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="TimerRain" to="." method="_on_timer_rain_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
