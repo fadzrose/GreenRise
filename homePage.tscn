@@ -1,7 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://dfpsmt4685y03"]
+[gd_scene load_steps=8 format=3 uid="uid://dfpsmt4685y03"]
 
 [ext_resource type="Texture2D" uid="uid://dsnd7i5troisb" path="res://background/home.png" id="1_lf6x3"]
 [ext_resource type="PackedScene" uid="uid://4dbycie8sr7r" path="res://floodUmbrella.tscn" id="2_0sy8c"]
+[ext_resource type="Texture2D" uid="uid://dsek3ecpsgtru" path="res://Home/homeShelfR.png" id="3_2p57j"]
+[ext_resource type="Texture2D" uid="uid://bbbk3kqpdc0n0" path="res://Home/flower1.png" id="4_ais0l"]
+[ext_resource type="Texture2D" uid="uid://cwa38dnf1qn3q" path="res://Home/flower2.png" id="5_ma7fv"]
+[ext_resource type="Texture2D" uid="uid://bvnmvfejiijyn" path="res://Home/flower3.png" id="6_843he"]
+[ext_resource type="Texture2D" uid="uid://c2j88f8kkwir" path="res://Home/flower4.png" id="7_8aonu"]
 
 [node name="HomePage" type="Node2D"]
 
@@ -15,3 +20,28 @@ offset_left = 758.0
 offset_top = 475.0
 offset_right = 797.0
 offset_bottom = 558.0
+
+[node name="HomeShelf" type="Sprite2D" parent="."]
+position = Vector2(1183, 485)
+scale = Vector2(1.07286, 0.663333)
+texture = ExtResource("3_2p57j")
+
+[node name="Flower1" type="Sprite2D" parent="."]
+position = Vector2(1167, 358)
+scale = Vector2(0.214844, 0.136719)
+texture = ExtResource("4_ais0l")
+
+[node name="Flower2" type="Sprite2D" parent="."]
+position = Vector2(1166, 546)
+scale = Vector2(0.21875, 0.144531)
+texture = ExtResource("5_ma7fv")
+
+[node name="Flower3" type="Sprite2D" parent="."]
+position = Vector2(1166, 447)
+scale = Vector2(0.210938, 0.15625)
+texture = ExtResource("6_843he")
+
+[node name="Flower4" type="Sprite2D" parent="."]
+position = Vector2(1169, 632)
+scale = Vector2(0.25, 0.175781)
+texture = ExtResource("7_8aonu")
