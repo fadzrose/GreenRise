@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bghmc1wo0512t"]
+
+[ext_resource type="Texture2D" uid="uid://cpeqw5088yja" path="res://background/garden page.png" id="1_d5vcq"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="GardenPage" type="Sprite2D" parent="."]
+position = Vector2(641, 361.25)
+scale = Vector2(1.77955, 1.80375)
+texture = ExtResource("1_d5vcq")
