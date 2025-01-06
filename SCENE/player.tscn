@@ -16,11 +16,11 @@ position = Vector2(228, 604)
 shape = SubResource("RectangleShape2D_r7gkd")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(623, 370)
+position = Vector2(641, 362)
 
 [node name="Buildings-trees-foreground" type="Sprite2D" parent="Camera2D"]
-position = Vector2(18, -2)
-scale = Vector2(2.04153, 2.09829)
+position = Vector2(1, -2)
+scale = Vector2(2.08153, 2.09829)
 texture = ExtResource("2_b82mc")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

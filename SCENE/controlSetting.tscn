@@ -1,0 +1,105 @@
+[gd_scene load_steps=6 format=3 uid="uid://dmr06vtgaurqh"]
+
+[ext_resource type="Theme" uid="uid://bvfpe7qu6csns" path="res://THEME/blurBG.tres" id="1_0415n"]
+[ext_resource type="Theme" uid="uid://cfhgrew07lj21" path="res://THEME/panelHijau.tres" id="2_a5jxw"]
+[ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="3_4ugtc"]
+[ext_resource type="FontFile" uid="uid://cuoi1w3thq0pw" path="res://fonts/8bitOperatorPlus-Bold.ttf" id="4_d4tke"]
+
+[sub_resource type="Theme" id="Theme_4odxg"]
+default_font = ExtResource("4_d4tke")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_right = 1285.0
+offset_bottom = 724.0
+theme = ExtResource("1_0415n")
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 305.0
+offset_top = 143.0
+offset_right = 987.0
+offset_bottom = 510.0
+theme = ExtResource("2_a5jxw")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 324.0
+offset_top = 148.0
+offset_right = 672.0
+offset_bottom = 198.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4ugtc")
+theme_override_font_sizes/font_size = 35
+text = "Tetapan"
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="."]
+offset_left = 326.0
+offset_top = 396.0
+offset_right = 674.0
+offset_bottom = 446.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4ugtc")
+theme_override_font_sizes/font_size = 35
+text = "Bahasa"
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 326.0
+offset_top = 306.0
+offset_right = 674.0
+offset_bottom = 356.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4ugtc")
+theme_override_font_sizes/font_size = 35
+text = "Muzik"
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 324.0
+offset_top = 229.0
+offset_right = 672.0
+offset_bottom = 279.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4ugtc")
+theme_override_font_sizes/font_size = 35
+text = "Kelantangan"
+vertical_alignment = 1
+
+[node name="next" type="Button" parent="."]
+offset_left = 718.0
+offset_top = 141.0
+offset_right = 1017.0
+offset_bottom = 199.0
+theme = SubResource("Theme_4odxg")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "Kembali >>"
+flat = true
+
+[node name="HSlider" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 604.0
+offset_top = 231.0
+offset_right = 951.0
+offset_bottom = 275.0
+
+[node name="HSlider2" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 604.0
+offset_top = 311.0
+offset_right = 951.0
+offset_bottom = 355.0
+
+[node name="OptionButton" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 392.0
+offset_right = 951.0
+offset_bottom = 448.0

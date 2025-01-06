@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://c75s3xnde03v5"]
+
+[ext_resource type="Texture2D" uid="uid://cgex1l3w46bu8" path="res://flood/New Piskel-5.png (1).png" id="2_31t3t"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lbqn5"]
+radius = 14.8718
+height = 133.752
+
+[node name="tree5" type="StaticBody2D"]
+position = Vector2(197, 409)
+scale = Vector2(0.252329, 0.294279)
+collision_mask = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1.73007, 0)
+scale = Vector2(14.5027, 17.849)
+texture = ExtResource("2_31t3t")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(3.46014, 5.57025)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(3.60144, 251.098)
+rotation = 1.56443
+shape = SubResource("CapsuleShape2D_lbqn5")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

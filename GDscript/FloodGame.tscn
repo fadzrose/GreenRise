@@ -1,0 +1,82 @@
+[gd_scene load_steps=18 format=3 uid="uid://6ltnngbt1853"]
+
+[ext_resource type="Texture2D" uid="uid://casmg0dmx2sx5" path="res://background/Untitled design (4).png" id="1_js2pp"]
+[ext_resource type="PackedScene" uid="uid://uviapy7rs0go" path="res://panelTree.tscn" id="1_k58ki"]
+[ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="2_85le4"]
+[ext_resource type="PackedScene" uid="uid://c4ynpdmlo46w8" path="res://GDscript/tanahFlood.tscn" id="3_s324v"]
+[ext_resource type="PackedScene" uid="uid://crxyj4r0uapb1" path="res://GDscript/tree_1.tscn" id="4_7wqgw"]
+[ext_resource type="PackedScene" uid="uid://b8j7pkgag37wq" path="res://GDscript/tree_2.tscn" id="5_o8gj4"]
+[ext_resource type="PackedScene" uid="uid://cuur81ypvqvf7" path="res://GDscript/tree_3.tscn" id="6_xjshc"]
+[ext_resource type="PackedScene" uid="uid://c75s3xnde03v5" path="res://GDscript/tree_5.tscn" id="10_f1hhk"]
+[ext_resource type="Script" path="res://GDscript/tree_5.gd" id="11_g0q3r"]
+[ext_resource type="PackedScene" uid="uid://dvvxnijg5nrmf" path="res://GDscript/tree_6.tscn" id="12_n7au8"]
+[ext_resource type="Script" path="res://GDscript/tree_6.gd" id="13_55iqt"]
+[ext_resource type="PackedScene" uid="uid://b4as2vidj6bww" path="res://GDscript/tree_7.tscn" id="14_sboug"]
+[ext_resource type="Script" path="res://GDscript/tree_7.gd" id="15_823m1"]
+[ext_resource type="PackedScene" uid="uid://bfyy28qeidcvg" path="res://GDscript/tree_4.tscn" id="19_lbuwh"]
+[ext_resource type="Script" path="res://GDscript/tree_4.gd" id="20_yl52y"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ye0pf"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.360784, 0.52549, 0.0862745, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="Theme" id="Theme_2y8u8"]
+resource_local_to_scene = true
+default_font = ExtResource("2_85le4")
+default_font_size = 35
+Panel/styles/panel = SubResource("StyleBoxFlat_ye0pf")
+
+[node name="Level" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = -7.0
+offset_bottom = -7.0
+metadata/_edit_vertical_guides_ = []
+
+[node name="UntitledDesign(4)" type="Sprite2D" parent="."]
+position = Vector2(640, 367)
+texture = ExtResource("1_js2pp")
+
+[node name="platform" parent="." instance=ExtResource("3_s324v")]
+position = Vector2(-4, 394)
+
+[node name="Panel" parent="." instance=ExtResource("1_k58ki")]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 524.0
+offset_right = 1279.0
+offset_bottom = 726.0
+theme = SubResource("Theme_2y8u8")
+
+[node name="tree2" parent="." instance=ExtResource("5_o8gj4")]
+position = Vector2(315, 621)
+
+[node name="tree3" parent="." instance=ExtResource("6_xjshc")]
+position = Vector2(478, 623)
+
+[node name="tree1" parent="." instance=ExtResource("4_7wqgw")]
+position = Vector2(148, 624)
+
+[node name="tree4" parent="." instance=ExtResource("19_lbuwh")]
+position = Vector2(647, 624)
+script = ExtResource("20_yl52y")
+
+[node name="tree5" parent="." instance=ExtResource("10_f1hhk")]
+position = Vector2(813, 627)
+script = ExtResource("11_g0q3r")
+
+[node name="tree6" parent="." instance=ExtResource("12_n7au8")]
+position = Vector2(977, 625)
+script = ExtResource("13_55iqt")
+
+[node name="tree7" parent="." instance=ExtResource("14_sboug")]
+position = Vector2(1137, 627)
+script = ExtResource("15_823m1")
