@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://vpn8fofyj6u1"]
+
+[ext_resource type="Script" path="res://SCENE/beforeFloodGame.gd" id="1_ibvdh"]
+[ext_resource type="Texture2D" uid="uid://casmg0dmx2sx5" path="res://background/Untitled design (4).png" id="2_bwdu2"]
+[ext_resource type="PackedScene" uid="uid://btvaobussioxj" path="res://SCENE/FloodInfoPlay.tscn" id="3_tgdmf"]
+[ext_resource type="PackedScene" uid="uid://cvr07tppbk0l0" path="res://SCENE/FloodInfo.tscn" id="4_0uhcn"]
+[ext_resource type="PackedScene" uid="uid://cjh4radi30gc0" path="res://SCENE/StartFloodGame.tscn" id="5_ho1dc"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ibvdh")
+
+[node name="UntitledDesign(4)" type="Sprite2D" parent="."]
+position = Vector2(641, 359)
+texture = ExtResource("2_bwdu2")
+
+[node name="infoPlay" parent="." instance=ExtResource("3_tgdmf")]
+visible = false
+offset_left = -2.0
+offset_top = -1.0
+offset_right = -2.0
+offset_bottom = -1.0
+
+[node name="startGame" parent="." instance=ExtResource("5_ho1dc")]
+offset_left = -1.0
+offset_top = 4.0
+offset_right = -1.0
+offset_bottom = 4.0
+
+[node name="infoPanel" parent="." instance=ExtResource("4_0uhcn")]
+visible = false
+offset_left = -2.0
+offset_right = -2.0

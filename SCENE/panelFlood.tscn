@@ -60,13 +60,12 @@ script = SubResource("GDScript_fqeyc")
 
 [node name="next" type="Button" parent="."]
 layout_mode = 0
-offset_left = 584.0
-offset_top = 14.0
-offset_right = 685.0
-offset_bottom = 51.0
+offset_left = 387.0
+offset_right = 686.0
+offset_bottom = 58.0
 theme = SubResource("Theme_88kv6")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Next >>"
+text = "Seterusnya >>"
 flat = true
 
 [connection signal="pressed" from="next" to="." method="_on_next_pressed"]

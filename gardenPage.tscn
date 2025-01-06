@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=10 format=3 uid="uid://bghmc1wo0512t"]
+=======
+[gd_scene load_steps=6 format=3 uid="uid://m5uuggqpn1d1"]
+>>>>>>> 6213b07c7d6bf0cabea523800acb0797369a2201
 
 [ext_resource type="Texture2D" uid="uid://cpeqw5088yja" path="res://background/garden page.png" id="1_d5vcq"]
 [ext_resource type="Texture2D" uid="uid://0g434icf0ll1" path="res://garden/perigiGarden.png" id="2_3w8qw"]
@@ -21,24 +25,24 @@ texture = ExtResource("1_d5vcq")
 position = Vector2(1061, 340)
 texture = ExtResource("2_3w8qw")
 
-[node name="Pot2" type="Sprite2D" parent="."]
-position = Vector2(410, 604)
-scale = Vector2(0.6, 0.684)
-texture = ExtResource("3_1ek45")
-
-[node name="Pot" type="Sprite2D" parent="."]
-position = Vector2(151, 606)
-scale = Vector2(0.6, 0.684)
-texture = ExtResource("3_1ek45")
-
 [node name="Pot3" type="Sprite2D" parent="."]
-position = Vector2(150, 451)
-scale = Vector2(0.6, 0.684)
+position = Vector2(139.5, 389.171)
+scale = Vector2(0.482, 0.436188)
+texture = ExtResource("3_1ek45")
+
+[node name="Pot5" type="Sprite2D" parent="."]
+position = Vector2(140, 484.171)
+scale = Vector2(0.56, 0.500317)
 texture = ExtResource("3_1ek45")
 
 [node name="Pot4" type="Sprite2D" parent="."]
-position = Vector2(404, 451)
-scale = Vector2(0.6, 0.684)
+position = Vector2(382.5, 389.171)
+scale = Vector2(0.482, 0.436188)
+texture = ExtResource("3_1ek45")
+
+[node name="Pot6" type="Sprite2D" parent="."]
+position = Vector2(389, 484.171)
+scale = Vector2(0.56, 0.500317)
 texture = ExtResource("3_1ek45")
 
 [node name="Foggy" type="Sprite2D" parent="."]

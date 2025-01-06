@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://6stki72t8h0w"]
 
-[ext_resource type="Texture2D" uid="uid://casmg0dmx2sx5" path="res://background/Untitled design (4).png" id="1_0rgoj"]
+[ext_resource type="Theme" uid="uid://bvfpe7qu6csns" path="res://THEME/blurBG.tres" id="1_78jxf"]
 [ext_resource type="Theme" uid="uid://f4f8jxrwk15k" path="res://THEME/panel.tres" id="2_6clik"]
 [ext_resource type="Texture2D" uid="uid://b7ucmxi37h6c7" path="res://flood/rabbit.png" id="3_n2lsq"]
 [ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="4_nu1wx"]
@@ -13,11 +13,15 @@ keycode = 4194309
 [sub_resource type="Shortcut" id="Shortcut_0ie1g"]
 events = [SubResource("InputEventKey_yabtl")]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 
-[node name="UntitledDesign(4)" type="Sprite2D" parent="."]
-position = Vector2(640, 360)
-texture = ExtResource("1_0rgoj")
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 1285.0
+offset_bottom = 723.0
+theme = ExtResource("1_78jxf")
 
 [node name="Panel2" type="Panel" parent="."]
 offset_left = 305.0

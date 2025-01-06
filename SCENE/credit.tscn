@@ -1,0 +1,82 @@
+[gd_scene load_steps=7 format=3 uid="uid://deatwhp0663mg"]
+
+[ext_resource type="Theme" uid="uid://bvfpe7qu6csns" path="res://THEME/blurBG.tres" id="1_qykpw"]
+[ext_resource type="Theme" uid="uid://cfhgrew07lj21" path="res://THEME/panelHijau.tres" id="2_7h6ty"]
+[ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="3_naw63"]
+[ext_resource type="FontFile" uid="uid://df2tdtkcdvy7y" path="res://fonts/Delux-Mainpal.otf" id="3_sfiwq"]
+[ext_resource type="FontFile" uid="uid://cuoi1w3thq0pw" path="res://fonts/8bitOperatorPlus-Bold.ttf" id="4_hu6wh"]
+
+[sub_resource type="Theme" id="Theme_ygn5n"]
+default_font = ExtResource("4_hu6wh")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 1285.0
+offset_bottom = 724.0
+theme = ExtResource("1_qykpw")
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 261.0
+offset_top = 89.0
+offset_right = 1044.0
+offset_bottom = 631.0
+theme = ExtResource("2_7h6ty")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 168.0
+offset_right = 1088.0
+offset_bottom = 602.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_sfiwq")
+theme_override_font_sizes/font_size = 28
+text = "Team Development
+Permainan ini dibangunkan oleh pelajar jurusan 
+Computer Science in Multimedia Computing :
+
+AMIRA ADILAH BINTI ROZAIMAN (2024505711)
+KHAIRUN NAZIFAH BINTI ZAKARIA (2024736121)
+FADZILLAH BINTI ROSLAN (2024793203)
+
+Team Research
+Permainan ini diinspirasikan oleh pelajar jurusan 
+Park and Amenity Management : 
+
+DAYANG NUR EZZATI NADIA BINTI MOHD (2022752931)
+NUR HANIS ZULAIKHA BINTI ZAKARIA (2022771823)
+"
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 282.0
+offset_top = 93.0
+offset_right = 630.0
+offset_bottom = 143.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_naw63")
+theme_override_font_sizes/font_size = 35
+text = "KREDIT"
+vertical_alignment = 1
+
+[node name="next" type="Button" parent="."]
+layout_mode = 0
+offset_left = 776.0
+offset_top = 92.0
+offset_right = 1075.0
+offset_bottom = 150.0
+theme = SubResource("Theme_ygn5n")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "Kembali >>"
+flat = true

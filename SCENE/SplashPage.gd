@@ -1,13 +1,39 @@
 extends Control
 
+@onready var exitYesNo: Control= $exit
+@onready var cr: Control= $kredit
+@onready var set: Control= $setting
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$kredit.hide()
+	$exit.hide()
+	$setting.hide()
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
 
+func _on_btn_power_pressed():
+	$exit.show()
+	exitYesNo.get_node("tidak").connect("pressed", _tidak_pressed)
+	exitYesNo.get_node("ya").connect("pressed", _ya_pressed)
 
+func _tidak_pressed():
+	$exit.hide()
+
+func _ya_pressed():
+	get_tree().quit()
+
+func _on_btn_setting_pressed():
+	$setting.show()
+	set.get_node("next").connect("pressed", _backSetting_pressed)
+
+
+func _on_btn_credit_pressed():
+	$kredit.show()
+	cr.get_node("next").connect("pressed", _backCredit_pressed)
+
+func _backSetting_pressed():
+	$setting.hide()
+
+func _backCredit_pressed():
+	$kredit.hide()
