@@ -92,6 +92,7 @@ layout_mode = 1
 offset_left = -2.0
 offset_right = -2.0
 
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="btnPower" to="." method="_on_btn_power_pressed"]
 [connection signal="pressed" from="btnSetting" to="." method="_on_btn_setting_pressed"]
 [connection signal="pressed" from="btnCredit" to="." method="_on_btn_credit_pressed"]

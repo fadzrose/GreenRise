@@ -7,6 +7,7 @@ extends Control
 func _ready() -> void:
 	_info_panel.hide()
 	_start_game.hide()
+	_info_play.show()
 	
 	_info_play.get_node("Info").connect("pressed", _long_info_pressed)
 	_info_play.get_node("PlayBtn").connect("pressed", _long_play_pressed)

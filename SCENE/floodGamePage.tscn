@@ -6,11 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://b7ucmxi37h6c7" path="res://flood/rabbit.png" id="4_m6art"]
 [ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="5_00yfj"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o6pwf"]
-
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eg436"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2tfom"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o6pwf"]
 
 [sub_resource type="InputEventKey" id="InputEventKey_yabtl"]
 keycode = 4194309
@@ -63,9 +63,9 @@ offset_bottom = 199.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_00yfj")
 theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxEmpty_o6pwf")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_eg436")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_2tfom")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_o6pwf")
 shortcut = SubResource("Shortcut_tudpq")
 text = "Seterusnya >>"
 
