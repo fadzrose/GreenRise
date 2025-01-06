@@ -21,6 +21,7 @@ offset_left = 792.0
 offset_top = 481.0
 offset_right = 831.0
 offset_bottom = 564.0
+theme = null
 
 [node name="HomeShelf" type="Sprite2D" parent="."]
 position = Vector2(1183, 485)
