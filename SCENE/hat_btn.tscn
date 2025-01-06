@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwb644jvt3pla"]
+
+[ext_resource type="Theme" uid="uid://c3rxa87q43tdr" path="res://THEME/hatBtn.tres" id="1_auqba"]
+
+[node name="hatBtn" type="Button"]
+offset_top = -5.0
+offset_right = 8.0
+offset_bottom = 3.0
+scale = Vector2(12.9391, 8.8726)
+theme = ExtResource("1_auqba")

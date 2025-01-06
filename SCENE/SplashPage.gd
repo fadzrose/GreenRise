@@ -37,3 +37,6 @@ func _backSetting_pressed():
 
 func _backCredit_pressed():
 	$kredit.hide()
+
+func _on_button_pressed():
+	get_tree().change_scene_to_file("res://SCENE/homePage.tscn")
