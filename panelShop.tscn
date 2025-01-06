@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://bf1c4rn2qvn"]
+
+[ext_resource type="Theme" uid="uid://duejkr60vt156" path="res://THEME/panelShop.tres" id="1_kpsc7"]
+[ext_resource type="FontFile" uid="uid://c23n63c641mgo" path="res://fonts/8bitOperatorPlus8-Bold.ttf" id="2_s6eu1"]
+[ext_resource type="FontFile" uid="uid://cuoi1w3thq0pw" path="res://fonts/8bitOperatorPlus-Bold.ttf" id="3_gjooa"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4otes"]
+line_spacing = 13.0
+font = ExtResource("2_s6eu1")
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="GDScript" id="GDScript_rcndx"]
+script/source = "extends Label
+
+"
+
+[sub_resource type="Theme" id="Theme_5r0mn"]
+default_font = ExtResource("3_gjooa")
+
+[node name="Panel" type="Panel"]
+offset_right = 625.0
+offset_bottom = 374.0
+theme = ExtResource("1_kpsc7")
+
+[node name="VSplitContainer" type="VSplitContainer" parent="."]
+offset_left = 85.0
+offset_top = 63.0
+offset_right = 685.0
+offset_bottom = 354.0
+
+[node name="LabelFloodInstruction" type="Label" parent="VSplitContainer"]
+layout_mode = 2
+text = "Mengikut ramalan cuaca, 
+hujan lebat akan turun 
+di kawasan kita."
+label_settings = SubResource("LabelSettings_4otes")
+horizontal_alignment = 1
+script = SubResource("GDScript_rcndx")
+
+[node name="next" type="Button" parent="."]
+offset_left = 387.0
+offset_right = 686.0
+offset_bottom = 58.0
+theme = SubResource("Theme_5r0mn")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Seterusnya >>"
+flat = true
