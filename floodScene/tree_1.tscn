@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cd76ul2l5w6a"]
+
+[ext_resource type="Texture2D" uid="uid://de0o3qj5o0p6r" path="res://flood/New Piskel-1.png.png" id="1_3c4rg"]
+[ext_resource type="Script" path="res://floodScene/tree_1.gd" id="1_1052g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q4cd2"]
+size = Vector2(9.65613, 2.32001)
+
+[node name="tree1" type="StaticBody2D"]
+position = Vector2(151.75, 621.25)
+scale = Vector2(4.45313, 5.07813)
+script = ExtResource("1_1052g")
+
+[node name="NewPiskel-2png(1)" type="Sprite2D" parent="."]
+position = Vector2(-0.842102, -2.60922)
+texture = ExtResource("1_3c4rg")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-0.505257, 11.7446)
+shape = SubResource("RectangleShape2D_q4cd2")

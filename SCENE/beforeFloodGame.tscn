@@ -20,6 +20,7 @@ position = Vector2(641, 359)
 texture = ExtResource("2_bwdu2")
 
 [node name="infoPlay" parent="." instance=ExtResource("3_tgdmf")]
+visible = false
 offset_left = -2.0
 offset_top = -1.0
 offset_right = -2.0
@@ -32,5 +33,6 @@ offset_right = -1.0
 offset_bottom = 4.0
 
 [node name="infoPanel" parent="." instance=ExtResource("4_0uhcn")]
+visible = false
 offset_left = -2.0
 offset_right = -2.0
