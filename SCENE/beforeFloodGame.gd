@@ -24,7 +24,7 @@ func _long_play_pressed() ->void:
 	_start_game.get_node("PlayBtn").connect("pressed", _on_play_button_pressed)
 
 func _on_play_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENE/FloodGame.tscn")
+	get_tree().change_scene_to_file("res://SCENE/GDscript/FloodGame.tscn")
 
 func _back_btn_pressed() -> void:
 	_info_panel.hide()

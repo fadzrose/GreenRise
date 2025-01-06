@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://c4ynpdmlo46w8"]
 
-[ext_resource type="Script" path="res://GDscript/tanahFlood.gd" id="1_qg60o"]
+[ext_resource type="Script" path="res://SCENE/GDscript/tanahFlood.gd" id="1_qg60o"]
 [ext_resource type="Texture2D" uid="uid://de0o3qj5o0p6r" path="res://flood/New Piskel-1.png.png" id="2_aufgh"]
 [ext_resource type="Texture2D" uid="uid://bpbf0be20b7tu" path="res://flood/New Piskel-2.png (1).png" id="3_blg1o"]
 [ext_resource type="Texture2D" uid="uid://iq2wgd3n8h60" path="res://flood/New Piskel-2.png.png" id="4_rsuio"]

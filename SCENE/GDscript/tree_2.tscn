@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b8j7pkgag37wq"]
 
-[ext_resource type="Script" path="res://GDscript/tree_2.gd" id="1_f36ql"]
+[ext_resource type="Script" path="res://SCENE/GDscript/tree_2.gd" id="1_f36ql"]
 [ext_resource type="Texture2D" uid="uid://bpbf0be20b7tu" path="res://flood/New Piskel-2.png (1).png" id="2_401nh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lbqn5"]

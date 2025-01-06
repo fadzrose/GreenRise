@@ -67,7 +67,7 @@ func snap_to_platform():
 
 # Create a new tree node at the default position
 func duplicate_tree():
-	var tree_scene = preload("res://GDscript/tree_4.tscn")
+	var tree_scene = preload("res://SCENE/GDscript/tree_4.tscn")
 	var new_tree = tree_scene.instance()
 	get_parent().add_child(new_tree)
 	new_tree.position = start_position

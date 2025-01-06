@@ -1,0 +1,74 @@
+[gd_scene load_steps=11 format=3 uid="uid://bkrbo6hilha8i"]
+
+[ext_resource type="Texture2D" uid="uid://cpeqw5088yja" path="res://background/garden page.png" id="1_4c0ns"]
+[ext_resource type="Script" path="res://garden.gd" id="1_5bbnu"]
+[ext_resource type="Texture2D" uid="uid://c6jgk2n4erpy3" path="res://garden/pot.png" id="2_yw1ax"]
+[ext_resource type="Texture2D" uid="uid://tsj5pmxb7n31" path="res://garden/sun (1).png" id="3_k72hs"]
+[ext_resource type="Texture2D" uid="uid://ygae8iiajxkg" path="res://garden/gardenCoin.png" id="4_kn68m"]
+[ext_resource type="Texture2D" uid="uid://drxuitslsjkqf" path="res://garden/gardenQuest.png" id="5_1i1be"]
+[ext_resource type="Texture2D" uid="uid://cvw5313tfbmg5" path="res://garden/gardenShop.png" id="6_dx2j8"]
+[ext_resource type="Texture2D" uid="uid://0g434icf0ll1" path="res://garden/perigiGarden.png" id="7_k2p20"]
+[ext_resource type="Texture2D" uid="uid://blgpg48seixt3" path="res://garden/foggyGarden.png" id="8_uxw6a"]
+[ext_resource type="Texture2D" uid="uid://lsqbwmcfn0fi" path="res://garden/pailGraden.png" id="9_lyjk0"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_5bbnu")
+
+[node name="GardenPage" type="Sprite2D" parent="."]
+position = Vector2(639.75, 360.5)
+scale = Vector2(1.78095, 1.8025)
+texture = ExtResource("1_4c0ns")
+
+[node name="Pot" type="Sprite2D" parent="."]
+position = Vector2(134, 582)
+scale = Vector2(0.6, 0.8)
+texture = ExtResource("2_yw1ax")
+
+[node name="Pot4" type="Sprite2D" parent="."]
+position = Vector2(134, 407)
+scale = Vector2(0.6, 0.8)
+texture = ExtResource("2_yw1ax")
+
+[node name="Pot2" type="Sprite2D" parent="."]
+position = Vector2(408, 582)
+scale = Vector2(0.6, 0.8)
+texture = ExtResource("2_yw1ax")
+
+[node name="Pot3" type="Sprite2D" parent="."]
+position = Vector2(408, 408)
+scale = Vector2(0.6, 0.8)
+texture = ExtResource("2_yw1ax")
+
+[node name="Sun(1)" type="Sprite2D" parent="."]
+position = Vector2(1230, 54)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_k72hs")
+
+[node name="GardenCoin" type="Sprite2D" parent="."]
+position = Vector2(1046, 47)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_kn68m")
+
+[node name="GardenQuest" type="Sprite2D" parent="."]
+position = Vector2(1232, 147)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_1i1be")
+
+[node name="GardenShop" type="Sprite2D" parent="."]
+position = Vector2(1232, 245)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("6_dx2j8")
+
+[node name="PerigiGarden" type="Sprite2D" parent="."]
+position = Vector2(1066, 317)
+texture = ExtResource("7_k2p20")
+
+[node name="FoggyGarden" type="Sprite2D" parent="."]
+position = Vector2(771, 399)
+scale = Vector2(0.827273, 0.773267)
+texture = ExtResource("8_uxw6a")
+
+[node name="PailGraden" type="Sprite2D" parent="."]
+position = Vector2(642, 534)
+scale = Vector2(0.304795, 0.265369)
+texture = ExtResource("9_lyjk0")
