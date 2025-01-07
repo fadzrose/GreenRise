@@ -6,11 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://b7ucmxi37h6c7" path="res://flood/rabbit.png" id="3_notev"]
 [ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="4_ph0vy"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dg5gs"]
-
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t8ful"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4vrmd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dg5gs"]
 
 [sub_resource type="InputEventKey" id="InputEventKey_yabtl"]
 keycode = 4194309
@@ -70,9 +70,9 @@ offset_bottom = 199.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_ph0vy")
 theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxEmpty_dg5gs")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_t8ful")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_4vrmd")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_dg5gs")
 shortcut = SubResource("Shortcut_0ehv8")
 text = "Kembali >>"
 

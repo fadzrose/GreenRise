@@ -1,5 +1,6 @@
-[gd_scene load_steps=18 format=3 uid="uid://6ltnngbt1853"]
+[gd_scene load_steps=32 format=3 uid="uid://6ltnngbt1853"]
 
+[ext_resource type="Script" path="res://SCENE/GDscript/flood_game.gd" id="1_bu3w8"]
 [ext_resource type="Texture2D" uid="uid://casmg0dmx2sx5" path="res://background/Untitled design (4).png" id="1_js2pp"]
 [ext_resource type="PackedScene" uid="uid://uviapy7rs0go" path="res://panelTree.tscn" id="1_k58ki"]
 [ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="2_85le4"]
@@ -13,8 +14,17 @@
 [ext_resource type="PackedScene" uid="uid://b4as2vidj6bww" path="res://SCENE/GDscript/tree_7.tscn" id="14_sboug"]
 [ext_resource type="Script" path="res://SCENE/GDscript/tree_7.gd" id="15_823m1"]
 [ext_resource type="PackedScene" uid="uid://m00ne0ttwcgn" path="res://SCENE/GDscript/platform.tscn" id="15_tni8m"]
+[ext_resource type="Theme" uid="uid://cae3dhhybmss4" path="res://THEME/btnBiru3.tres" id="17_ytig4"]
+[ext_resource type="Texture2D" uid="uid://ocnpjjohwrwc" path="res://icon/info-removebg-preview.png" id="18_r3t2v"]
 [ext_resource type="PackedScene" uid="uid://bfyy28qeidcvg" path="res://SCENE/GDscript/tree_4.tscn" id="19_lbuwh"]
+[ext_resource type="FontFile" uid="uid://c23n63c641mgo" path="res://fonts/8bitOperatorPlus8-Bold.ttf" id="19_nvo7v"]
+[ext_resource type="PackedScene" uid="uid://cvr07tppbk0l0" path="res://SCENE/FloodInfo.tscn" id="20_rlw3v"]
 [ext_resource type="Script" path="res://SCENE/GDscript/tree_4.gd" id="20_yl52y"]
+[ext_resource type="PackedScene" uid="uid://ctyjbcjit4g6t" path="res://SCENE/timeout_popup.tscn" id="21_fhx50"]
+[ext_resource type="Texture2D" uid="uid://0cqs48kyx1to" path="res://flood/pxArt (37).png" id="22_xvdt8"]
+[ext_resource type="Texture2D" uid="uid://bpxcjw1b17oqe" path="res://flood/pxArt (36).png" id="23_qt745"]
+[ext_resource type="Texture2D" uid="uid://7p55xm11d5w7" path="res://flood/pxArt (35).png" id="24_pek3i"]
+[ext_resource type="Texture2D" uid="uid://b5t4c8sjjdwlk" path="res://flood/pxArt (34).png" id="25_r7ure"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ye0pf"]
 bg_color = Color(1, 1, 1, 1)
@@ -34,11 +44,150 @@ default_font = ExtResource("2_85le4")
 default_font_size = 35
 Panel/styles/panel = SubResource("StyleBoxFlat_ye0pf")
 
+[sub_resource type="Animation" id="Animation_4rsel"]
+resource_name = "timer"
+length = 20.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%TIMER:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": ["0:20", "0:19", "0:18", "0:17", "0:16", "0:15", "0:14", "0:13", "0:12", "0:11", "0:10", "0:09", "0:08", "0:07", "0:06", "0:05", "0:04", "0:03", "0:02", "0:01", "0:00"]
+}
+
+[sub_resource type="Animation" id="Animation_8ra8t"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%TIMER:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["0:10"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("%level1:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("%level2:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("%level3:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("%level4:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_u28aq"]
+resource_name = "flood"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%level1:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("%level2:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(2),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("%level3:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(4),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("%level4:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(6),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3m56r"]
+_data = {
+"RESET": SubResource("Animation_8ra8t"),
+"flood": SubResource("Animation_u28aq"),
+"timer": SubResource("Animation_4rsel")
+}
+
 [node name="Level" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_top = -7.0
 offset_bottom = -7.0
+script = ExtResource("1_bu3w8")
 metadata/_edit_vertical_guides_ = []
 
 [node name="UntitledDesign(4)" type="Sprite2D" parent="."]
@@ -99,33 +248,6 @@ position = Vector2(222, 447)
 [node name="platform18" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
 position = Vector2(86, 446)
 
-[node name="platform19" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
-position = Vector2(14, 479)
-
-[node name="platform20" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
-position = Vector2(153, 479)
-
-[node name="platform21" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
-position = Vector2(293, 482)
-
-[node name="platform22" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
-position = Vector2(434, 482)
-
-[node name="platform23" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
-position = Vector2(566, 482)
-
-[node name="platform24" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
-position = Vector2(703, 482)
-
-[node name="platform25" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
-position = Vector2(835, 479)
-
-[node name="platform26" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
-position = Vector2(974, 478)
-
-[node name="platform27" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
-position = Vector2(1119, 478)
-
 [node name="Panel" parent="." instance=ExtResource("1_k58ki")]
 layout_mode = 0
 offset_left = 0.0
@@ -158,3 +280,108 @@ script = ExtResource("13_55iqt")
 [node name="tree7" parent="." instance=ExtResource("14_sboug")]
 position = Vector2(1137, 627)
 script = ExtResource("15_823m1")
+
+[node name="FloodTimer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 20.0
+one_shot = true
+
+[node name="btnInfo" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1191.0
+offset_top = 11.0
+offset_right = 1269.0
+offset_bottom = 84.0
+theme = ExtResource("17_ytig4")
+icon = ExtResource("18_r3t2v")
+icon_alignment = 1
+expand_icon = true
+
+[node name="TIMER" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 1008.0
+offset_top = 13.0
+offset_right = 1185.0
+offset_bottom = 84.0
+theme = ExtResource("17_ytig4")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("19_nvo7v")
+theme_override_font_sizes/font_size = 45
+text = "0:10"
+
+[node name="AnimationTimer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../timeroutPopup")
+libraries = {
+"": SubResource("AnimationLibrary_3m56r")
+}
+
+[node name="infoPanel" parent="." instance=ExtResource("20_rlw3v")]
+visible = false
+offset_left = -3.0
+offset_top = 4.0
+offset_right = -3.0
+offset_bottom = 4.0
+
+[node name="timeroutPopup" type="Timer" parent="."]
+process_callback = 0
+wait_time = 5.0
+one_shot = true
+
+[node name="timeoutPopup" parent="." instance=ExtResource("21_fhx50")]
+visible = false
+
+[node name="level4" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(626, 509)
+scale = Vector2(2.02971, 1.46553)
+texture = ExtResource("22_xvdt8")
+
+[node name="platform19" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(14, 479)
+
+[node name="platform20" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(153, 479)
+
+[node name="platform21" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(293, 482)
+
+[node name="platform22" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(434, 482)
+
+[node name="platform23" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(566, 482)
+
+[node name="platform24" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(703, 482)
+
+[node name="platform25" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(835, 479)
+
+[node name="platform26" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(974, 478)
+
+[node name="platform27" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(1119, 478)
+
+[node name="level3" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(628, 569)
+scale = Vector2(2.02971, 1.46553)
+texture = ExtResource("23_qt745")
+
+[node name="level2" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(632, 615)
+scale = Vector2(2.02971, 1.46553)
+texture = ExtResource("24_pek3i")
+
+[node name="level1" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(624, 679)
+scale = Vector2(2.02971, 1.46553)
+texture = ExtResource("25_r7ure")
+
+[connection signal="timeout" from="FloodTimer" to="." method="_on_flood_timer_timeout"]
+[connection signal="pressed" from="btnInfo" to="." method="_on_btn_info_pressed"]
+[connection signal="timeout" from="timeroutPopup" to="." method="_on_timerout_popup_timeout"]

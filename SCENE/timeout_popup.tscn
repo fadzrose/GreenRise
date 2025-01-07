@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctyjbcjit4g6t"]
+
+[ext_resource type="Theme" uid="uid://bvfpe7qu6csns" path="res://THEME/blurBG.tres" id="1_truyq"]
+[ext_resource type="Texture2D" uid="uid://c5rqkpsnac0ps" path="res://text/timeUp.png" id="2_hnen5"]
+
+[node name="timeoutPopup" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 7.0
+offset_right = 40.0
+offset_bottom = 47.0
+
+[node name="Container" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_top = -21.0
+offset_right = 40.0
+offset_bottom = 19.0
+scale = Vector2(32.1856, 18.9228)
+theme = ExtResource("1_truyq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(657, 355)
+texture = ExtResource("2_hnen5")
