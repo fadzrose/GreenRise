@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://6ltnngbt1853"]
+[gd_scene load_steps=41 format=3 uid="uid://6ltnngbt1853"]
 
 [ext_resource type="Script" path="res://SCENE/GDscript/flood_game.gd" id="1_bu3w8"]
 [ext_resource type="Texture2D" uid="uid://casmg0dmx2sx5" path="res://background/Untitled design (4).png" id="1_js2pp"]
@@ -21,10 +21,18 @@
 [ext_resource type="PackedScene" uid="uid://cvr07tppbk0l0" path="res://SCENE/FloodInfo.tscn" id="20_rlw3v"]
 [ext_resource type="Script" path="res://SCENE/GDscript/tree_4.gd" id="20_yl52y"]
 [ext_resource type="PackedScene" uid="uid://ctyjbcjit4g6t" path="res://SCENE/timeout_popup.tscn" id="21_fhx50"]
+[ext_resource type="Texture2D" uid="uid://l1gcb778gqp2" path="res://flood/Layer 1_sprite_1.png" id="21_hg3dc"]
+[ext_resource type="Texture2D" uid="uid://dext8k7420p1g" path="res://flood/Layer 1_sprite_2.png" id="22_6ht22"]
 [ext_resource type="Texture2D" uid="uid://0cqs48kyx1to" path="res://flood/pxArt (37).png" id="22_xvdt8"]
+[ext_resource type="Texture2D" uid="uid://dbhhd25548lrf" path="res://flood/Layer 1_sprite_3.png" id="23_ewxkv"]
 [ext_resource type="Texture2D" uid="uid://bpxcjw1b17oqe" path="res://flood/pxArt (36).png" id="23_qt745"]
+[ext_resource type="Texture2D" uid="uid://8f4g0cw4pas3" path="res://flood/Layer 1_sprite_4.png" id="24_6b1ok"]
 [ext_resource type="Texture2D" uid="uid://7p55xm11d5w7" path="res://flood/pxArt (35).png" id="24_pek3i"]
+[ext_resource type="AudioStream" uid="uid://bjdsdjhexlo5" path="res://flood/heavy-rain-nature-sounds-8186.mp3" id="25_lpybf"]
 [ext_resource type="Texture2D" uid="uid://b5t4c8sjjdwlk" path="res://flood/pxArt (34).png" id="25_r7ure"]
+[ext_resource type="Texture2D" uid="uid://cfmyh6ynj5db1" path="res://flood/Layer 1_sprite_5.png" id="25_s0v4g"]
+[ext_resource type="Texture2D" uid="uid://r2jr5pa22of7" path="res://flood/Layer 1_sprite_6.png" id="26_egwpf"]
+[ext_resource type="Texture2D" uid="uid://b1c8eofddjjo0" path="res://flood/awan.png" id="27_5lrcc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ye0pf"]
 bg_color = Color(1, 1, 1, 1)
@@ -113,7 +121,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("%level4:visible")
+tracks/4/path = NodePath("../level4:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -165,7 +173,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("%level4:visible")
+tracks/3/path = NodePath("../level4:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -181,6 +189,32 @@ _data = {
 "flood": SubResource("Animation_u28aq"),
 "timer": SubResource("Animation_4rsel")
 }
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2xxrd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_hg3dc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6ht22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ewxkv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_6b1ok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_s0v4g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_egwpf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Level" type="Control"]
 layout_mode = 3
@@ -328,15 +362,6 @@ process_callback = 0
 wait_time = 5.0
 one_shot = true
 
-[node name="timeoutPopup" parent="." instance=ExtResource("21_fhx50")]
-visible = false
-
-[node name="level4" type="Sprite2D" parent="."]
-unique_name_in_owner = true
-position = Vector2(626, 509)
-scale = Vector2(2.02971, 1.46553)
-texture = ExtResource("22_xvdt8")
-
 [node name="platform19" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
 position = Vector2(14, 479)
 
@@ -364,6 +389,47 @@ position = Vector2(974, 478)
 [node name="platform27" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
 position = Vector2(1119, 478)
 
+[node name="rainAnim" type="AnimatedSprite2D" parent="."]
+position = Vector2(76.0459, 396.777)
+rotation = 0.199392
+scale = Vector2(9.37787, 19.2361)
+sprite_frames = SubResource("SpriteFrames_2xxrd")
+
+[node name="rainAnim2" type="AnimatedSprite2D" parent="."]
+position = Vector2(359.046, 385.777)
+rotation = 0.199392
+scale = Vector2(9.37787, 19.2361)
+sprite_frames = SubResource("SpriteFrames_2xxrd")
+
+[node name="rainAnim3" type="AnimatedSprite2D" parent="."]
+position = Vector2(653.046, 382.777)
+rotation = 0.199392
+scale = Vector2(9.37787, 19.2361)
+sprite_frames = SubResource("SpriteFrames_2xxrd")
+
+[node name="rainAnim4" type="AnimatedSprite2D" parent="."]
+position = Vector2(944.046, 377.777)
+rotation = 0.199392
+scale = Vector2(9.37787, 19.2361)
+sprite_frames = SubResource("SpriteFrames_2xxrd")
+
+[node name="rainAnim5" type="AnimatedSprite2D" parent="."]
+position = Vector2(1235.05, 393.777)
+rotation = 0.199392
+scale = Vector2(9.37787, 19.2361)
+sprite_frames = SubResource("SpriteFrames_2xxrd")
+
+[node name="awan" type="Sprite2D" parent="."]
+position = Vector2(632, 248)
+scale = Vector2(2.21577, 1.24)
+texture = ExtResource("27_5lrcc")
+
+[node name="level4" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(626, 509)
+scale = Vector2(2.02971, 1.46553)
+texture = ExtResource("22_xvdt8")
+
 [node name="level3" type="Sprite2D" parent="."]
 unique_name_in_owner = true
 position = Vector2(628, 569)
@@ -381,6 +447,12 @@ unique_name_in_owner = true
 position = Vector2(624, 679)
 scale = Vector2(2.02971, 1.46553)
 texture = ExtResource("25_r7ure")
+
+[node name="heavyRain" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("25_lpybf")
+
+[node name="timeoutPopup" parent="." instance=ExtResource("21_fhx50")]
+visible = false
 
 [connection signal="timeout" from="FloodTimer" to="." method="_on_flood_timer_timeout"]
 [connection signal="pressed" from="btnInfo" to="." method="_on_btn_info_pressed"]

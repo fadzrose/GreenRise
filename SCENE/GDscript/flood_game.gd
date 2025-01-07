@@ -11,6 +11,17 @@ func _ready():
 	$"%level2".hide()
 	$"%level3".hide()
 	$"%level4".hide()
+	$awan.hide()
+	$rainAnim.hide()
+	$rainAnim2.animation = "default" 
+	$rainAnim2.hide()
+	$rainAnim3.animation = "default" 
+	$rainAnim3.hide()
+	$rainAnim4.animation = "default" 
+	$rainAnim4.hide()
+	$rainAnim5.animation = "default" 
+	$rainAnim5.hide()
+	$rainAnim.animation = "default" 
 	
 
 
@@ -41,5 +52,16 @@ func _on_timerout_popup_timeout() -> void:
 	$tree6.hide()
 	$tree7.hide()
 	$AnimationTimer.play("flood")
-	
+	$heavyRain.play()
+	$awan.show()  
+	$rainAnim.show()
+	$rainAnim5.show()
+	$rainAnim2.show()
+	$rainAnim3.show()
+	$rainAnim4.show()
+	$rainAnim.play()
+	$rainAnim5.play()
+	$rainAnim2.play()
+	$rainAnim3.play()
+	$rainAnim4.play()
 	
