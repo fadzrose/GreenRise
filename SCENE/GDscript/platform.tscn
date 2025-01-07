@@ -1,0 +1,106 @@
+[gd_scene load_steps=11 format=3 uid="uid://m00ne0ttwcgn"]
+
+[ext_resource type="Script" path="res://SCENE/GDscript/platform.gd" id="1_1f77j"]
+[ext_resource type="Texture2D" uid="uid://de0o3qj5o0p6r" path="res://flood/New Piskel-1.png.png" id="2_gdvq5"]
+[ext_resource type="Texture2D" uid="uid://bpbf0be20b7tu" path="res://flood/New Piskel-2.png (1).png" id="3_gnq5o"]
+[ext_resource type="Texture2D" uid="uid://iq2wgd3n8h60" path="res://flood/New Piskel-2.png.png" id="4_3o1do"]
+[ext_resource type="Texture2D" uid="uid://dnld16r688hpo" path="res://flood/New Piskel-4.png.png" id="5_i2d2s"]
+[ext_resource type="Texture2D" uid="uid://cgex1l3w46bu8" path="res://flood/New Piskel-5.png (1).png" id="6_0feh1"]
+[ext_resource type="Texture2D" uid="uid://chhj241bdv4t4" path="res://flood/New Piskel-5.png.png" id="7_r0xhg"]
+[ext_resource type="Texture2D" uid="uid://bjsv2lb5g8u51" path="res://flood/New Piskel-6.png.png" id="8_3d7op"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f8pqi"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gdvq5")
+}],
+"loop": true,
+"name": &"tree1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_gnq5o")
+}],
+"loop": true,
+"name": &"tree2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_3o1do")
+}],
+"loop": true,
+"name": &"tree3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_i2d2s")
+}],
+"loop": true,
+"name": &"tree4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_0feh1")
+}],
+"loop": true,
+"name": &"tree5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_r0xhg")
+}],
+"loop": true,
+"name": &"tree6",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_3d7op")
+}],
+"loop": true,
+"name": &"tree7",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j5274"]
+size = Vector2(121, 155.58)
+
+[node name="platform" type="StaticBody2D"]
+position = Vector2(134, 478)
+scale = Vector2(0.566655, 0.207638)
+collision_layer = 0
+collision_mask = 127
+script = ExtResource("1_1f77j")
+
+[node name="ColorRect" type="ColorRect" parent="." groups=["dropable"]]
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 121.0
+offset_bottom = 40.0
+scale = Vector2(0.980006, 4.05989)
+color = Color(1, 1, 1, 0)
+
+[node name="tree" type="AnimatedSprite2D" parent="." groups=["dropable"]]
+position = Vector2(56.4718, -765.755)
+scale = Vector2(17.1538, 57.0256)
+sprite_frames = SubResource("SpriteFrames_f8pqi")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(61.5, 77.7902)
+shape = SubResource("RectangleShape2D_j5274")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_shape_entered" from="Area2D" to="." method="_on_area_2d_area_shape_entered"]

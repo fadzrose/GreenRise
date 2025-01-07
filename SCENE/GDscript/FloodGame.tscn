@@ -3,7 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://casmg0dmx2sx5" path="res://background/Untitled design (4).png" id="1_js2pp"]
 [ext_resource type="PackedScene" uid="uid://uviapy7rs0go" path="res://panelTree.tscn" id="1_k58ki"]
 [ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="2_85le4"]
-[ext_resource type="PackedScene" uid="uid://c4ynpdmlo46w8" path="res://SCENE/GDscript/tanahFlood.tscn" id="3_s324v"]
 [ext_resource type="PackedScene" uid="uid://crxyj4r0uapb1" path="res://SCENE/GDscript/tree_1.tscn" id="4_7wqgw"]
 [ext_resource type="PackedScene" uid="uid://b8j7pkgag37wq" path="res://SCENE/GDscript/tree_2.tscn" id="5_o8gj4"]
 [ext_resource type="PackedScene" uid="uid://cuur81ypvqvf7" path="res://SCENE/GDscript/tree_3.tscn" id="6_xjshc"]
@@ -13,6 +12,7 @@
 [ext_resource type="Script" path="res://SCENE/GDscript/tree_6.gd" id="13_55iqt"]
 [ext_resource type="PackedScene" uid="uid://b4as2vidj6bww" path="res://SCENE/GDscript/tree_7.tscn" id="14_sboug"]
 [ext_resource type="Script" path="res://SCENE/GDscript/tree_7.gd" id="15_823m1"]
+[ext_resource type="PackedScene" uid="uid://m00ne0ttwcgn" path="res://SCENE/GDscript/platform.tscn" id="15_tni8m"]
 [ext_resource type="PackedScene" uid="uid://bfyy28qeidcvg" path="res://SCENE/GDscript/tree_4.tscn" id="19_lbuwh"]
 [ext_resource type="Script" path="res://SCENE/GDscript/tree_4.gd" id="20_yl52y"]
 
@@ -45,8 +45,86 @@ metadata/_edit_vertical_guides_ = []
 position = Vector2(640, 367)
 texture = ExtResource("1_js2pp")
 
-[node name="platform" parent="." instance=ExtResource("3_s324v")]
-position = Vector2(-4, 394)
+[node name="platform" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(15, 411)
+
+[node name="platform2" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(154, 411)
+
+[node name="platform3" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(293, 411)
+
+[node name="platform4" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(432, 410)
+
+[node name="platform5" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(572, 409)
+
+[node name="platform6" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(705, 408)
+
+[node name="platform7" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(833, 405)
+
+[node name="platform8" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(980, 404)
+
+[node name="platform9" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(1121, 403)
+
+[node name="platform10" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(1194, 440)
+
+[node name="platform11" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(1049, 439)
+
+[node name="platform12" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(905, 442)
+
+[node name="platform13" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(765, 442)
+
+[node name="platform14" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(634, 445)
+
+[node name="platform15" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(501, 446)
+
+[node name="platform16" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(362, 446)
+
+[node name="platform17" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(222, 447)
+
+[node name="platform18" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(86, 446)
+
+[node name="platform19" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(14, 479)
+
+[node name="platform20" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(153, 479)
+
+[node name="platform21" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(293, 482)
+
+[node name="platform22" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(434, 482)
+
+[node name="platform23" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(566, 482)
+
+[node name="platform24" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(703, 482)
+
+[node name="platform25" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(835, 479)
+
+[node name="platform26" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(974, 478)
+
+[node name="platform27" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
+position = Vector2(1119, 478)
 
 [node name="Panel" parent="." instance=ExtResource("1_k58ki")]
 layout_mode = 0
@@ -57,7 +135,7 @@ offset_bottom = 726.0
 theme = SubResource("Theme_2y8u8")
 
 [node name="tree2" parent="." instance=ExtResource("5_o8gj4")]
-position = Vector2(315, 621)
+position = Vector2(311, 630)
 
 [node name="tree3" parent="." instance=ExtResource("6_xjshc")]
 position = Vector2(478, 623)

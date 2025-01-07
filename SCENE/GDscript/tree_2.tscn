@@ -1,7 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8j7pkgag37wq"]
+[gd_scene load_steps=5 format=3 uid="uid://b8j7pkgag37wq"]
 
 [ext_resource type="Script" path="res://SCENE/GDscript/tree_2.gd" id="1_f36ql"]
-[ext_resource type="Texture2D" uid="uid://bpbf0be20b7tu" path="res://flood/New Piskel-2.png (1).png" id="2_401nh"]
+[ext_resource type="Texture2D" uid="uid://cgex1l3w46bu8" path="res://flood/New Piskel-5.png (1).png" id="2_bjmmq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ycea2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_bjmmq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lbqn5"]
 radius = 17.49
@@ -12,10 +23,10 @@ position = Vector2(197, 409)
 scale = Vector2(0.25621, 0.299355)
 script = ExtResource("1_f36ql")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1.73007, 0)
-scale = Vector2(14.5027, 17.849)
-texture = ExtResource("2_401nh")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(19.5152, -6.681)
+scale = Vector2(17.887, 17.8322)
+sprite_frames = SubResource("SpriteFrames_ycea2")
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(-7.8061, 5.89349)
