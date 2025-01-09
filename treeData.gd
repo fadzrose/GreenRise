@@ -14,8 +14,16 @@ static func New(d: Array, c: PackedStringArray) -> treeData:
 	return td
 
 # getters
-func GetColumn():
-	pass
+func GetColumn(col: String):
+	assert(col in columns) #11:37
+	
+	var ix = columns.find(col)
+	var result = []
+	
+	for row in data:
+		result.append(row[ix])
+	
+	return result #12:29
 
 func GetRow(i: int):
 	assert(i < len(data)) #10:44

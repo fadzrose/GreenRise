@@ -1,7 +1,7 @@
 extends Node
 
 
-func _ready() -> void:
+func _ready():
 	
 	var columns = ["Category", "Family Name", "Tree Species"]
 	var data = [
@@ -13,8 +13,8 @@ func _ready() -> void:
 		["", "Rubiaceae", "Gardenia sp."]
 	]
 	
-	var td = treeData.New([], PackedStringArray())
+	var td = treeData.New(data, columns)
 	print(td)
 	
 	print(td.GetRow(2))
-	
+	print(td.GetColumn("Category"))
