@@ -25,35 +25,88 @@ theme = ExtResource("1_kpsc7")
 
 [node name="VSplitContainer" type="VSplitContainer" parent="."]
 layout_mode = 0
-offset_left = 26.0
-offset_top = 23.0
-offset_right = 471.0
-offset_bottom = 137.0
+offset_left = 31.0
+offset_top = 120.0
+offset_right = 476.0
+offset_bottom = 150.0
 
-[node name="shopLabel" type="Label" parent="VSplitContainer"]
+[node name="shopLabel" type="Label" parent="."]
 layout_mode = 2
-text = "Beli Biji Benih"
+offset_left = 31.0
+offset_top = 34.0
+offset_right = 476.0
+offset_bottom = 59.0
+text = "Beli Anak Pokok"
 label_settings = SubResource("LabelSettings_4otes")
 horizontal_alignment = 1
 script = SubResource("GDScript_rcndx")
 
-[node name="benih1" type="Label" parent="VSplitContainer"]
+[node name="benih1" type="Label" parent="."]
 layout_mode = 2
-text = "Biji Benih 1"
+offset_left = 42.0
+offset_top = 107.0
+offset_right = 487.0
+offset_bottom = 129.0
+text = "Meranti (Shorea spp)"
 label_settings = SubResource("LabelSettings_4otes")
-horizontal_alignment = 1
+script = SubResource("GDScript_rcndx")
+
+[node name="benih2" type="Label" parent="."]
+layout_mode = 2
+offset_left = 42.0
+offset_top = 172.0
+offset_right = 472.0
+offset_bottom = 229.0
+text = "Angsana (Pterocarpus
+indicus)"
+label_settings = SubResource("LabelSettings_4otes")
+script = SubResource("GDScript_rcndx")
+
+[node name="benih3" type="Label" parent="."]
+layout_mode = 2
+offset_left = 42.0
+offset_top = 260.0
+offset_right = 487.0
+offset_bottom = 317.0
+text = "Banyan (Ficus
+benghalensis)"
+label_settings = SubResource("LabelSettings_4otes")
 script = SubResource("GDScript_rcndx")
 
 [node name="buy1" type="Button" parent="."]
 layout_mode = 2
-offset_left = 466.0
-offset_top = 64.0
-offset_right = 559.0
-offset_bottom = 122.0
+offset_left = 465.0
+offset_top = 100.0
+offset_right = 552.0
+offset_bottom = 139.0
 theme = ExtResource("3_1godg")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 action_mode = 0
-text = "."
+text = "BELI"
+flat = true
+
+[node name="buy2" type="Button" parent="."]
+layout_mode = 2
+offset_left = 465.0
+offset_top = 181.0
+offset_right = 552.0
+offset_bottom = 220.0
+theme = ExtResource("3_1godg")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+action_mode = 0
+text = "BELI"
+flat = true
+
+[node name="buy3" type="Button" parent="."]
+layout_mode = 2
+offset_left = 465.0
+offset_top = 269.0
+offset_right = 552.0
+offset_bottom = 308.0
+theme = ExtResource("3_1godg")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+action_mode = 0
+text = "BELI"
 flat = true
 
 [node name="next" type="Button" parent="."]
