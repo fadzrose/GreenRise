@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3aveeip10drd"]
+
+[ext_resource type="Texture2D" uid="uid://ygae8iiajxkg" path="res://garden/gardenCoin.png" id="1_rijhm"]
+[ext_resource type="LabelSettings" uid="uid://bsurb87xendl6" path="res://THEME/label_duit.tres" id="2_cnqnl"]
+
+[node name="GardenCoin" type="Sprite2D"]
+position = Vector2(1132, 60)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_rijhm")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -46.0
+offset_top = -29.0
+offset_right = 153.0
+offset_bottom = 36.0
+text = "999999999"
+label_settings = ExtResource("2_cnqnl")
+horizontal_alignment = 2

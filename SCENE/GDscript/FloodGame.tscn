@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://6ltnngbt1853"]
+[gd_scene load_steps=52 format=3 uid="uid://6ltnngbt1853"]
 
 [ext_resource type="Script" path="res://SCENE/GDscript/flood_game.gd" id="1_bu3w8"]
 [ext_resource type="Texture2D" uid="uid://casmg0dmx2sx5" path="res://background/Untitled design (4).png" id="1_js2pp"]
@@ -42,6 +42,7 @@
 [ext_resource type="Texture2D" uid="uid://cv863fviqags5" path="res://game/Layer 1_sprite_6.png" id="40_5a1mr"]
 [ext_resource type="Texture2D" uid="uid://brgp7vys3ywxa" path="res://game/Layer 1_sprite_7.png" id="41_2ikqj"]
 [ext_resource type="Texture2D" uid="uid://dit2c8vf64v7y" path="res://game/Layer 1_sprite_8.png" id="42_mkd58"]
+[ext_resource type="PackedScene" uid="uid://d3aveeip10drd" path="res://garden_coin.tscn" id="43_bmc4i"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ye0pf"]
 bg_color = Color(1, 1, 1, 1)
@@ -199,32 +200,6 @@ _data = {
 "timer": SubResource("Animation_4rsel")
 }
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_2xxrd"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("21_hg3dc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("22_6ht22")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_ewxkv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("24_6b1ok")
-}, {
-"duration": 1.0,
-"texture": ExtResource("25_s0v4g")
-}, {
-"duration": 1.0,
-"texture": ExtResource("26_egwpf")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_160p4"]
 animations = [{
 "frames": [{
@@ -251,6 +226,32 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("42_mkd58")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2xxrd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_hg3dc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6ht22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ewxkv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_6b1ok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_s0v4g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_egwpf")
 }],
 "loop": true,
 "name": &"default",
@@ -331,31 +332,6 @@ offset_right = 1279.0
 offset_bottom = 726.0
 theme = SubResource("Theme_2y8u8")
 
-[node name="tree2" parent="." instance=ExtResource("5_o8gj4")]
-position = Vector2(311, 630)
-
-[node name="tree3" parent="." instance=ExtResource("6_xjshc")]
-position = Vector2(478, 623)
-
-[node name="tree1" parent="." instance=ExtResource("4_7wqgw")]
-position = Vector2(148, 624)
-
-[node name="tree4" parent="." instance=ExtResource("19_lbuwh")]
-position = Vector2(647, 624)
-script = ExtResource("20_yl52y")
-
-[node name="tree5" parent="." instance=ExtResource("10_f1hhk")]
-position = Vector2(813, 627)
-script = ExtResource("11_g0q3r")
-
-[node name="tree6" parent="." instance=ExtResource("12_n7au8")]
-position = Vector2(977, 625)
-script = ExtResource("13_55iqt")
-
-[node name="tree7" parent="." instance=ExtResource("14_sboug")]
-position = Vector2(1137, 627)
-script = ExtResource("15_823m1")
-
 [node name="FloodTimer" type="Timer" parent="."]
 process_callback = 0
 wait_time = 20.0
@@ -429,6 +405,36 @@ position = Vector2(974, 478)
 [node name="platform27" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
 position = Vector2(1119, 478)
 
+[node name="tree2" parent="." instance=ExtResource("5_o8gj4")]
+position = Vector2(311, 630)
+
+[node name="tree3" parent="." instance=ExtResource("6_xjshc")]
+position = Vector2(478, 623)
+
+[node name="tree1" parent="." instance=ExtResource("4_7wqgw")]
+position = Vector2(148, 624)
+
+[node name="tree4" parent="." instance=ExtResource("19_lbuwh")]
+position = Vector2(647, 624)
+script = ExtResource("20_yl52y")
+
+[node name="tree5" parent="." instance=ExtResource("10_f1hhk")]
+position = Vector2(813, 627)
+script = ExtResource("11_g0q3r")
+
+[node name="tree6" parent="." instance=ExtResource("12_n7au8")]
+position = Vector2(977, 625)
+script = ExtResource("13_55iqt")
+
+[node name="tree7" parent="." instance=ExtResource("14_sboug")]
+position = Vector2(1137, 627)
+script = ExtResource("15_823m1")
+
+[node name="thermometer" type="AnimatedSprite2D" parent="."]
+position = Vector2(1236, 194)
+scale = Vector2(5.40625, 6)
+sprite_frames = SubResource("SpriteFrames_160p4")
+
 [node name="level4" type="Sprite2D" parent="."]
 unique_name_in_owner = true
 position = Vector2(626, 509)
@@ -485,7 +491,6 @@ scale = Vector2(2.02971, 1.46553)
 texture = ExtResource("25_r7ure")
 
 [node name="awan" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(632, 248)
 scale = Vector2(2.21577, 1.24)
 texture = ExtResource("27_5lrcc")
@@ -500,10 +505,7 @@ layout_mode = 1
 offset_top = 7.0
 offset_bottom = 7.0
 
-[node name="thermometer" type="AnimatedSprite2D" parent="."]
-position = Vector2(1236, 194)
-scale = Vector2(5.40625, 6)
-sprite_frames = SubResource("SpriteFrames_160p4")
+[node name="GardenCoin" parent="." instance=ExtResource("43_bmc4i")]
 
 [connection signal="timeout" from="FloodTimer" to="." method="_on_flood_timer_timeout"]
 [connection signal="pressed" from="btnInfo" to="." method="_on_btn_info_pressed"]
