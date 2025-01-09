@@ -30,12 +30,24 @@ func GetRow(i: int):
 	
 	return data[i]
 
+# adders
+func AddColumn(d: Array, col_name: String):
+	assert(len(d) == len(data))
+	
+	for i in range(len(data)):
+		data[i].append(d[i])
+	
+	columns.append(col_name) #14:00
+
+
+static func EvalColumns():
+	pass #15:10
 
 func _to_string():
 	if len(data) == 0:
 		return "<empty treeData>"
 	
-	var result = " | ".join(columns) + "\n-----------------\n"
+	var result = " | ".join(columns) + "\n--------------------------------------------------------\n"
 	
 	for row in data:
 		result += " | ".join(row) + "\n"
