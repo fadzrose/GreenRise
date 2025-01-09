@@ -148,7 +148,7 @@ scale = Vector2(0.173584, 0.157269)
 texture = ExtResource("4_lhw55")
 
 [node name="Flower7" type="Sprite2D" parent="Flower7"]
-position = Vector2(823.81, 120.812)
+position = Vector2(823.809, 101.736)
 scale = Vector2(0.807868, 0.762942)
 texture = ExtResource("4_lhw55")
 
