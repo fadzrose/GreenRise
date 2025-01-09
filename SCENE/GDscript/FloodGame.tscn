@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://6ltnngbt1853"]
+[gd_scene load_steps=51 format=3 uid="uid://6ltnngbt1853"]
 
 [ext_resource type="Script" path="res://SCENE/GDscript/flood_game.gd" id="1_bu3w8"]
 [ext_resource type="Texture2D" uid="uid://casmg0dmx2sx5" path="res://background/Untitled design (4).png" id="1_js2pp"]
@@ -21,18 +21,27 @@
 [ext_resource type="PackedScene" uid="uid://cvr07tppbk0l0" path="res://SCENE/FloodInfo.tscn" id="20_rlw3v"]
 [ext_resource type="Script" path="res://SCENE/GDscript/tree_4.gd" id="20_yl52y"]
 [ext_resource type="PackedScene" uid="uid://ctyjbcjit4g6t" path="res://SCENE/timeout_popup.tscn" id="21_fhx50"]
-[ext_resource type="Texture2D" uid="uid://l1gcb778gqp2" path="res://flood/Layer 1_sprite_1.png" id="21_hg3dc"]
-[ext_resource type="Texture2D" uid="uid://dext8k7420p1g" path="res://flood/Layer 1_sprite_2.png" id="22_6ht22"]
+[ext_resource type="Texture2D" uid="uid://dx2m1se04yad8" path="res://flood/Layer 1_sprite_1.png" id="21_hg3dc"]
+[ext_resource type="Texture2D" uid="uid://cv5bkp3tvexuk" path="res://flood/Layer 1_sprite_2.png" id="22_6ht22"]
 [ext_resource type="Texture2D" uid="uid://0cqs48kyx1to" path="res://flood/pxArt (37).png" id="22_xvdt8"]
-[ext_resource type="Texture2D" uid="uid://dbhhd25548lrf" path="res://flood/Layer 1_sprite_3.png" id="23_ewxkv"]
+[ext_resource type="Texture2D" uid="uid://dyuqnjpucw3d6" path="res://flood/Layer 1_sprite_3.png" id="23_ewxkv"]
 [ext_resource type="Texture2D" uid="uid://bpxcjw1b17oqe" path="res://flood/pxArt (36).png" id="23_qt745"]
-[ext_resource type="Texture2D" uid="uid://8f4g0cw4pas3" path="res://flood/Layer 1_sprite_4.png" id="24_6b1ok"]
+[ext_resource type="Texture2D" uid="uid://cn50igidi7dhg" path="res://flood/Layer 1_sprite_4.png" id="24_6b1ok"]
 [ext_resource type="Texture2D" uid="uid://7p55xm11d5w7" path="res://flood/pxArt (35).png" id="24_pek3i"]
 [ext_resource type="AudioStream" uid="uid://bjdsdjhexlo5" path="res://flood/heavy-rain-nature-sounds-8186.mp3" id="25_lpybf"]
 [ext_resource type="Texture2D" uid="uid://b5t4c8sjjdwlk" path="res://flood/pxArt (34).png" id="25_r7ure"]
-[ext_resource type="Texture2D" uid="uid://cfmyh6ynj5db1" path="res://flood/Layer 1_sprite_5.png" id="25_s0v4g"]
-[ext_resource type="Texture2D" uid="uid://r2jr5pa22of7" path="res://flood/Layer 1_sprite_6.png" id="26_egwpf"]
+[ext_resource type="Texture2D" uid="uid://cf07djaytx7u0" path="res://flood/Layer 1_sprite_5.png" id="25_s0v4g"]
+[ext_resource type="Texture2D" uid="uid://edegwsvq7c7k" path="res://flood/Layer 1_sprite_6.png" id="26_egwpf"]
 [ext_resource type="Texture2D" uid="uid://b1c8eofddjjo0" path="res://flood/awan.png" id="27_5lrcc"]
+[ext_resource type="PackedScene" uid="uid://btm3tlvawbf4q" path="res://SCENE/ScorePanel.tscn" id="34_y32kv"]
+[ext_resource type="Texture2D" uid="uid://b4nwnt1v44b2s" path="res://game/Layer 1_sprite_1.png" id="35_pl1pj"]
+[ext_resource type="Texture2D" uid="uid://bmvqixw0yo8la" path="res://game/Layer 1_sprite_2.png" id="36_2i2jp"]
+[ext_resource type="Texture2D" uid="uid://cjrm04yi2o714" path="res://game/Layer 1_sprite_3.png" id="37_m2hoh"]
+[ext_resource type="Texture2D" uid="uid://bruqmsm6nr4jn" path="res://game/Layer 1_sprite_4.png" id="38_ocuiv"]
+[ext_resource type="Texture2D" uid="uid://ckwn1bjoarj8h" path="res://game/Layer 1_sprite_5.png" id="39_ifgny"]
+[ext_resource type="Texture2D" uid="uid://cv863fviqags5" path="res://game/Layer 1_sprite_6.png" id="40_5a1mr"]
+[ext_resource type="Texture2D" uid="uid://brgp7vys3ywxa" path="res://game/Layer 1_sprite_7.png" id="41_2ikqj"]
+[ext_resource type="Texture2D" uid="uid://dit2c8vf64v7y" path="res://game/Layer 1_sprite_8.png" id="42_mkd58"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ye0pf"]
 bg_color = Color(1, 1, 1, 1)
@@ -51,22 +60,6 @@ resource_local_to_scene = true
 default_font = ExtResource("2_85le4")
 default_font_size = 35
 Panel/styles/panel = SubResource("StyleBoxFlat_ye0pf")
-
-[sub_resource type="Animation" id="Animation_4rsel"]
-resource_name = "timer"
-length = 20.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("%TIMER:text")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": ["0:20", "0:19", "0:18", "0:17", "0:16", "0:15", "0:14", "0:13", "0:12", "0:11", "0:10", "0:09", "0:08", "0:07", "0:06", "0:05", "0:04", "0:03", "0:02", "0:01", "0:00"]
-}
 
 [sub_resource type="Animation" id="Animation_8ra8t"]
 length = 0.001
@@ -183,6 +176,22 @@ tracks/3/keys = {
 "values": [true]
 }
 
+[sub_resource type="Animation" id="Animation_4rsel"]
+resource_name = "timer"
+length = 20.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%TIMER:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": ["0:20", "0:19", "0:18", "0:17", "0:16", "0:15", "0:14", "0:13", "0:12", "0:11", "0:10", "0:09", "0:08", "0:07", "0:06", "0:05", "0:04", "0:03", "0:02", "0:01", "0:00"]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3m56r"]
 _data = {
 "RESET": SubResource("Animation_8ra8t"),
@@ -210,6 +219,38 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("26_egwpf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_160p4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("35_pl1pj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_2i2jp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_m2hoh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_ocuiv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ifgny")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_5a1mr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_2ikqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_mkd58")
 }],
 "loop": true,
 "name": &"default",
@@ -351,7 +392,6 @@ libraries = {
 }
 
 [node name="infoPanel" parent="." instance=ExtResource("20_rlw3v")]
-visible = false
 offset_left = -3.0
 offset_top = 4.0
 offset_right = -3.0
@@ -389,6 +429,18 @@ position = Vector2(974, 478)
 [node name="platform27" parent="." groups=["dropable"] instance=ExtResource("15_tni8m")]
 position = Vector2(1119, 478)
 
+[node name="level4" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(626, 509)
+scale = Vector2(2.02971, 1.46553)
+texture = ExtResource("22_xvdt8")
+
+[node name="level3" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(628, 569)
+scale = Vector2(2.02971, 1.46553)
+texture = ExtResource("23_qt745")
+
 [node name="rainAnim" type="AnimatedSprite2D" parent="."]
 position = Vector2(76.0459, 396.777)
 rotation = 0.199392
@@ -414,27 +466,11 @@ scale = Vector2(9.37787, 19.2361)
 sprite_frames = SubResource("SpriteFrames_2xxrd")
 
 [node name="rainAnim5" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(1235.05, 393.777)
 rotation = 0.199392
 scale = Vector2(9.37787, 19.2361)
 sprite_frames = SubResource("SpriteFrames_2xxrd")
-
-[node name="awan" type="Sprite2D" parent="."]
-position = Vector2(632, 248)
-scale = Vector2(2.21577, 1.24)
-texture = ExtResource("27_5lrcc")
-
-[node name="level4" type="Sprite2D" parent="."]
-unique_name_in_owner = true
-position = Vector2(626, 509)
-scale = Vector2(2.02971, 1.46553)
-texture = ExtResource("22_xvdt8")
-
-[node name="level3" type="Sprite2D" parent="."]
-unique_name_in_owner = true
-position = Vector2(628, 569)
-scale = Vector2(2.02971, 1.46553)
-texture = ExtResource("23_qt745")
 
 [node name="level2" type="Sprite2D" parent="."]
 unique_name_in_owner = true
@@ -448,11 +484,26 @@ position = Vector2(624, 679)
 scale = Vector2(2.02971, 1.46553)
 texture = ExtResource("25_r7ure")
 
+[node name="awan" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(632, 248)
+scale = Vector2(2.21577, 1.24)
+texture = ExtResource("27_5lrcc")
+
 [node name="heavyRain" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("25_lpybf")
 
 [node name="timeoutPopup" parent="." instance=ExtResource("21_fhx50")]
-visible = false
+
+[node name="Control" parent="." instance=ExtResource("34_y32kv")]
+layout_mode = 1
+offset_top = 7.0
+offset_bottom = 7.0
+
+[node name="thermometer" type="AnimatedSprite2D" parent="."]
+position = Vector2(1236, 194)
+scale = Vector2(5.40625, 6)
+sprite_frames = SubResource("SpriteFrames_160p4")
 
 [connection signal="timeout" from="FloodTimer" to="." method="_on_flood_timer_timeout"]
 [connection signal="pressed" from="btnInfo" to="." method="_on_btn_info_pressed"]

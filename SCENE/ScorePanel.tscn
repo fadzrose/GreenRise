@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://btm3tlvawbf4q"]
+
+[ext_resource type="Theme" uid="uid://bvfpe7qu6csns" path="res://THEME/blurBG.tres" id="1_ii78k"]
+[ext_resource type="PackedScene" uid="uid://bj7gy1ot066i6" path="res://panelMark.tscn" id="2_0670v"]
+[ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="3_s6cxg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ye0pf"]
+bg_color = Color(1, 1, 0.298039, 1)
+border_width_left = 1
+border_width_top = 5
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="Theme" id="Theme_8pyc0"]
+resource_local_to_scene = true
+default_font = ExtResource("3_s6cxg")
+default_font_size = 35
+Panel/styles/panel = SubResource("StyleBoxFlat_ye0pf")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 724.0
+theme = ExtResource("1_ii78k")
+
+[node name="Panel" parent="." instance=ExtResource("2_0670v")]
+layout_mode = 0
+offset_left = 315.0
+offset_top = 82.0
+offset_right = 370.0
+offset_bottom = 116.0
+theme = SubResource("Theme_8pyc0")

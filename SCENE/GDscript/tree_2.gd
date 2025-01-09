@@ -2,7 +2,7 @@ extends StaticBody2D
 
 var selected = false
 var tree_type = 2
-var tree_coverage = 5 # For Global.canopypoint
+var tree_coverage = 9 # For Global.canopypoint
 var mouse_offset
 var start_position: Vector2
 
