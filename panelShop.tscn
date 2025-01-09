@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://bf1c4rn2qvn"]
+[gd_scene load_steps=8 format=3 uid="uid://bf1c4rn2qvn"]
 
 [ext_resource type="Theme" uid="uid://duejkr60vt156" path="res://THEME/panelShop.tres" id="1_kpsc7"]
 [ext_resource type="FontFile" uid="uid://c23n63c641mgo" path="res://fonts/8bitOperatorPlus8-Bold.ttf" id="2_s6eu1"]
+[ext_resource type="Theme" uid="uid://bupsxpm8pod4j" path="res://THEME/coin.tres" id="3_1godg"]
 [ext_resource type="FontFile" uid="uid://cuoi1w3thq0pw" path="res://fonts/8bitOperatorPlus-Bold.ttf" id="3_gjooa"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_4otes"]
@@ -12,7 +13,6 @@ font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="GDScript" id="GDScript_rcndx"]
 script/source = "extends Label
-
 "
 
 [sub_resource type="Theme" id="Theme_5r0mn"]
@@ -24,25 +24,45 @@ offset_bottom = 374.0
 theme = ExtResource("1_kpsc7")
 
 [node name="VSplitContainer" type="VSplitContainer" parent="."]
-offset_left = 85.0
-offset_top = 63.0
-offset_right = 685.0
-offset_bottom = 354.0
+layout_mode = 0
+offset_left = 26.0
+offset_top = 23.0
+offset_right = 471.0
+offset_bottom = 137.0
 
-[node name="LabelFloodInstruction" type="Label" parent="VSplitContainer"]
+[node name="shopLabel" type="Label" parent="VSplitContainer"]
 layout_mode = 2
-text = "Mengikut ramalan cuaca, 
-hujan lebat akan turun 
-di kawasan kita."
+text = "Beli Biji Benih"
 label_settings = SubResource("LabelSettings_4otes")
 horizontal_alignment = 1
 script = SubResource("GDScript_rcndx")
 
+[node name="benih1" type="Label" parent="VSplitContainer"]
+layout_mode = 2
+text = "Biji Benih 1"
+label_settings = SubResource("LabelSettings_4otes")
+horizontal_alignment = 1
+script = SubResource("GDScript_rcndx")
+
+[node name="buy1" type="Button" parent="."]
+layout_mode = 2
+offset_left = 466.0
+offset_top = 64.0
+offset_right = 559.0
+offset_bottom = 122.0
+theme = ExtResource("3_1godg")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+action_mode = 0
+text = "."
+flat = true
+
 [node name="next" type="Button" parent="."]
-offset_left = 387.0
-offset_right = 686.0
-offset_bottom = 58.0
+layout_mode = 0
+offset_left = 556.0
+offset_top = -2.0
+offset_right = 618.0
+offset_bottom = 56.0
 theme = SubResource("Theme_5r0mn")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Seterusnya >>"
+text = "x"
 flat = true
