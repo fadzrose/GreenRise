@@ -77,7 +77,7 @@ scale = Vector2(0.827273, 0.773267)
 texture = ExtResource("8_2xf36")
 
 [node name="PailGraden" type="Sprite2D" parent="."]
-position = Vector2(641, 516)
+position = Vector2(638, 519)
 scale = Vector2(0.35, 0.305)
 texture = ExtResource("9_l3125")
 

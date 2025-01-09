@@ -25,17 +25,10 @@ theme = ExtResource("1_kpsc7")
 
 [node name="VSplitContainer" type="VSplitContainer" parent="."]
 layout_mode = 0
-<<<<<<< HEAD
-offset_left = 85.0
-offset_top = 63.0
-offset_right = 685.0
-offset_bottom = 354.0
-=======
 offset_left = 26.0
 offset_top = 23.0
 offset_right = 471.0
 offset_bottom = 137.0
->>>>>>> 8b8049d94084f970e6d2089d32af2dd4a63348e1
 
 [node name="shopLabel" type="Label" parent="VSplitContainer"]
 layout_mode = 2
@@ -65,16 +58,10 @@ flat = true
 
 [node name="next" type="Button" parent="."]
 layout_mode = 0
-<<<<<<< HEAD
-offset_left = 387.0
-offset_right = 686.0
-offset_bottom = 58.0
-=======
 offset_left = 556.0
 offset_top = -2.0
 offset_right = 618.0
 offset_bottom = 56.0
->>>>>>> 8b8049d94084f970e6d2089d32af2dd4a63348e1
 theme = SubResource("Theme_5r0mn")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "x"
