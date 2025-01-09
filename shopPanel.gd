@@ -19,9 +19,9 @@ func _ready():
 	#print(td.GetRow(2))
 	#print(td.GetColumn("Category"))
 	
-	td.AddColumn(
-		[5, 4, 5, 6, 7, 9], 
-		"Total"
-	)
+	# td.AddColumn(
+	# 	[5, 4, 5, 6, 7, 9], 
+	#	"Total"
+	#)
 	
-	print(td)
+	#print(td)
