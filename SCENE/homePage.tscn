@@ -22,6 +22,16 @@ position = Vector2(642.5, 363)
 scale = Vector2(1.53837, 1.448)
 texture = ExtResource("1_kdee6")
 
+[node name="HomeShelf4" type="Sprite2D" parent="Home"]
+position = Vector2(253.84, 73.2044)
+scale = Vector2(0.724595, 0.348757)
+texture = ExtResource("3_ymfox")
+
+[node name="HomeShelf" type="Sprite2D" parent="Home"]
+position = Vector2(351.996, 93.232)
+scale = Vector2(0.6974, 0.458103)
+texture = ExtResource("3_ymfox")
+
 [node name="GardenQuest" type="Sprite2D" parent="Home"]
 position = Vector2(383.848, -138.122)
 scale = Vector2(0.164418, 0.165224)
@@ -32,6 +42,11 @@ position = Vector2(382.548, -205.111)
 scale = Vector2(0.143246, 0.157218)
 texture = ExtResource("4_brker")
 
+[node name="Flower4" type="Sprite2D" parent="Home"]
+position = Vector2(244.09, 101.519)
+scale = Vector2(0.125346, 0.0905882)
+texture = ExtResource("7_oj4qb")
+
 [node name="FloodUmbrella" parent="." instance=ExtResource("2_g7r3b")]
 offset_left = 792.0
 offset_top = 481.0
@@ -39,14 +54,14 @@ offset_right = 831.0
 offset_bottom = 564.0
 theme = null
 
-[node name="HomeShelf" type="Sprite2D" parent="."]
-position = Vector2(1184, 498)
-scale = Vector2(1.07286, 0.663333)
-texture = ExtResource("3_ymfox")
-
 [node name="Flower1" type="Sprite2D" parent="."]
 position = Vector2(1170, 371)
 scale = Vector2(0.214844, 0.136719)
+texture = ExtResource("4_lhw55")
+
+[node name="Flower1" type="Sprite2D" parent="Flower1"]
+position = Vector2(-693.527, 504.685)
+scale = Vector2(0.790908, 0.886159)
 texture = ExtResource("4_lhw55")
 
 [node name="Flower2" type="Sprite2D" parent="."]
@@ -54,9 +69,19 @@ position = Vector2(1169, 557)
 scale = Vector2(0.21875, 0.144531)
 texture = ExtResource("5_og408")
 
+[node name="Flower2" type="Sprite2D" parent="Flower2"]
+position = Vector2(-681.143, -1326.83)
+scale = Vector2(0.624861, 0.87112)
+texture = ExtResource("5_og408")
+
 [node name="Flower3" type="Sprite2D" parent="."]
 position = Vector2(1167, 461)
 scale = Vector2(0.210938, 0.15625)
+texture = ExtResource("6_46hur")
+
+[node name="Flower3" type="Sprite2D" parent="Flower3"]
+position = Vector2(-706.369, 755.2)
+scale = Vector2(0.720161, 0.832617)
 texture = ExtResource("6_46hur")
 
 [node name="Flower4" type="Sprite2D" parent="."]
@@ -79,6 +104,58 @@ texture = ExtResource("12_n58pq")
 position = Vector2(1235.75, 240.75)
 scale = Vector2(0.155, 0.153)
 texture = ExtResource("13_la26i")
+
+[node name="HomeShelf3" type="Sprite2D" parent="."]
+position = Vector2(274, 467.502)
+scale = Vector2(1.15103, 0.488339)
+texture = ExtResource("3_ymfox")
+flip_h = true
+
+[node name="HomeShelf2" type="Sprite2D" parent="."]
+position = Vector2(133, 500)
+scale = Vector2(1.07286, 0.663333)
+texture = ExtResource("3_ymfox")
+flip_h = true
+
+[node name="Flower5" type="Sprite2D" parent="."]
+position = Vector2(147, 648)
+scale = Vector2(0.171875, 0.154176)
+texture = ExtResource("5_og408")
+
+[node name="Flower3" type="Sprite2D" parent="Flower5"]
+position = Vector2(-17.4547, -1816.11)
+scale = Vector2(0.948898, 1.01175)
+texture = ExtResource("6_46hur")
+
+[node name="Flower5" type="Sprite2D" parent="Flower5"]
+position = Vector2(837.818, -1362.08)
+scale = Vector2(0.768732, 0.761227)
+texture = ExtResource("5_og408")
+
+[node name="Flower4" type="Sprite2D" parent="Flower5"]
+position = Vector2(843.636, -1822.6)
+scale = Vector2(0.949928, 0.899441)
+texture = ExtResource("7_oj4qb")
+
+[node name="Flower6" type="Sprite2D" parent="."]
+position = Vector2(290, 506)
+scale = Vector2(0.149862, 0.125003)
+texture = ExtResource("6_46hur")
+
+[node name="Flower7" type="Sprite2D" parent="."]
+position = Vector2(147, 557)
+scale = Vector2(0.173584, 0.157269)
+texture = ExtResource("4_lhw55")
+
+[node name="Flower7" type="Sprite2D" parent="Flower7"]
+position = Vector2(823.809, 101.736)
+scale = Vector2(0.807868, 0.762942)
+texture = ExtResource("4_lhw55")
+
+[node name="Flower8" type="Sprite2D" parent="."]
+position = Vector2(146, 463)
+scale = Vector2(0.173917, 0.174442)
+texture = ExtResource("7_oj4qb")
 
 [connection signal="pressed" from="hatBtn" to="." method="_on_hat_btn_pressed"]
 [connection signal="pressed" from="hatBtn" to="FloodUmbrella" method="_on_hat_btn_pressed"]
