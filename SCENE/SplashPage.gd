@@ -8,6 +8,7 @@ func _ready():
 	$kredit.hide()
 	$exit.hide()
 	$setting.hide()
+	MusicGlobal._music_on()
 
 func _process(delta):
 	pass

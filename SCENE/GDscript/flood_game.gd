@@ -125,6 +125,7 @@ func _on_timerout_popup_timeout() -> void:
 	_update_score_label()
 	_calculate_water_level()
 	_label_reward()
+	$thermometer.hide()
 	
 
 func _update_score_label():

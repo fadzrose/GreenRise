@@ -472,7 +472,6 @@ scale = Vector2(9.37787, 19.2361)
 sprite_frames = SubResource("SpriteFrames_2xxrd")
 
 [node name="rainAnim5" type="AnimatedSprite2D" parent="."]
-visible = false
 position = Vector2(1235.05, 393.777)
 rotation = 0.199392
 scale = Vector2(9.37787, 19.2361)
