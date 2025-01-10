@@ -1,0 +1,91 @@
+[gd_scene load_steps=8 format=3 uid="uid://dmx5hrhcdyjfj"]
+
+[ext_resource type="Theme" uid="uid://bvfpe7qu6csns" path="res://THEME/blurBG.tres" id="1_2g0ap"]
+[ext_resource type="Theme" uid="uid://cfhgrew07lj21" path="res://THEME/panelHijau.tres" id="2_6ihvt"]
+[ext_resource type="Theme" uid="uid://cul0eallhyn" path="res://THEME/howPlay.tres" id="3_ctdsj"]
+[ext_resource type="FontFile" uid="uid://df2tdtkcdvy7y" path="res://fonts/Delux-Mainpal.otf" id="4_k67i5"]
+[ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="5_3ncnc"]
+[ext_resource type="FontFile" uid="uid://cuoi1w3thq0pw" path="res://fonts/8bitOperatorPlus-Bold.ttf" id="6_6ko1n"]
+
+[sub_resource type="Theme" id="Theme_h4pvd"]
+default_font = ExtResource("6_6ko1n")
+
+[node name="HowToPlay" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_right = 1285.0
+offset_bottom = 724.0
+theme = ExtResource("1_2g0ap")
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 261.0
+offset_top = 89.0
+offset_right = 1044.0
+offset_bottom = 631.0
+theme = ExtResource("2_6ihvt")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 0
+offset_left = 285.0
+offset_top = 157.0
+offset_right = 868.0
+offset_bottom = 426.0
+scale = Vector2(1.26957, 1.69649)
+theme = ExtResource("3_ctdsj")
+follow_focus = true
+
+[node name="HSplitContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+
+[node name="Image" type="Label" parent="ScrollContainer/HSplitContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_k67i5")
+text = "IMAGE CREDITS :
+1. Flora and Fauna Images (for tree collection)
+Source: NParks Flora Fauna Web
+License: Refer to NParks terms for proper use in non-commercial or educational projects."
+vertical_alignment = 1
+
+[node name="Sound" type="Label" parent="ScrollContainer/HSplitContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_k67i5")
+text = "SOUND CREDITS :
+1. Heavy Rain Nature Sounds
+Source: Pixabay - Heavy Rain Nature Sounds
+License: Free for commercial use, no attribution required (Pixabay License)
+
+2 Cherry Cute BGM
+Source: Pixabay - 2 Cherry Cute BGM
+License: Free for commercial use, no attribution required (Pixabay License)
+"
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 282.0
+offset_top = 93.0
+offset_right = 630.0
+offset_bottom = 143.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_3ncnc")
+theme_override_font_sizes/font_size = 35
+text = "RUJUKAN - KREDIT"
+vertical_alignment = 1
+
+[node name="next" type="Button" parent="."]
+offset_left = 776.0
+offset_top = 92.0
+offset_right = 1075.0
+offset_bottom = 150.0
+theme = SubResource("Theme_h4pvd")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "Kembali >>"
+flat = true
