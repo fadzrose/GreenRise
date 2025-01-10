@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cv83hup346p26"]
+[gd_scene load_steps=2 format=3 uid="uid://cv83hup346p26"]
+
+[ext_resource type="PackedScene" uid="uid://dot6bpl3alrd8" path="res://table_row.tscn" id="1_7um1f"]
 
 [node name="tableShop" type="Control"]
 layout_mode = 3
@@ -7,6 +9,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="row" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -15,3 +19,55 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="tableRow" parent="row" instance=ExtResource("1_7um1f")]
+layout_mode = 2
+
+[node name="tableRow2" parent="row" instance=ExtResource("1_7um1f")]
+layout_mode = 2
+
+[node name="tableRow3" parent="row" instance=ExtResource("1_7um1f")]
+layout_mode = 2
+
+[node name="tableRow4" parent="row" instance=ExtResource("1_7um1f")]
+layout_mode = 2
+
+[node name="tableRow5" parent="row" instance=ExtResource("1_7um1f")]
+layout_mode = 2
+
+[node name="tableRow6" parent="row" instance=ExtResource("1_7um1f")]
+layout_mode = 2
+
+[node name="tableRow7" parent="row" instance=ExtResource("1_7um1f")]
+layout_mode = 2
+
+[node name="tableRow8" parent="row" instance=ExtResource("1_7um1f")]
+layout_mode = 2
+
+[node name="tableRow9" parent="row" instance=ExtResource("1_7um1f")]
+layout_mode = 2
+
+[node name="tableRow10" parent="row" instance=ExtResource("1_7um1f")]
+layout_mode = 2
+
+[node name="tableRow11" parent="row" instance=ExtResource("1_7um1f")]
+layout_mode = 2
+
+[node name="tableRow12" parent="row" instance=ExtResource("1_7um1f")]
+layout_mode = 2
+
+[node name="tableRow13" parent="row" instance=ExtResource("1_7um1f")]
+layout_mode = 2
+
+[node name="tableRow14" parent="row" instance=ExtResource("1_7um1f")]
+layout_mode = 2
+
+[node name="tableRow15" parent="row" instance=ExtResource("1_7um1f")]
+layout_mode = 2
+
+[node name="tableRow16" parent="row" instance=ExtResource("1_7um1f")]
+layout_mode = 2
+
+[node name="tableRow17" parent="row" instance=ExtResource("1_7um1f")]
+layout_mode = 2
