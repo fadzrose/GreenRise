@@ -33,7 +33,7 @@
 [ext_resource type="Texture2D" uid="uid://cf07djaytx7u0" path="res://flood/Layer 1_sprite_5.png" id="25_s0v4g"]
 [ext_resource type="Texture2D" uid="uid://edegwsvq7c7k" path="res://flood/Layer 1_sprite_6.png" id="26_egwpf"]
 [ext_resource type="Texture2D" uid="uid://b1c8eofddjjo0" path="res://flood/awan.png" id="27_5lrcc"]
-[ext_resource type="PackedScene" uid="uid://btm3tlvawbf4q" path="res://SCENE/ScorePanel.tscn" id="34_y32kv"]
+[ext_resource type="PackedScene" path="res://SCENE/ScorePanel.tscn" id="34_y32kv"]
 [ext_resource type="Texture2D" uid="uid://b4nwnt1v44b2s" path="res://game/Layer 1_sprite_1.png" id="35_pl1pj"]
 [ext_resource type="Texture2D" uid="uid://bmvqixw0yo8la" path="res://game/Layer 1_sprite_2.png" id="36_2i2jp"]
 [ext_resource type="Texture2D" uid="uid://cjrm04yi2o714" path="res://game/Layer 1_sprite_3.png" id="37_m2hoh"]
