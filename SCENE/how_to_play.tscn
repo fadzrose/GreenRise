@@ -1,0 +1,127 @@
+[gd_scene load_steps=8 format=3 uid="uid://ddkgqwx8ln10g"]
+
+[ext_resource type="Theme" uid="uid://bvfpe7qu6csns" path="res://THEME/blurBG.tres" id="1_a056r"]
+[ext_resource type="Theme" uid="uid://cfhgrew07lj21" path="res://THEME/panelHijau.tres" id="2_dktdo"]
+[ext_resource type="FontFile" uid="uid://df2tdtkcdvy7y" path="res://fonts/Delux-Mainpal.otf" id="3_scp0k"]
+[ext_resource type="Theme" uid="uid://cul0eallhyn" path="res://THEME/howPlay.tres" id="3_sisdu"]
+[ext_resource type="FontFile" uid="uid://cmh2rorsj6yh6" path="res://fonts/8bitOperatorPlus8-Regular.ttf" id="4_cdx4u"]
+[ext_resource type="FontFile" uid="uid://cuoi1w3thq0pw" path="res://fonts/8bitOperatorPlus-Bold.ttf" id="5_dqifh"]
+
+[sub_resource type="Theme" id="Theme_h4pvd"]
+default_font = ExtResource("5_dqifh")
+
+[node name="HowToPlay" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_right = 1285.0
+offset_bottom = 724.0
+theme = ExtResource("1_a056r")
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 261.0
+offset_top = 89.0
+offset_right = 1044.0
+offset_bottom = 631.0
+theme = ExtResource("2_dktdo")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 0
+offset_left = 285.0
+offset_top = 157.0
+offset_right = 868.0
+offset_bottom = 426.0
+scale = Vector2(1.26957, 1.69649)
+theme = ExtResource("3_sisdu")
+follow_focus = true
+
+[node name="HSplitContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/HSplitContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_scp0k")
+text = "🌱 Gardening Game
+Objektif:
+Menanam dan menjaga pelbagai jenis pokok untuk membangunkan hutan bandar 
+yang subur.
+
+Cara Bermain:
+Tanam Benih: Pilih benih daripada koleksi anda dan tanam di petak yang disediakan.
+Penjagaan: Gunakan sumber seperti air dan baja untuk membantu pokok anda tumbuh.
+Buka Pokok Baru: Pastikan pokok tumbuh dengan baik untuk membuka spesies baru.
+
+Tips:
+Eksperimen dengan pelbagai jenis pokok untuk melihat manfaat uniknya.
+Uruskan sumber anda dengan bijak untuk memaksimumkan pertumbuhan.
+
+💧 Flood Game
+Objektif:
+Menggunakan pokok secara strategik untuk mengurangkan kesan banjir akibat 
+hujan lebat.
+
+Cara Bermain:
+Atasi Hujan: Menghadapi simulasi ribut hujan dengan intensiti berbeza.
+Tanam Secara Strategik: Letakkan pokok di kawasan yang mudah banjir untuk 
+menyerap air.
+Optimumkan Kanopi: Seimbangkan kepadatan pokok dan saiz kanopi untuk 
+keberkesanan maksimum.
+
+Tips:
+Kenalpasti kawasan kritikal untuk penanaman pokok.
+Naik taraf pokok anda untuk meningkatkan keupayaannya menyerap air.
+
+🌿 Seed Collection Game
+Objektif:
+Kumpul dan uruskan pelbagai jenis benih untuk mengembangkan hutan bandar anda.
+
+Cara Bermain:
+Teroka Persekitaran: Cari benih pokok di pelbagai lokasi maya.
+Selesaikan Cabaran: Lengkapkan tugasan untuk mendapatkan benih unik.
+Tingkatkan Biodiversiti: Pastikan koleksi pokok anda pelbagai untuk 
+manfaat maksimum.
+
+Tips:
+Fokus pada benih yang memberi manfaat tertentu, seperti pengurangan haba atau 
+banjir. 
+
+📚 Belajar Sambil Bermain:
+Pengetahuan Alam Sekitar: Ketahui lebih lanjut tentang hutan bandar dan kesannya 
+terhadap alam sekitar.
+Maklumat Dalam Permainan: Akses petua berguna untuk memperdalam 
+pemahaman anda.
+
+🌍 Kesan Dunia Nyata:
+Gunakan pengetahuan dari permainan untuk menyokong perancangan 
+bandar yang lebih hijau.
+
+Main sekarang dan sertai perjuangan untuk dunia yang lebih hijau! 🌱"
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 282.0
+offset_top = 93.0
+offset_right = 630.0
+offset_bottom = 143.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_cdx4u")
+theme_override_font_sizes/font_size = 35
+text = "CARA BERMAIN"
+vertical_alignment = 1
+
+[node name="next" type="Button" parent="."]
+offset_left = 776.0
+offset_top = 92.0
+offset_right = 1075.0
+offset_bottom = 150.0
+theme = SubResource("Theme_h4pvd")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "Kembali >>"
+flat = true
