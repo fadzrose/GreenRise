@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://d0wv3qbdo88ul"]
+[gd_scene load_steps=12 format=3 uid="uid://d0wv3qbdo88ul"]
 
 [ext_resource type="Script" path="res://SCENE/SplashPage.gd" id="1_mk5ml"]
 [ext_resource type="Texture2D" uid="uid://b0r3btusbfe7s" path="res://background/splash page.png" id="2_75qa0"]
@@ -11,8 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://deatwhp0663mg" path="res://SCENE/credit.tscn" id="9_mqjnc"]
 [ext_resource type="PackedScene" uid="uid://b1f7dnqu1j5pm" path="res://SCENE/confirmEXIT.tscn" id="10_qt8nj"]
 [ext_resource type="PackedScene" uid="uid://dmr06vtgaurqh" path="res://SCENE/controlSetting.tscn" id="11_cu2si"]
-[ext_resource type="PackedScene" uid="uid://ddkgqwx8ln10g" path="res://SCENE/how_to_play.tscn" id="12_h2noh"]
-[ext_resource type="PackedScene" uid="uid://dmx5hrhcdyjfj" path="res://SCENE/rujukan.tscn" id="13_4ukf5"]
 
 [node name="SplashPage" type="Control"]
 layout_mode = 3
@@ -93,20 +91,6 @@ offset_bottom = -4.0
 layout_mode = 1
 offset_left = -2.0
 offset_right = -2.0
-
-[node name="HowToPlay" parent="." instance=ExtResource("12_h2noh")]
-layout_mode = 1
-offset_left = -2.0
-offset_top = -12.0
-offset_right = -2.0
-offset_bottom = -12.0
-
-[node name="RUJUKAN" parent="." instance=ExtResource("13_4ukf5")]
-layout_mode = 1
-offset_left = 4.0
-offset_top = -3.0
-offset_right = 4.0
-offset_bottom = -3.0
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="btnPower" to="." method="_on_btn_power_pressed"]
