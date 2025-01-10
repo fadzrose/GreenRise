@@ -40,8 +40,25 @@ func AddColumn(d: Array, col_name: String):
 	columns.append(col_name) #14:00
 
 
-static func EvalColumns():
-	pass #15:10
+static func EvalColumns(
+	c1: Array,
+	operand: String,
+	c2: Array
+):
+	assert(len(c1) == len(c2)) #15:10 change 15:46
+	
+	var expression = Expression.new()
+	expression.parse("a %s b" % operand, ["a", "b"]) #16:43
+	
+	#18:56
+	var result = []
+	for i in range(len(c1)):
+			result.append(
+				expression.execute([c1[i], c2[i]])
+			)
+	
+	return result
+
 
 func _to_string():
 	if len(data) == 0:

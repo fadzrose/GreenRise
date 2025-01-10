@@ -16,12 +16,11 @@ func _ready():
 	var td = treeData.New(data, columns)
 	#print(td) #14:25 delete
 	
-	#print(td.GetRow(2))
-	#print(td.GetColumn("Category"))
+	#print(td.GetRow(2)) test
+	#print(td.GetColumn("Category")) test
 	
-	# td.AddColumn(
-	# 	[5, 4, 5, 6, 7, 9], 
-	#	"Total"
-	#)
+	td.AddColumn([5, 4, 5, 6, 7, 9], "Total")
 	
-	#print(td)
+	print(td)
+	
+	#print("%s says hi to %s %d times" % ["Eypa", "Fadze", 7]) test
