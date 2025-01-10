@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dfpsmt4685y03"]
+[gd_scene load_steps=17 format=3 uid="uid://dfpsmt4685y03"]
 
 [ext_resource type="Script" path="res://SCENE/home_page.gd" id="1_044a0"]
 [ext_resource type="Texture2D" uid="uid://dsnd7i5troisb" path="res://background/home.png" id="1_kdee6"]
@@ -7,8 +7,14 @@
 [ext_resource type="Texture2D" uid="uid://bbbk3kqpdc0n0" path="res://Home/flower1.png" id="4_lhw55"]
 [ext_resource type="Texture2D" uid="uid://cwa38dnf1qn3q" path="res://Home/flower2.png" id="5_og408"]
 [ext_resource type="Texture2D" uid="uid://bvnmvfejiijyn" path="res://Home/flower3.png" id="6_46hur"]
+[ext_resource type="Script" path="res://SCENE/flower_1.gd" id="7_h3bxr"]
 [ext_resource type="Texture2D" uid="uid://c2j88f8kkwir" path="res://Home/flower4.png" id="7_oj4qb"]
+[ext_resource type="Texture2D" uid="uid://djp85symwe3so" path="res://angsana.png" id="8_otg1g"]
 [ext_resource type="PackedScene" uid="uid://dwb644jvt3pla" path="res://SCENE/hat_btn.tscn" id="9_1ej8y"]
+[ext_resource type="Script" path="res://SCENE/pokok_1.gd" id="9_x7lf6"]
+[ext_resource type="Script" path="res://SCENE/flower_1_btn.gd" id="10_605c0"]
+[ext_resource type="Texture2D" uid="uid://d0herifriu08q" path="res://SCENE/exitBtn.png" id="11_82pui"]
+[ext_resource type="Script" path="res://SCENE/exit_btn.gd" id="12_d6x8h"]
 [ext_resource type="PackedScene" uid="uid://d3aveeip10drd" path="res://garden_coin.tscn" id="13_oyhoe"]
 
 [node name="HomePage" type="Node2D"]
@@ -45,11 +51,37 @@ theme = null
 position = Vector2(1170, 371)
 scale = Vector2(0.214844, 0.136719)
 texture = ExtResource("4_lhw55")
+script = ExtResource("7_h3bxr")
 
 [node name="Flower1" type="Sprite2D" parent="Flower1"]
 position = Vector2(-693.527, 504.685)
 scale = Vector2(0.790908, 0.886159)
 texture = ExtResource("4_lhw55")
+
+[node name="Flower1Btn" type="Button" parent="Flower1"]
+clip_children = 1
+offset_left = -205.0
+offset_top = -329.0
+offset_right = 233.0
+offset_bottom = 278.0
+script = ExtResource("10_605c0")
+
+[node name="pokok_1" type="Sprite2D" parent="Flower1/Flower1Btn"]
+z_index = 1
+position = Vector2(-2196.74, 350.943)
+scale = Vector2(3.582, 5.779)
+texture = ExtResource("8_otg1g")
+script = ExtResource("9_x7lf6")
+
+[node name="exitBtn" type="Button" parent="Flower1/Flower1Btn/pokok_1"]
+offset_left = 230.0
+offset_top = -295.0
+offset_right = 463.0
+offset_bottom = -62.0
+scale = Vector2(0.3, 0.3)
+action_mode = 0
+icon = ExtResource("11_82pui")
+script = ExtResource("12_d6x8h")
 
 [node name="Flower2" type="Sprite2D" parent="."]
 position = Vector2(1169, 557)
