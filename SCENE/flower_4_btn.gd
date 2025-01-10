@@ -1,6 +1,6 @@
 extends Button
 
-@onready var picture_display = $pokok_1
+@onready var picture_display = $pokok_4
 
 func _input(event: InputEvent):
 	if event is InputEventMouseButton and event.pressed:
