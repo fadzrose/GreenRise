@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cv83hup346p26"]
+[gd_scene load_steps=3 format=3 uid="uid://cv83hup346p26"]
 
 [ext_resource type="PackedScene" uid="uid://dot6bpl3alrd8" path="res://table_row.tscn" id="1_7um1f"]
+[ext_resource type="PackedScene" uid="uid://dumaiteecywdu" path="res://table_cell.tscn" id="2_sjh8n"]
 
 [node name="tableShop" type="Control"]
 layout_mode = 3
@@ -24,50 +25,299 @@ metadata/_edit_use_anchors_ = true
 [node name="tableRow" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "Belian Anak Pokok"
+
+[node name="tableCell2" parent="row/tableRow" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "      X      "
+
 [node name="tableRow2" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
+
+[node name="tableCell" parent="row/tableRow2" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  01."
+
+[node name="tableCell2" parent="row/tableRow2" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow2" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
 
 [node name="tableRow3" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow3" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  02."
+
+[node name="tableCell2" parent="row/tableRow3" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow3" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
 [node name="tableRow4" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
+
+[node name="tableCell" parent="row/tableRow4" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  03."
+
+[node name="tableCell2" parent="row/tableRow4" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow4" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
 
 [node name="tableRow5" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow5" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  04."
+
+[node name="tableCell2" parent="row/tableRow5" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow5" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
 [node name="tableRow6" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
+
+[node name="tableCell" parent="row/tableRow6" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  05."
+
+[node name="tableCell2" parent="row/tableRow6" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow6" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
 
 [node name="tableRow7" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow7" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  06."
+
+[node name="tableCell2" parent="row/tableRow7" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow7" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
 [node name="tableRow8" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
+
+[node name="tableCell" parent="row/tableRow8" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  07."
+
+[node name="tableCell2" parent="row/tableRow8" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow8" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
 
 [node name="tableRow9" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow9" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  08."
+
+[node name="tableCell2" parent="row/tableRow9" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow9" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
 [node name="tableRow10" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
+
+[node name="tableCell" parent="row/tableRow10" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  09."
+
+[node name="tableCell2" parent="row/tableRow10" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow10" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
 
 [node name="tableRow11" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow11" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  10."
+
+[node name="tableCell2" parent="row/tableRow11" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow11" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
 [node name="tableRow12" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
+
+[node name="tableCell" parent="row/tableRow12" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  11."
+
+[node name="tableCell2" parent="row/tableRow12" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow12" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
 
 [node name="tableRow13" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow13" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  12."
+
+[node name="tableCell2" parent="row/tableRow13" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow13" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
 [node name="tableRow14" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
+
+[node name="tableCell" parent="row/tableRow14" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  13."
+
+[node name="tableCell2" parent="row/tableRow14" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow14" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
 
 [node name="tableRow15" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow15" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  14."
+
+[node name="tableCell2" parent="row/tableRow15" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow15" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
 [node name="tableRow16" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow16" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  15."
+
+[node name="tableCell2" parent="row/tableRow16" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow16" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
 [node name="tableRow17" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
+
+[node name="tableCell" parent="row/tableRow17" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  16."
+
+[node name="tableCell2" parent="row/tableRow17" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow17" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
