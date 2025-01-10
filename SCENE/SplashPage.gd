@@ -10,8 +10,8 @@ func _ready():
 	$kredit.hide()
 	$exit.hide()
 	$setting.hide()
-	$HowToPlay.hide()
-	$RUJUKAN.hide()
+	#$HowToPlay.hide()
+	#$RUJUKAN.hide()
 	MusicGlobal._music_on()
 
 func _process(delta):
@@ -55,8 +55,8 @@ func _on_btn_credit_pressed():
 func _back_pressed():
 	$setting.hide()
 	$kredit.hide()
-	$HowToPlay.hide()
-	$RUJUKAN.hide()
+	#$HowToPlay.hide()
+	#$RUJUKAN.hide()
 
 
 func _on_button_pressed():
