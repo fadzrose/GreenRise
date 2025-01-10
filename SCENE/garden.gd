@@ -13,8 +13,13 @@ func _process(delta: float) -> void:
 
 
 func _on_garden_shop_pressed() -> void:
-	$Control.show()
-	shop.get_node("GardenShop").connect("pressed", _back_pressed)
+		get_tree().change_scene_to_file("res://THEME/shop_panel.tscn")
+	#$Control.show()
+	#shop.get_node("GardenShop").connect("pressed", _back_pressed)
 
 func _back_pressed():
 	$Control.hide()
+
+
+func _on_door_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENE/homePage.tscn")

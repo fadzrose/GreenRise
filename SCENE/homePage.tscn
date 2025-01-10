@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dfpsmt4685y03"]
+[gd_scene load_steps=22 format=3 uid="uid://dfpsmt4685y03"]
 
 [ext_resource type="Script" path="res://SCENE/home_page.gd" id="1_044a0"]
 [ext_resource type="Texture2D" uid="uid://dsnd7i5troisb" path="res://background/home.png" id="1_kdee6"]
@@ -16,6 +16,17 @@
 [ext_resource type="Texture2D" uid="uid://d0herifriu08q" path="res://SCENE/exitBtn.png" id="11_82pui"]
 [ext_resource type="Script" path="res://SCENE/exit_btn.gd" id="12_d6x8h"]
 [ext_resource type="PackedScene" uid="uid://d3aveeip10drd" path="res://garden_coin.tscn" id="13_oyhoe"]
+[ext_resource type="Theme" uid="uid://b2pyv0sjsyy2p" path="res://Home/toMain.tres" id="17_i8gsk"]
+[ext_resource type="Texture2D" uid="uid://bwwcgbiih1s6a" path="res://Home/KELUAR-removebg-preview (1).png" id="18_tk6qn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b2ltc"]
+texture = ExtResource("18_tk6qn")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6xmh2"]
+texture = ExtResource("18_tk6qn")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mirx4"]
+texture = ExtResource("18_tk6qn")
 
 [node name="HomePage" type="Node2D"]
 script = ExtResource("1_044a0")
@@ -167,7 +178,19 @@ scale = Vector2(0.173917, 0.174442)
 texture = ExtResource("7_oj4qb")
 
 [node name="GardenCoin2" parent="." instance=ExtResource("13_oyhoe")]
-position = Vector2(1137, 63)
+position = Vector2(1042, 54)
+
+[node name="toMain" type="Button" parent="."]
+offset_left = 1162.0
+offset_top = 10.0
+offset_right = 1422.0
+offset_bottom = 184.0
+scale = Vector2(0.5, 0.506)
+theme = ExtResource("17_i8gsk")
+theme_override_styles/hover = SubResource("StyleBoxTexture_b2ltc")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_6xmh2")
+theme_override_styles/normal = SubResource("StyleBoxTexture_mirx4")
 
 [connection signal="pressed" from="hatBtn" to="." method="_on_hat_btn_pressed"]
 [connection signal="pressed" from="hatBtn" to="FloodUmbrella" method="_on_hat_btn_pressed"]
+[connection signal="pressed" from="toMain" to="." method="_on_to_main_pressed"]
