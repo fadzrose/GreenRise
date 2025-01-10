@@ -1,7 +1,7 @@
 extends Control
 
 @onready var _info_panel: Control= $infoPanel
-@onready var _score_panel: Control= $Control
+@onready var _score_panel: Control= $Control/Panel
 
 signal flood_game_added
 
@@ -123,7 +123,8 @@ func _on_timerout_popup_timeout() -> void:
 	_label_reward()
 	$Control.show()#add timer to show score
 	$GardenCoin.show()
-	#_score_panel.get_node("Button2").connect("pressed", _keluar_btn_pressed)
+	_score_panel.get_node("Button2").connect("pressed", _keluar_btn_pressed)
+	_score_panel.get_node("Button").connect("pressed", _replay_btn_pressed)
 
 func _update_score_label():
 	var score_label = get_node("Control/Panel/VSplitContainer/VSplitContainer2/score")
@@ -219,3 +220,6 @@ func _calculate_water_level():
 
 func _keluar_btn_pressed():
 	get_tree().change_scene_to_file("res://SCENE/homePage.tscn")
+
+func _replay_btn_pressed():
+	get_tree().change_scene_to_file("res://SCENE/GDscript/FloodGame.tscn")

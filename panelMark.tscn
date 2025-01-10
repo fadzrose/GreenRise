@@ -107,22 +107,24 @@ texture = ExtResource("3_3rfd8")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = -27.0
-offset_top = 25.0
-offset_right = 28.0
-offset_bottom = 40.0
-scale = Vector2(1, 1.065)
+offset_left = 9.22675
+offset_top = 26.6386
+offset_right = 265.227
+offset_bottom = 100.639
+scale = Vector2(0.0723138, 0.0550814)
 theme = ExtResource("4_obnvi")
-theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
 text = "Main Lagi"
 
 [node name="Button2" type="Button" parent="."]
 layout_mode = 0
-offset_left = 36.0
-offset_top = 26.0
-offset_right = 116.0
-offset_bottom = 56.0
-scale = Vector2(1.8099, 0.565084)
+offset_left = 31.2684
+offset_top = 26.5782
+offset_right = 287.268
+offset_bottom = 100.578
+scale = Vector2(0.0723138, 0.0550814)
 theme = ExtResource("4_obnvi")
-theme_override_font_sizes/font_size = 16
-text = "Keluar"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "Kembali"
