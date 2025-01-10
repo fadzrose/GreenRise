@@ -43,12 +43,16 @@ func AddColumn(d: Array, col_name: String):
 static func EvalColumns(
 	c1: Array,
 	operand: String,
-	c2: Array
+	c2: Array,
+	convert_to_float: bool = false #21:31
 ):
 	assert(len(c1) == len(c2)) #15:10 change 15:46
 	
 	var expression = Expression.new()
-	expression.parse("a %s b" % operand, ["a", "b"]) #16:43
+	if convert_to_float: #21:31
+		expression.parse("float(a) %s float(b)" % operand, ["a", "b"])  
+	else: 
+		expression.parse("a %s b" % operand, ["a", "b"]) #16:43
 	
 	#18:56
 	var result = []
