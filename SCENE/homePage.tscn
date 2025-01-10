@@ -1,17 +1,14 @@
-[gd_scene load_steps=14 format=3 uid="uid://dfpsmt4685y03"]
+[gd_scene load_steps=11 format=3 uid="uid://dfpsmt4685y03"]
 
 [ext_resource type="Script" path="res://SCENE/home_page.gd" id="1_044a0"]
 [ext_resource type="Texture2D" uid="uid://dsnd7i5troisb" path="res://background/home.png" id="1_kdee6"]
 [ext_resource type="PackedScene" uid="uid://4dbycie8sr7r" path="res://floodUmbrella.tscn" id="2_g7r3b"]
-[ext_resource type="Texture2D" uid="uid://drxuitslsjkqf" path="res://garden/gardenQuest.png" id="3_hxlhi"]
 [ext_resource type="Texture2D" uid="uid://dsek3ecpsgtru" path="res://Home/homeShelf.png" id="3_ymfox"]
-[ext_resource type="Texture2D" uid="uid://tsj5pmxb7n31" path="res://garden/sun (1).png" id="4_brker"]
 [ext_resource type="Texture2D" uid="uid://bbbk3kqpdc0n0" path="res://Home/flower1.png" id="4_lhw55"]
 [ext_resource type="Texture2D" uid="uid://cwa38dnf1qn3q" path="res://Home/flower2.png" id="5_og408"]
 [ext_resource type="Texture2D" uid="uid://bvnmvfejiijyn" path="res://Home/flower3.png" id="6_46hur"]
 [ext_resource type="Texture2D" uid="uid://c2j88f8kkwir" path="res://Home/flower4.png" id="7_oj4qb"]
 [ext_resource type="PackedScene" uid="uid://dwb644jvt3pla" path="res://SCENE/hat_btn.tscn" id="9_1ej8y"]
-[ext_resource type="Texture2D" uid="uid://cvw5313tfbmg5" path="res://garden/gardenShop.png" id="13_la26i"]
 [ext_resource type="PackedScene" uid="uid://d3aveeip10drd" path="res://garden_coin.tscn" id="13_oyhoe"]
 
 [node name="HomePage" type="Node2D"]
@@ -31,16 +28,6 @@ texture = ExtResource("3_ymfox")
 position = Vector2(351.996, 93.232)
 scale = Vector2(0.6974, 0.458103)
 texture = ExtResource("3_ymfox")
-
-[node name="GardenQuest" type="Sprite2D" parent="Home"]
-position = Vector2(383.848, -138.122)
-scale = Vector2(0.164418, 0.165224)
-texture = ExtResource("3_hxlhi")
-
-[node name="Sun(1)" type="Sprite2D" parent="Home"]
-position = Vector2(382.548, -205.111)
-scale = Vector2(0.143246, 0.157218)
-texture = ExtResource("4_brker")
 
 [node name="Flower4" type="Sprite2D" parent="Home"]
 position = Vector2(244.09, 101.519)
@@ -95,11 +82,6 @@ offset_top = 304.0
 offset_right = 603.0
 offset_bottom = 312.0
 
-[node name="GardenShop" type="Sprite2D" parent="."]
-position = Vector2(1235.75, 240.75)
-scale = Vector2(0.155, 0.153)
-texture = ExtResource("13_la26i")
-
 [node name="HomeShelf3" type="Sprite2D" parent="."]
 position = Vector2(274, 467.502)
 scale = Vector2(1.15103, 0.488339)
@@ -153,7 +135,7 @@ scale = Vector2(0.173917, 0.174442)
 texture = ExtResource("7_oj4qb")
 
 [node name="GardenCoin2" parent="." instance=ExtResource("13_oyhoe")]
-position = Vector2(1045, 56)
+position = Vector2(1137, 63)
 
 [connection signal="pressed" from="hatBtn" to="." method="_on_hat_btn_pressed"]
 [connection signal="pressed" from="hatBtn" to="FloodUmbrella" method="_on_hat_btn_pressed"]
