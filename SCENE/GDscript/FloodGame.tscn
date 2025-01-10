@@ -497,6 +497,7 @@ texture = ExtResource("27_5lrcc")
 
 [node name="heavyRain" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("25_lpybf")
+parameters/looping = true
 
 [node name="timeoutPopup" parent="." instance=ExtResource("21_fhx50")]
 
@@ -507,6 +508,11 @@ offset_bottom = 7.0
 
 [node name="GardenCoin" parent="." instance=ExtResource("43_bmc4i")]
 
+[node name="TimerScore" type="Timer" parent="."]
+process_callback = 0
+wait_time = 10.0
+
 [connection signal="timeout" from="FloodTimer" to="." method="_on_flood_timer_timeout"]
 [connection signal="pressed" from="btnInfo" to="." method="_on_btn_info_pressed"]
 [connection signal="timeout" from="timeroutPopup" to="." method="_on_timerout_popup_timeout"]
+[connection signal="timeout" from="TimerScore" to="." method="_on_timer_score_timeout"]

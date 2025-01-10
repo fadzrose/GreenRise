@@ -11,8 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://bvnmvfejiijyn" path="res://Home/flower3.png" id="6_46hur"]
 [ext_resource type="Texture2D" uid="uid://c2j88f8kkwir" path="res://Home/flower4.png" id="7_oj4qb"]
 [ext_resource type="PackedScene" uid="uid://dwb644jvt3pla" path="res://SCENE/hat_btn.tscn" id="9_1ej8y"]
-[ext_resource type="Texture2D" uid="uid://ygae8iiajxkg" path="res://garden/gardenCoin.png" id="12_n58pq"]
 [ext_resource type="Texture2D" uid="uid://cvw5313tfbmg5" path="res://garden/gardenShop.png" id="13_la26i"]
+[ext_resource type="PackedScene" uid="uid://d3aveeip10drd" path="res://garden_coin.tscn" id="13_oyhoe"]
 
 [node name="HomePage" type="Node2D"]
 script = ExtResource("1_044a0")
@@ -95,11 +95,6 @@ offset_top = 304.0
 offset_right = 603.0
 offset_bottom = 312.0
 
-[node name="GardenCoin" type="Sprite2D" parent="."]
-position = Vector2(1046, 61)
-scale = Vector2(0.7, 0.7)
-texture = ExtResource("12_n58pq")
-
 [node name="GardenShop" type="Sprite2D" parent="."]
 position = Vector2(1235.75, 240.75)
 scale = Vector2(0.155, 0.153)
@@ -156,6 +151,9 @@ texture = ExtResource("4_lhw55")
 position = Vector2(146, 463)
 scale = Vector2(0.173917, 0.174442)
 texture = ExtResource("7_oj4qb")
+
+[node name="GardenCoin2" parent="." instance=ExtResource("13_oyhoe")]
+position = Vector2(1045, 56)
 
 [connection signal="pressed" from="hatBtn" to="." method="_on_hat_btn_pressed"]
 [connection signal="pressed" from="hatBtn" to="FloodUmbrella" method="_on_hat_btn_pressed"]

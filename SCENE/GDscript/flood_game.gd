@@ -14,6 +14,10 @@ func add_flood_game():
 func _ready():
 	#print_tree()
 	Global.flood_game_instance = self
+	#reset
+	Global.canopypoint = 0
+	Global.paras_air = 0
+	Global.tempature = 0
 
 	$infoPanel.hide()
 	$timeoutPopup.hide()
@@ -117,14 +121,11 @@ func _on_timerout_popup_timeout() -> void:
 	$rainAnim2.play()
 	$rainAnim3.play()
 	$rainAnim4.play()
-	
+	$TimerScore.start()
 	_update_score_label()
 	_calculate_water_level()
 	_label_reward()
-	$Control.show()#add timer to show score
-	$GardenCoin.show()
-	_score_panel.get_node("Button2").connect("pressed", _keluar_btn_pressed)
-	_score_panel.get_node("Button").connect("pressed", _replay_btn_pressed)
+	
 
 func _update_score_label():
 	var score_label = get_node("Control/Panel/VSplitContainer/VSplitContainer2/score")
@@ -168,7 +169,7 @@ func _label_reward():
 	Global.duit += coins_earned
 	var total_duit = get_node("GardenCoin/Label")
 	if total_duit:
-		total_duit.text = str(coins_earned)
+		total_duit.text = str(Global.duit)
 	else:
 		print("total Coins label not found.")
 	
@@ -223,3 +224,10 @@ func _keluar_btn_pressed():
 
 func _replay_btn_pressed():
 	get_tree().change_scene_to_file("res://SCENE/GDscript/FloodGame.tscn")
+
+
+func _on_timer_score_timeout() -> void:
+	$Control.show()#add timer to show score
+	$GardenCoin.show()
+	_score_panel.get_node("Button2").connect("pressed", _keluar_btn_pressed)
+	_score_panel.get_node("Button").connect("pressed", _replay_btn_pressed)
