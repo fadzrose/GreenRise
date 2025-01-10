@@ -1,6 +1,58 @@
-[gd_scene load_steps=2 format=3 uid="uid://cv83hup346p26"]
+[gd_scene load_steps=20 format=3 uid="uid://cv83hup346p26"]
 
 [ext_resource type="PackedScene" uid="uid://dot6bpl3alrd8" path="res://table_row.tscn" id="1_7um1f"]
+[ext_resource type="PackedScene" uid="uid://dumaiteecywdu" path="res://table_cell.tscn" id="2_sjh8n"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xcfls"]
+bg_color = Color(0.662745, 0.721569, 0.509804, 0.196078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hqutl"]
+bg_color = Color(0.662745, 0.721569, 0.509804, 0.196078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7sgsf"]
+bg_color = Color(0.662745, 0.721569, 0.509804, 0.196078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_srftw"]
+bg_color = Color(0.662745, 0.721569, 0.509804, 0.196078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yxaun"]
+bg_color = Color(0.662745, 0.721569, 0.509804, 0.196078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wjd4y"]
+bg_color = Color(0.662745, 0.721569, 0.509804, 0.196078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d5d56"]
+bg_color = Color(0.662745, 0.721569, 0.509804, 0.196078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kmg6o"]
+bg_color = Color(0.662745, 0.721569, 0.509804, 0.196078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_45aj8"]
+bg_color = Color(0.662745, 0.721569, 0.509804, 0.196078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uffuv"]
+bg_color = Color(0.662745, 0.721569, 0.509804, 0.196078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5i6ff"]
+bg_color = Color(0.662745, 0.721569, 0.509804, 0.196078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qtbdx"]
+bg_color = Color(0.662745, 0.721569, 0.509804, 0.196078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kjsn5"]
+bg_color = Color(0.662745, 0.721569, 0.509804, 0.196078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_18aef"]
+bg_color = Color(0.662745, 0.721569, 0.509804, 0.196078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h0dkv"]
+bg_color = Color(0.662745, 0.721569, 0.509804, 0.196078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_or02x"]
+bg_color = Color(0.662745, 0.721569, 0.509804, 0.196078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q4w8a"]
+bg_color = Color(0.662745, 0.721569, 0.509804, 0.196078)
 
 [node name="tableShop" type="Control"]
 layout_mode = 3
@@ -24,50 +76,554 @@ metadata/_edit_use_anchors_ = true
 [node name="tableRow" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "Belian Anak Pokok"
+
+[node name="tableCell2" parent="row/tableRow" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "      X      "
+
+[node name="Button" type="Button" parent="row/tableRow/tableCell2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -27.0
+offset_top = -10.5
+offset_right = 27.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_xcfls")
+
 [node name="tableRow2" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
+
+[node name="tableCell" parent="row/tableRow2" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  01."
+
+[node name="tableCell2" parent="row/tableRow2" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow2" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
+[node name="Button" type="Button" parent="row/tableRow2/tableCell3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -11.5
+offset_right = 32.0
+offset_bottom = 13.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_hqutl")
 
 [node name="tableRow3" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow3" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  02."
+
+[node name="tableCell2" parent="row/tableRow3" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow3" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
+[node name="Button" type="Button" parent="row/tableRow3/tableCell3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -12.5
+offset_right = 32.0
+offset_bottom = 13.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_7sgsf")
+
 [node name="tableRow4" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
+
+[node name="tableCell" parent="row/tableRow4" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  03."
+
+[node name="tableCell2" parent="row/tableRow4" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow4" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
+[node name="Button" type="Button" parent="row/tableRow4/tableCell3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.5
+offset_top = -16.0
+offset_right = 31.5
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_srftw")
 
 [node name="tableRow5" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow5" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  04."
+
+[node name="tableCell2" parent="row/tableRow5" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow5" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
+[node name="Button" type="Button" parent="row/tableRow5/tableCell3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -12.0
+offset_right = 32.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_yxaun")
+
 [node name="tableRow6" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
+
+[node name="tableCell" parent="row/tableRow6" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  05."
+
+[node name="tableCell2" parent="row/tableRow6" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow6" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
+[node name="Button" type="Button" parent="row/tableRow6/tableCell3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -12.5
+offset_right = 32.0
+offset_bottom = 12.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_wjd4y")
 
 [node name="tableRow7" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow7" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  06."
+
+[node name="tableCell2" parent="row/tableRow7" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow7" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
+[node name="Button" type="Button" parent="row/tableRow7/tableCell3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -12.5
+offset_right = 32.0
+offset_bottom = 13.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_d5d56")
+
 [node name="tableRow8" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
+
+[node name="tableCell" parent="row/tableRow8" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  07."
+
+[node name="tableCell2" parent="row/tableRow8" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow8" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
+[node name="Button" type="Button" parent="row/tableRow8/tableCell3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -12.5
+offset_right = 32.0
+offset_bottom = 13.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_kmg6o")
 
 [node name="tableRow9" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow9" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  08."
+
+[node name="tableCell2" parent="row/tableRow9" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow9" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
+[node name="Button" type="Button" parent="row/tableRow9/tableCell3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -12.0
+offset_right = 32.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_45aj8")
+
 [node name="tableRow10" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
+
+[node name="tableCell" parent="row/tableRow10" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  09."
+
+[node name="tableCell2" parent="row/tableRow10" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow10" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
+[node name="Button" type="Button" parent="row/tableRow10/tableCell3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -13.5
+offset_right = 32.0
+offset_bottom = 13.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_uffuv")
 
 [node name="tableRow11" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow11" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  10."
+
+[node name="tableCell2" parent="row/tableRow11" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow11" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
+[node name="Button" type="Button" parent="row/tableRow11/tableCell3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -12.5
+offset_right = 32.0
+offset_bottom = 13.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_5i6ff")
+
 [node name="tableRow12" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
+
+[node name="tableCell" parent="row/tableRow12" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  11."
+
+[node name="tableCell2" parent="row/tableRow12" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow12" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
+[node name="Button" type="Button" parent="row/tableRow12/tableCell3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -12.5
+offset_right = 32.0
+offset_bottom = 13.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_qtbdx")
 
 [node name="tableRow13" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow13" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  12."
+
+[node name="tableCell2" parent="row/tableRow13" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow13" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
+[node name="Button" type="Button" parent="row/tableRow13/tableCell3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -12.0
+offset_right = 32.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_kjsn5")
+
 [node name="tableRow14" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
+
+[node name="tableCell" parent="row/tableRow14" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  13."
+
+[node name="tableCell2" parent="row/tableRow14" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow14" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
+[node name="Button" type="Button" parent="row/tableRow14/tableCell3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -12.5
+offset_right = 32.0
+offset_bottom = 12.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_18aef")
 
 [node name="tableRow15" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow15" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  14."
+
+[node name="tableCell2" parent="row/tableRow15" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow15" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
+[node name="Button" type="Button" parent="row/tableRow15/tableCell3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -12.5
+offset_right = 32.0
+offset_bottom = 13.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_h0dkv")
+
 [node name="tableRow16" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
 
+[node name="tableCell" parent="row/tableRow16" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  15."
+
+[node name="tableCell2" parent="row/tableRow16" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow16" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
+[node name="Button" type="Button" parent="row/tableRow16/tableCell3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -12.5
+offset_right = 32.0
+offset_bottom = 13.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_or02x")
+
 [node name="tableRow17" parent="row" instance=ExtResource("1_7um1f")]
 layout_mode = 2
+
+[node name="tableCell" parent="row/tableRow17" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  16."
+
+[node name="tableCell2" parent="row/tableRow17" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+text = "  cell"
+horizontal_alignment = 0
+
+[node name="tableCell3" parent="row/tableRow17" instance=ExtResource("2_sjh8n")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "  button  "
+
+[node name="Button" type="Button" parent="row/tableRow17/tableCell3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -12.0
+offset_right = 32.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_q4w8a")

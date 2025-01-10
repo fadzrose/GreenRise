@@ -1,12 +1,46 @@
-[gd_scene load_steps=3 format=3 uid="uid://saku21x4l8sm"]
+[gd_scene load_steps=5 format=3 uid="uid://saku21x4l8sm"]
 
-[ext_resource type="Script" path="res://shopPanel.gd" id="1_vlc11"]
+[ext_resource type="Script" path="res://THEME/shop_panel.gd" id="1_maclt"]
+[ext_resource type="Theme" uid="uid://bvfpe7qu6csns" path="res://THEME/blurBG.tres" id="2_jb4um"]
 [ext_resource type="PackedScene" uid="uid://cv83hup346p26" path="res://table_shop.tscn" id="2_u4hnd"]
 
-[node name="ShopPanel" type="Node"]
-script = ExtResource("1_vlc11")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4kuqx"]
+bg_color = Color(0.298672, 0.429001, 0.294303, 1)
+corner_detail = 10
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[node name="ShopPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_maclt")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -640.0
+offset_top = -362.0
+offset_right = 640.0
+offset_bottom = 362.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_jb4um")
+metadata/_edit_use_anchors_ = true
 
 [node name="background" type="Panel" parent="."]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -18,6 +52,9 @@ offset_right = 256.0
 offset_bottom = 256.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4kuqx")
+metadata/_edit_use_anchors_ = true
 
 [node name="tableShop" parent="background" instance=ExtResource("2_u4hnd")]
 layout_mode = 1
+metadata/_edit_use_anchors_ = true
