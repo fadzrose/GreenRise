@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=44 format=3 uid="uid://dfpsmt4685y03"]
+=======
+[gd_scene load_steps=22 format=3 uid="uid://dfpsmt4685y03"]
+>>>>>>> a202bc7ab345350fb33c921810edc0d262ad6384
 
 [ext_resource type="Script" path="res://SCENE/home_page.gd" id="1_044a0"]
 [ext_resource type="Texture2D" uid="uid://dsnd7i5troisb" path="res://background/home.png" id="1_kdee6"]
@@ -15,6 +19,7 @@
 [ext_resource type="Script" path="res://SCENE/flower_2.gd" id="11_4mwwj"]
 [ext_resource type="Texture2D" uid="uid://d13h4wqb8tcsn" path="res://SCENE/cengal.png" id="13_o5bfq"]
 [ext_resource type="PackedScene" uid="uid://d3aveeip10drd" path="res://garden_coin.tscn" id="13_oyhoe"]
+<<<<<<< HEAD
 [ext_resource type="Script" path="res://SCENE/flower_3.gd" id="13_xgfbx"]
 [ext_resource type="Script" path="res://SCENE/flower_4.gd" id="16_8g0j5"]
 [ext_resource type="Texture2D" uid="uid://cfjfptuopg7v7" path="res://SCENE/beringin.png" id="17_70coa"]
@@ -43,6 +48,19 @@
 [ext_resource type="Script" path="res://SCENE/flower_15.gd" id="39_14u8m"]
 [ext_resource type="Script" path="res://SCENE/flower_16.gd" id="41_2jlig"]
 [ext_resource type="Texture2D" uid="uid://bwhiobc14siqn" path="res://SCENE/saga.png" id="58_3ik1v"]
+=======
+[ext_resource type="Theme" uid="uid://b2pyv0sjsyy2p" path="res://Home/toMain.tres" id="17_i8gsk"]
+[ext_resource type="Texture2D" uid="uid://bwwcgbiih1s6a" path="res://Home/KELUAR-removebg-preview (1).png" id="18_tk6qn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b2ltc"]
+texture = ExtResource("18_tk6qn")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6xmh2"]
+texture = ExtResource("18_tk6qn")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mirx4"]
+texture = ExtResource("18_tk6qn")
+>>>>>>> a202bc7ab345350fb33c921810edc0d262ad6384
 
 [node name="HomePage" type="Node2D"]
 script = ExtResource("1_044a0")
@@ -287,7 +305,19 @@ scale = Vector2(4.31723, 5.52097)
 texture = ExtResource("58_3ik1v")
 
 [node name="GardenCoin2" parent="." instance=ExtResource("13_oyhoe")]
-position = Vector2(1137, 63)
+position = Vector2(1042, 54)
+
+[node name="toMain" type="Button" parent="."]
+offset_left = 1162.0
+offset_top = 10.0
+offset_right = 1422.0
+offset_bottom = 184.0
+scale = Vector2(0.5, 0.506)
+theme = ExtResource("17_i8gsk")
+theme_override_styles/hover = SubResource("StyleBoxTexture_b2ltc")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_6xmh2")
+theme_override_styles/normal = SubResource("StyleBoxTexture_mirx4")
 
 [connection signal="pressed" from="hatBtn" to="." method="_on_hat_btn_pressed"]
 [connection signal="pressed" from="hatBtn" to="FloodUmbrella" method="_on_hat_btn_pressed"]
+[connection signal="pressed" from="toMain" to="." method="_on_to_main_pressed"]

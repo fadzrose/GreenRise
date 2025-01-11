@@ -27,3 +27,6 @@ func _ready():
 
 func _on_hat_btn_pressed():
 	get_tree().change_scene_to_file("res://SCENE/GARDEN.tscn")
+
+func _on_to_main_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENE/SplashPage.tscn")

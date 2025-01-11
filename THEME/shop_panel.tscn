@@ -1,8 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://saku21x4l8sm"]
+[gd_scene load_steps=10 format=3 uid="uid://saku21x4l8sm"]
 
 [ext_resource type="Script" path="res://THEME/shop_panel.gd" id="1_maclt"]
+[ext_resource type="Texture2D" uid="uid://cpeqw5088yja" path="res://background/garden page.png" id="2_hp2a0"]
 [ext_resource type="Theme" uid="uid://bvfpe7qu6csns" path="res://THEME/blurBG.tres" id="2_jb4um"]
 [ext_resource type="PackedScene" uid="uid://cv83hup346p26" path="res://table_shop.tscn" id="2_u4hnd"]
+[ext_resource type="Texture2D" uid="uid://c6jgk2n4erpy3" path="res://garden/pot.png" id="3_1dh4u"]
+[ext_resource type="Texture2D" uid="uid://0g434icf0ll1" path="res://garden/perigiGarden.png" id="4_qu3fm"]
+[ext_resource type="Texture2D" uid="uid://blgpg48seixt3" path="res://garden/foggyGarden.png" id="5_cp3ac"]
+[ext_resource type="Texture2D" uid="uid://lsqbwmcfn0fi" path="res://garden/pailGraden.png" id="6_f1qf2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4kuqx"]
 bg_color = Color(0.298672, 0.429001, 0.294303, 1)
@@ -22,6 +27,46 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_maclt")
+
+[node name="GardenPage" type="Sprite2D" parent="."]
+position = Vector2(2.75006, 3.5)
+scale = Vector2(1.78095, 1.8025)
+texture = ExtResource("2_hp2a0")
+
+[node name="Pot" type="Sprite2D" parent="."]
+position = Vector2(-503, 225)
+scale = Vector2(0.6, 0.8)
+texture = ExtResource("3_1dh4u")
+
+[node name="Pot4" type="Sprite2D" parent="."]
+position = Vector2(-503, 50)
+scale = Vector2(0.6, 0.8)
+texture = ExtResource("3_1dh4u")
+
+[node name="Pot2" type="Sprite2D" parent="."]
+position = Vector2(-229, 225)
+scale = Vector2(0.6, 0.8)
+texture = ExtResource("3_1dh4u")
+
+[node name="Pot3" type="Sprite2D" parent="."]
+position = Vector2(-229, 51)
+scale = Vector2(0.6, 0.8)
+texture = ExtResource("3_1dh4u")
+
+[node name="PerigiGarden" type="Sprite2D" parent="."]
+position = Vector2(429, -40)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("4_qu3fm")
+
+[node name="FoggyGarden" type="Sprite2D" parent="."]
+position = Vector2(134, 42)
+scale = Vector2(0.827273, 0.773267)
+texture = ExtResource("5_cp3ac")
+
+[node name="PailGraden" type="Sprite2D" parent="."]
+position = Vector2(1, 162)
+scale = Vector2(0.35, 0.305)
+texture = ExtResource("6_f1qf2")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1

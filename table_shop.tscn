@@ -1,6 +1,7 @@
-[gd_scene load_steps=20 format=3 uid="uid://cv83hup346p26"]
+[gd_scene load_steps=21 format=3 uid="uid://cv83hup346p26"]
 
 [ext_resource type="PackedScene" uid="uid://dot6bpl3alrd8" path="res://table_row.tscn" id="1_7um1f"]
+[ext_resource type="Script" path="res://table_shop.gd" id="1_61g8v"]
 [ext_resource type="PackedScene" uid="uid://dumaiteecywdu" path="res://table_cell.tscn" id="2_sjh8n"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xcfls"]
@@ -63,6 +64,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("1_61g8v")
 
 [node name="row" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -78,6 +80,7 @@ layout_mode = 2
 
 [node name="tableCell" parent="row/tableRow" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
+theme_override_font_sizes/font_size = 20
 text = "Belian Anak Pokok"
 
 [node name="tableCell2" parent="row/tableRow" instance=ExtResource("2_sjh8n")]
@@ -85,7 +88,7 @@ layout_mode = 2
 size_flags_horizontal = 1
 text = "      X      "
 
-[node name="Button" type="Button" parent="row/tableRow/tableCell2"]
+[node name="closeShop" type="Button" parent="row/tableRow/tableCell2"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -106,19 +109,19 @@ layout_mode = 2
 [node name="tableCell" parent="row/tableRow2" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  01."
+text = "  01. "
 
 [node name="tableCell2" parent="row/tableRow2" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
-text = "  cell"
+text = "  Angsana (Pterocarpus indicus)"
 horizontal_alignment = 0
 
 [node name="tableCell3" parent="row/tableRow2" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  button  "
+text = "     BELI     "
 
-[node name="Button" type="Button" parent="row/tableRow2/tableCell3"]
+[node name="beli1" type="Button" parent="row/tableRow2/tableCell3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -139,19 +142,19 @@ layout_mode = 2
 [node name="tableCell" parent="row/tableRow3" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  02."
+text = "  02. "
 
 [node name="tableCell2" parent="row/tableRow3" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
-text = "  cell"
+text = "  Pokok Hujan (Samanea saman)"
 horizontal_alignment = 0
 
 [node name="tableCell3" parent="row/tableRow3" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  button  "
+text = "     BELI     "
 
-[node name="Button" type="Button" parent="row/tableRow3/tableCell3"]
+[node name="beli2" type="Button" parent="row/tableRow3/tableCell3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -172,19 +175,19 @@ layout_mode = 2
 [node name="tableCell" parent="row/tableRow4" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  03."
+text = "  03. "
 
 [node name="tableCell2" parent="row/tableRow4" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
-text = "  cell"
+text = "  Tecoma (Tabeuia spp.)"
 horizontal_alignment = 0
 
 [node name="tableCell3" parent="row/tableRow4" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  button  "
+text = "     BELI     "
 
-[node name="Button" type="Button" parent="row/tableRow4/tableCell3"]
+[node name="beli3" type="Button" parent="row/tableRow4/tableCell3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -205,19 +208,19 @@ layout_mode = 2
 [node name="tableCell" parent="row/tableRow5" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  04."
+text = "  04. "
 
 [node name="tableCell2" parent="row/tableRow5" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
-text = "  cell"
+text = "  Banyan (Ficus benghalensis)"
 horizontal_alignment = 0
 
 [node name="tableCell3" parent="row/tableRow5" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  button  "
+text = "     BELI     "
 
-[node name="Button" type="Button" parent="row/tableRow5/tableCell3"]
+[node name="beli4" type="Button" parent="row/tableRow5/tableCell3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -238,19 +241,19 @@ layout_mode = 2
 [node name="tableCell" parent="row/tableRow6" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  05."
+text = "  05. "
 
 [node name="tableCell2" parent="row/tableRow6" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
-text = "  cell"
+text = "  Casuarina (Casuarina equisetifolia)"
 horizontal_alignment = 0
 
 [node name="tableCell3" parent="row/tableRow6" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  button  "
+text = "     BELI     "
 
-[node name="Button" type="Button" parent="row/tableRow6/tableCell3"]
+[node name="beli5" type="Button" parent="row/tableRow6/tableCell3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -271,19 +274,19 @@ layout_mode = 2
 [node name="tableCell" parent="row/tableRow7" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  06."
+text = "  06. "
 
 [node name="tableCell2" parent="row/tableRow7" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
-text = "  cell"
+text = "  Cengal (Neobalanocarpus heimii)"
 horizontal_alignment = 0
 
 [node name="tableCell3" parent="row/tableRow7" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  button  "
+text = "     BELI     "
 
-[node name="Button" type="Button" parent="row/tableRow7/tableCell3"]
+[node name="beli6" type="Button" parent="row/tableRow7/tableCell3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -304,19 +307,19 @@ layout_mode = 2
 [node name="tableCell" parent="row/tableRow8" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  07."
+text = "  07. "
 
 [node name="tableCell2" parent="row/tableRow8" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
-text = "  cell"
+text = "  Jelutong (Dyera costulata)"
 horizontal_alignment = 0
 
 [node name="tableCell3" parent="row/tableRow8" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  button  "
+text = "     BELI     "
 
-[node name="Button" type="Button" parent="row/tableRow8/tableCell3"]
+[node name="beli7" type="Button" parent="row/tableRow8/tableCell3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -337,19 +340,19 @@ layout_mode = 2
 [node name="tableCell" parent="row/tableRow9" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  08."
+text = "  08. "
 
 [node name="tableCell2" parent="row/tableRow9" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
-text = "  cell"
+text = "  Temple Tree (Alstonia scholaris)"
 horizontal_alignment = 0
 
 [node name="tableCell3" parent="row/tableRow9" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  button  "
+text = "     BELI     "
 
-[node name="Button" type="Button" parent="row/tableRow9/tableCell3"]
+[node name="beli8" type="Button" parent="row/tableRow9/tableCell3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -370,19 +373,19 @@ layout_mode = 2
 [node name="tableCell" parent="row/tableRow10" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  09."
+text = "  09. "
 
 [node name="tableCell2" parent="row/tableRow10" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
-text = "  cell"
+text = "  Tualang (Koompassia excelsa)"
 horizontal_alignment = 0
 
 [node name="tableCell3" parent="row/tableRow10" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  button  "
+text = "     BELI     "
 
-[node name="Button" type="Button" parent="row/tableRow10/tableCell3"]
+[node name="beli9" type="Button" parent="row/tableRow10/tableCell3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -403,19 +406,19 @@ layout_mode = 2
 [node name="tableCell" parent="row/tableRow11" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  10."
+text = "  10. "
 
 [node name="tableCell2" parent="row/tableRow11" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
-text = "  cell"
+text = "  Beringin (Ficus benjamina)"
 horizontal_alignment = 0
 
 [node name="tableCell3" parent="row/tableRow11" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  button  "
+text = "     BELI     "
 
-[node name="Button" type="Button" parent="row/tableRow11/tableCell3"]
+[node name="beli10" type="Button" parent="row/tableRow11/tableCell3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -436,19 +439,19 @@ layout_mode = 2
 [node name="tableCell" parent="row/tableRow12" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  11."
+text = "  11. "
 
 [node name="tableCell2" parent="row/tableRow12" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
-text = "  cell"
+text = "  Penaga Lilin (Mesua ferrea)"
 horizontal_alignment = 0
 
 [node name="tableCell3" parent="row/tableRow12" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  button  "
+text = "     BELI     "
 
-[node name="Button" type="Button" parent="row/tableRow12/tableCell3"]
+[node name="beli11" type="Button" parent="row/tableRow12/tableCell3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -469,19 +472,19 @@ layout_mode = 2
 [node name="tableCell" parent="row/tableRow13" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  12."
+text = "  12. "
 
 [node name="tableCell2" parent="row/tableRow13" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
-text = "  cell"
+text = "  Pokok bunga loceng kuning (Tecoma stans)"
 horizontal_alignment = 0
 
 [node name="tableCell3" parent="row/tableRow13" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  button  "
+text = "     BELI     "
 
-[node name="Button" type="Button" parent="row/tableRow13/tableCell3"]
+[node name="beli12" type="Button" parent="row/tableRow13/tableCell3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -502,19 +505,19 @@ layout_mode = 2
 [node name="tableCell" parent="row/tableRow14" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  13."
+text = "  13. "
 
 [node name="tableCell2" parent="row/tableRow14" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
-text = "  cell"
+text = "  Pokok Kenanga (Cananga odorata)"
 horizontal_alignment = 0
 
 [node name="tableCell3" parent="row/tableRow14" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  button  "
+text = "     BELI     "
 
-[node name="Button" type="Button" parent="row/tableRow14/tableCell3"]
+[node name="beli13" type="Button" parent="row/tableRow14/tableCell3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -535,19 +538,19 @@ layout_mode = 2
 [node name="tableCell" parent="row/tableRow15" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  14."
+text = "  14. "
 
 [node name="tableCell2" parent="row/tableRow15" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
-text = "  cell"
+text = "  Palma diraja (Roystonea regia)"
 horizontal_alignment = 0
 
 [node name="tableCell3" parent="row/tableRow15" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  button  "
+text = "     BELI     "
 
-[node name="Button" type="Button" parent="row/tableRow15/tableCell3"]
+[node name="beli14" type="Button" parent="row/tableRow15/tableCell3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -568,19 +571,19 @@ layout_mode = 2
 [node name="tableCell" parent="row/tableRow16" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  15."
+text = "  15. "
 
 [node name="tableCell2" parent="row/tableRow16" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
-text = "  cell"
+text = "  Saga (Adenanthera pavonina)"
 horizontal_alignment = 0
 
 [node name="tableCell3" parent="row/tableRow16" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  button  "
+text = "     BELI     "
 
-[node name="Button" type="Button" parent="row/tableRow16/tableCell3"]
+[node name="beli15" type="Button" parent="row/tableRow16/tableCell3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -601,19 +604,19 @@ layout_mode = 2
 [node name="tableCell" parent="row/tableRow17" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  16."
+text = "  16. "
 
 [node name="tableCell2" parent="row/tableRow17" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
-text = "  cell"
+text = "  Semarak Api (Delonix regia)"
 horizontal_alignment = 0
 
 [node name="tableCell3" parent="row/tableRow17" instance=ExtResource("2_sjh8n")]
 layout_mode = 2
 size_flags_horizontal = 1
-text = "  button  "
+text = "     BELI     "
 
-[node name="Button" type="Button" parent="row/tableRow17/tableCell3"]
+[node name="beli16" type="Button" parent="row/tableRow17/tableCell3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -627,3 +630,21 @@ offset_bottom = 12.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_q4w8a")
+
+[connection signal="pressed" from="row/tableRow/tableCell2/closeShop" to="." method="_on_close_shop_pressed"]
+[connection signal="pressed" from="row/tableRow2/tableCell3/beli1" to="." method="_on_beli_1_pressed"]
+[connection signal="pressed" from="row/tableRow3/tableCell3/beli2" to="." method="_on_beli_2_pressed"]
+[connection signal="pressed" from="row/tableRow4/tableCell3/beli3" to="." method="_on_beli_3_pressed"]
+[connection signal="pressed" from="row/tableRow5/tableCell3/beli4" to="." method="_on_beli_4_pressed"]
+[connection signal="pressed" from="row/tableRow6/tableCell3/beli5" to="." method="_on_beli_5_pressed"]
+[connection signal="pressed" from="row/tableRow7/tableCell3/beli6" to="." method="_on_beli_6_pressed"]
+[connection signal="pressed" from="row/tableRow8/tableCell3/beli7" to="." method="_on_beli_7_pressed"]
+[connection signal="pressed" from="row/tableRow9/tableCell3/beli8" to="." method="_on_beli_8_pressed"]
+[connection signal="pressed" from="row/tableRow10/tableCell3/beli9" to="." method="_on_beli_9_pressed"]
+[connection signal="pressed" from="row/tableRow11/tableCell3/beli10" to="." method="_on_beli_10_pressed"]
+[connection signal="pressed" from="row/tableRow12/tableCell3/beli11" to="." method="_on_beli_11_pressed"]
+[connection signal="pressed" from="row/tableRow13/tableCell3/beli12" to="." method="_on_beli_12_pressed"]
+[connection signal="pressed" from="row/tableRow14/tableCell3/beli13" to="." method="_on_beli_13_pressed"]
+[connection signal="pressed" from="row/tableRow15/tableCell3/beli14" to="." method="_on_beli_14_pressed"]
+[connection signal="pressed" from="row/tableRow16/tableCell3/beli15" to="." method="_on_beli_15_pressed"]
+[connection signal="pressed" from="row/tableRow17/tableCell3/beli16" to="." method="_on_beli_16_pressed"]
