@@ -46,6 +46,23 @@ position = Vector2(1183, 485)
 scale = Vector2(1.07286, 0.663333)
 texture = ExtResource("3_2p57j")
 
+[node name="HomeShelf2" type="Sprite2D" parent="."]
+position = Vector2(142, 487.119)
+scale = Vector2(1.02903, 0.709435)
+texture = ExtResource("3_2p57j")
+flip_h = true
+
+[node name="HomeShelf" type="Sprite2D" parent="HomeShelf2"]
+position = Vector2(148.683, -69.2876)
+scale = Vector2(0.959023, 0.953642)
+texture = ExtResource("3_2p57j")
+flip_h = true
+
+[node name="HomeShelf2" type="Sprite2D" parent="HomeShelf2"]
+position = Vector2(858.087, -53.0256)
+scale = Vector2(1.04273, 0.927973)
+texture = ExtResource("3_2p57j")
+
 [node name="HatHome" type="Sprite2D" parent="."]
 position = Vector2(640, 338)
 scale = Vector2(1.032, 1.12)
@@ -67,6 +84,30 @@ script = ExtResource("9_hhso6")
 
 [node name="pokok_2" type="Sprite2D" parent="Flower2"]
 
+[node name="Flower2" type="Sprite2D" parent="Flower2"]
+position = Vector2(-3945.14, -1688.22)
+scale = Vector2(0.769252, 1.13015)
+texture = ExtResource("5_ma7fv")
+script = ExtResource("9_hhso6")
+
+[node name="pokok_2" type="Sprite2D" parent="Flower2/Flower2"]
+
+[node name="Flower2" type="Sprite2D" parent="Flower2/Flower2"]
+position = Vector2(-861.691, 857.1)
+scale = Vector2(1.10425, 1.13015)
+texture = ExtResource("5_ma7fv")
+script = ExtResource("9_hhso6")
+
+[node name="pokok_2" type="Sprite2D" parent="Flower2/Flower2/Flower2"]
+
+[node name="Flower2" type="Sprite2D" parent="Flower2/Flower2/Flower2"]
+position = Vector2(4612.08, 823.402)
+scale = Vector2(0.804392, 0.861323)
+texture = ExtResource("5_ma7fv")
+script = ExtResource("9_hhso6")
+
+[node name="pokok_2" type="Sprite2D" parent="Flower2/Flower2/Flower2/Flower2"]
+
 [node name="Flower3" type="Sprite2D" parent="."]
 position = Vector2(1166, 447)
 scale = Vector2(0.210938, 0.15625)
@@ -75,6 +116,14 @@ script = ExtResource("11_egsx5")
 
 [node name="pokok_3" type="Sprite2D" parent="Flower3"]
 
+[node name="Flower3" type="Sprite2D" parent="Flower3"]
+position = Vector2(-725.332, -832)
+scale = Vector2(0.802519, 1.01309)
+texture = ExtResource("6_843he")
+script = ExtResource("11_egsx5")
+
+[node name="pokok_3" type="Sprite2D" parent="Flower3/Flower3"]
+
 [node name="Flower4" type="Sprite2D" parent="."]
 position = Vector2(1169, 632)
 scale = Vector2(0.25, 0.175781)
@@ -82,6 +131,14 @@ texture = ExtResource("7_8aonu")
 script = ExtResource("13_jh3kb")
 
 [node name="pokok_4" type="Sprite2D" parent="Flower4"]
+
+[node name="Flower4" type="Sprite2D" parent="Flower4"]
+position = Vector2(-452, -807.824)
+scale = Vector2(1.23633, 1.57782)
+texture = ExtResource("7_8aonu")
+script = ExtResource("13_jh3kb")
+
+[node name="pokok_4" type="Sprite2D" parent="Flower4/Flower4"]
 
 [node name="Flower5" type="Sprite2D" parent="."]
 script = ExtResource("14_gmmb7")
@@ -144,3 +201,43 @@ script = ExtResource("24_gxgdt")
 script = ExtResource("25_mwwh7")
 
 [node name="pokok_16" type="Sprite2D" parent="Flower16"]
+
+[node name="Flower17" type="Sprite2D" parent="."]
+position = Vector2(1011, 414)
+scale = Vector2(0.214844, 0.136719)
+texture = ExtResource("4_ais0l")
+script = ExtResource("7_ftdd4")
+
+[node name="pokok_1" type="Sprite2D" parent="Flower17"]
+
+[node name="Flower18" type="Sprite2D" parent="."]
+position = Vector2(308, 500)
+scale = Vector2(0.214844, 0.136719)
+texture = ExtResource("4_ais0l")
+script = ExtResource("7_ftdd4")
+
+[node name="pokok_1" type="Sprite2D" parent="Flower18"]
+
+[node name="Flower18" type="Sprite2D" parent="Flower18"]
+position = Vector2(-721.454, 1082.51)
+scale = Vector2(0.905858, 1.12036)
+texture = ExtResource("4_ais0l")
+script = ExtResource("7_ftdd4")
+
+[node name="pokok_1" type="Sprite2D" parent="Flower18/Flower18"]
+
+[node name="Flower19" type="Sprite2D" parent="."]
+position = Vector2(309, 588)
+scale = Vector2(0.210938, 0.15625)
+texture = ExtResource("6_843he")
+script = ExtResource("11_egsx5")
+
+[node name="pokok_3" type="Sprite2D" parent="Flower19"]
+
+[node name="Flower19" type="Sprite2D" parent="Flower19"]
+position = Vector2(-730.072, -281.6)
+scale = Vector2(0.862086, 1.11953)
+texture = ExtResource("6_843he")
+script = ExtResource("11_egsx5")
+
+[node name="pokok_3" type="Sprite2D" parent="Flower19/Flower19"]
