@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://dfpsmt4685y03"]
+[gd_scene load_steps=26 format=3 uid="uid://dfpsmt4685y03"]
 
+[ext_resource type="Script" path="res://home_page.gd" id="1_0hiaq"]
 [ext_resource type="Texture2D" uid="uid://dsnd7i5troisb" path="res://background/home.png" id="1_lf6x3"]
 [ext_resource type="PackedScene" uid="uid://4dbycie8sr7r" path="res://floodUmbrella.tscn" id="2_0sy8c"]
 [ext_resource type="Texture2D" uid="uid://dsek3ecpsgtru" path="res://Home/homeShelf.png" id="3_2p57j"]
@@ -7,9 +8,26 @@
 [ext_resource type="Texture2D" uid="uid://cwa38dnf1qn3q" path="res://Home/flower2.png" id="5_ma7fv"]
 [ext_resource type="Texture2D" uid="uid://bvnmvfejiijyn" path="res://Home/flower3.png" id="6_843he"]
 [ext_resource type="Texture2D" uid="uid://c2j88f8kkwir" path="res://Home/flower4.png" id="7_8aonu"]
+[ext_resource type="Script" path="res://flower_1.gd" id="7_ftdd4"]
 [ext_resource type="Texture2D" uid="uid://5smkkxgogdk8" path="res://Home/hatHome.png" id="8_1qnpi"]
+[ext_resource type="Script" path="res://flower_2.gd" id="9_hhso6"]
+[ext_resource type="Script" path="res://flower_3.gd" id="11_egsx5"]
+[ext_resource type="Script" path="res://flower_4.gd" id="13_jh3kb"]
+[ext_resource type="Script" path="res://flower_5.gd" id="14_gmmb7"]
+[ext_resource type="Script" path="res://flower_6.gd" id="15_lv8n6"]
+[ext_resource type="Script" path="res://flower_7.gd" id="16_ifh7q"]
+[ext_resource type="Script" path="res://flower_8.gd" id="17_tnxug"]
+[ext_resource type="Script" path="res://flower_9.gd" id="18_s1do5"]
+[ext_resource type="Script" path="res://flower_10.gd" id="19_6g5w0"]
+[ext_resource type="Script" path="res://flower_11.gd" id="20_fnguk"]
+[ext_resource type="Script" path="res://flower_12.gd" id="21_vergh"]
+[ext_resource type="Script" path="res://flower_13.gd" id="22_bwedj"]
+[ext_resource type="Script" path="res://flower_14.gd" id="23_h46hd"]
+[ext_resource type="Script" path="res://flower_15.gd" id="24_gxgdt"]
+[ext_resource type="Script" path="res://flower_16.gd" id="25_mwwh7"]
 
 [node name="HomePage" type="Node2D"]
+script = ExtResource("1_0hiaq")
 
 [node name="Home" type="Sprite2D" parent="."]
 position = Vector2(642.5, 363)
@@ -28,27 +46,101 @@ position = Vector2(1183, 485)
 scale = Vector2(1.07286, 0.663333)
 texture = ExtResource("3_2p57j")
 
+[node name="HatHome" type="Sprite2D" parent="."]
+position = Vector2(640, 338)
+scale = Vector2(1.032, 1.12)
+texture = ExtResource("8_1qnpi")
+
 [node name="Flower1" type="Sprite2D" parent="."]
 position = Vector2(1167, 358)
 scale = Vector2(0.214844, 0.136719)
 texture = ExtResource("4_ais0l")
+script = ExtResource("7_ftdd4")
+
+[node name="pokok_1" type="Sprite2D" parent="Flower1"]
 
 [node name="Flower2" type="Sprite2D" parent="."]
 position = Vector2(1166, 546)
 scale = Vector2(0.21875, 0.144531)
 texture = ExtResource("5_ma7fv")
+script = ExtResource("9_hhso6")
+
+[node name="pokok_2" type="Sprite2D" parent="Flower2"]
 
 [node name="Flower3" type="Sprite2D" parent="."]
 position = Vector2(1166, 447)
 scale = Vector2(0.210938, 0.15625)
 texture = ExtResource("6_843he")
+script = ExtResource("11_egsx5")
+
+[node name="pokok_3" type="Sprite2D" parent="Flower3"]
 
 [node name="Flower4" type="Sprite2D" parent="."]
 position = Vector2(1169, 632)
 scale = Vector2(0.25, 0.175781)
 texture = ExtResource("7_8aonu")
+script = ExtResource("13_jh3kb")
 
-[node name="HatHome" type="Sprite2D" parent="."]
+[node name="pokok_4" type="Sprite2D" parent="Flower4"]
+
+[node name="Flower5" type="Sprite2D" parent="."]
+script = ExtResource("14_gmmb7")
+
+[node name="pokok_5" type="Sprite2D" parent="Flower5"]
+
+[node name="Flower6" type="Sprite2D" parent="."]
 position = Vector2(640, 338)
 scale = Vector2(1.032, 1.12)
-texture = ExtResource("8_1qnpi")
+script = ExtResource("15_lv8n6")
+
+[node name="pokok_6" type="Sprite2D" parent="Flower6"]
+
+[node name="Flower7" type="Sprite2D" parent="."]
+script = ExtResource("16_ifh7q")
+
+[node name="pokok_7" type="Sprite2D" parent="Flower7"]
+
+[node name="Flower8" type="Sprite2D" parent="."]
+script = ExtResource("17_tnxug")
+
+[node name="pokok_8" type="Sprite2D" parent="Flower8"]
+
+[node name="Flower9" type="Sprite2D" parent="."]
+script = ExtResource("18_s1do5")
+
+[node name="pokok_9" type="Sprite2D" parent="Flower9"]
+
+[node name="Flower10" type="Sprite2D" parent="."]
+script = ExtResource("19_6g5w0")
+
+[node name="pokok_10" type="Sprite2D" parent="Flower10"]
+
+[node name="Flower11" type="Sprite2D" parent="."]
+script = ExtResource("20_fnguk")
+
+[node name="pokok_11" type="Sprite2D" parent="Flower11"]
+
+[node name="Flower12" type="Sprite2D" parent="."]
+script = ExtResource("21_vergh")
+
+[node name="pokok_12" type="Sprite2D" parent="Flower12"]
+
+[node name="Flower13" type="Sprite2D" parent="."]
+script = ExtResource("22_bwedj")
+
+[node name="pokok_13" type="Sprite2D" parent="Flower13"]
+
+[node name="Flower14" type="Sprite2D" parent="."]
+script = ExtResource("23_h46hd")
+
+[node name="pokok_14" type="Sprite2D" parent="Flower14"]
+
+[node name="Flower15" type="Sprite2D" parent="."]
+script = ExtResource("24_gxgdt")
+
+[node name="pokok_15" type="Sprite2D" parent="Flower15"]
+
+[node name="Flower16" type="Sprite2D" parent="."]
+script = ExtResource("25_mwwh7")
+
+[node name="pokok_16" type="Sprite2D" parent="Flower16"]
