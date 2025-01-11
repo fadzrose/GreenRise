@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dehaalxpuwmcu"]
+
+[ext_resource type="Script" path="res://SCENE/kebun/seed_1.gd" id="1_51w18"]
+[ext_resource type="Texture2D" uid="uid://g8pb1c0er0oo" path="res://garden/Layer 1_sprite_2.png" id="1_67lrr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1sy85"]
+
+[node name="seed1" type="StaticBody2D"]
+script = ExtResource("1_51w18")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_67lrr")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_1sy85")

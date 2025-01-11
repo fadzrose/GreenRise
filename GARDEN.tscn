@@ -1,74 +1,98 @@
-[gd_scene load_steps=11 format=3 uid="uid://bkrbo6hilha8i"]
+[gd_scene load_steps=14 format=3 uid="uid://dix2ftjhfq6xl"]
 
-[ext_resource type="Texture2D" uid="uid://cpeqw5088yja" path="res://background/garden page.png" id="1_4c0ns"]
-[ext_resource type="Script" path="res://garden.gd" id="1_5bbnu"]
-[ext_resource type="Texture2D" uid="uid://c6jgk2n4erpy3" path="res://garden/pot.png" id="2_yw1ax"]
-[ext_resource type="Texture2D" uid="uid://tsj5pmxb7n31" path="res://garden/sun (1).png" id="3_k72hs"]
-[ext_resource type="Texture2D" uid="uid://ygae8iiajxkg" path="res://garden/gardenCoin.png" id="4_kn68m"]
-[ext_resource type="Texture2D" uid="uid://drxuitslsjkqf" path="res://garden/gardenQuest.png" id="5_1i1be"]
-[ext_resource type="Texture2D" uid="uid://cvw5313tfbmg5" path="res://garden/gardenShop.png" id="6_dx2j8"]
-[ext_resource type="Texture2D" uid="uid://0g434icf0ll1" path="res://garden/perigiGarden.png" id="7_k2p20"]
-[ext_resource type="Texture2D" uid="uid://blgpg48seixt3" path="res://garden/foggyGarden.png" id="8_uxw6a"]
-[ext_resource type="Texture2D" uid="uid://lsqbwmcfn0fi" path="res://garden/pailGraden.png" id="9_lyjk0"]
+[ext_resource type="Texture2D" uid="uid://cpeqw5088yja" path="res://background/garden page.png" id="1_2culb"]
+[ext_resource type="Script" path="res://SCENE/garden.gd" id="1_taiv0"]
+[ext_resource type="Texture2D" uid="uid://c6jgk2n4erpy3" path="res://garden/pot.png" id="2_chifp"]
+[ext_resource type="Texture2D" uid="uid://tsj5pmxb7n31" path="res://garden/sun (1).png" id="3_6ka3d"]
+[ext_resource type="Texture2D" uid="uid://drxuitslsjkqf" path="res://garden/gardenQuest.png" id="5_rpec1"]
+[ext_resource type="Theme" uid="uid://bbi48bmmdgn08" path="res://THEME/ShopBtn.tres" id="7_3metu"]
+[ext_resource type="Texture2D" uid="uid://0g434icf0ll1" path="res://garden/perigiGarden.png" id="7_wr0io"]
+[ext_resource type="Texture2D" uid="uid://blgpg48seixt3" path="res://garden/foggyGarden.png" id="8_2xf36"]
+[ext_resource type="Texture2D" uid="uid://lsqbwmcfn0fi" path="res://garden/pailGraden.png" id="9_l3125"]
+[ext_resource type="PackedScene" uid="uid://b88a2jb841uux" path="res://SCENE/Shop.tscn" id="10_78c30"]
+[ext_resource type="PackedScene" uid="uid://d3aveeip10drd" path="res://garden_coin.tscn" id="11_mvfos"]
+[ext_resource type="PackedScene" uid="uid://0mvgipao601r" path="res://SCENE/seed_grow.tscn" id="12_nain4"]
+[ext_resource type="PackedScene" uid="uid://dehaalxpuwmcu" path="res://SCENE/kebun/seed_1.tscn" id="13_nh3og"]
 
-[node name="Node2D" type="Node2D"]
-script = ExtResource("1_5bbnu")
+[node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_taiv0")
 
 [node name="GardenPage" type="Sprite2D" parent="."]
 position = Vector2(639.75, 360.5)
 scale = Vector2(1.78095, 1.8025)
-texture = ExtResource("1_4c0ns")
+texture = ExtResource("1_2culb")
 
 [node name="Pot" type="Sprite2D" parent="."]
 position = Vector2(134, 582)
 scale = Vector2(0.6, 0.8)
-texture = ExtResource("2_yw1ax")
+texture = ExtResource("2_chifp")
 
 [node name="Pot4" type="Sprite2D" parent="."]
 position = Vector2(134, 407)
 scale = Vector2(0.6, 0.8)
-texture = ExtResource("2_yw1ax")
+texture = ExtResource("2_chifp")
 
 [node name="Pot2" type="Sprite2D" parent="."]
 position = Vector2(408, 582)
 scale = Vector2(0.6, 0.8)
-texture = ExtResource("2_yw1ax")
+texture = ExtResource("2_chifp")
 
 [node name="Pot3" type="Sprite2D" parent="."]
 position = Vector2(408, 408)
 scale = Vector2(0.6, 0.8)
-texture = ExtResource("2_yw1ax")
+texture = ExtResource("2_chifp")
 
 [node name="Sun(1)" type="Sprite2D" parent="."]
 position = Vector2(1230, 54)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("3_k72hs")
-
-[node name="GardenCoin" type="Sprite2D" parent="."]
-position = Vector2(1046, 47)
-scale = Vector2(0.7, 0.7)
-texture = ExtResource("4_kn68m")
+texture = ExtResource("3_6ka3d")
 
 [node name="GardenQuest" type="Sprite2D" parent="."]
 position = Vector2(1232, 147)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("5_1i1be")
+texture = ExtResource("5_rpec1")
 
-[node name="GardenShop" type="Sprite2D" parent="."]
-position = Vector2(1232, 245)
+[node name="GardenShop" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1197.0
+offset_top = 207.0
+offset_right = 1605.0
+offset_bottom = 648.0
 scale = Vector2(0.17, 0.17)
-texture = ExtResource("6_dx2j8")
+theme = ExtResource("7_3metu")
 
 [node name="PerigiGarden" type="Sprite2D" parent="."]
 position = Vector2(1066, 317)
-texture = ExtResource("7_k2p20")
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("7_wr0io")
 
 [node name="FoggyGarden" type="Sprite2D" parent="."]
 position = Vector2(771, 399)
 scale = Vector2(0.827273, 0.773267)
-texture = ExtResource("8_uxw6a")
+texture = ExtResource("8_2xf36")
 
 [node name="PailGraden" type="Sprite2D" parent="."]
-position = Vector2(642, 534)
-scale = Vector2(0.304795, 0.265369)
-texture = ExtResource("9_lyjk0")
+position = Vector2(638, 519)
+scale = Vector2(0.35, 0.305)
+texture = ExtResource("9_l3125")
+
+[node name="Control" parent="." instance=ExtResource("10_78c30")]
+visible = false
+layout_mode = 1
+offset_left = -2.0
+offset_top = -1.0
+offset_right = -2.0
+offset_bottom = -1.0
+
+[node name="GardenCoin2" parent="." instance=ExtResource("11_mvfos")]
+position = Vector2(1045, 48)
+
+[node name="seedGrow" parent="." instance=ExtResource("12_nain4")]
+position = Vector2(134, 405)
+
+[node name="seed1" parent="." instance=ExtResource("13_nh3og")]
+position = Vector2(571, 383)
+
+[connection signal="pressed" from="GardenShop" to="." method="_on_garden_shop_pressed"]
