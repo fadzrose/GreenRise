@@ -1,6 +1,6 @@
 extends Sprite2D
 
-@onready var picture_display = $pokok_1
+@onready var picture_display = $pokok_15
 
 func _input(event):
 	if event is InputEventMouseButton:
