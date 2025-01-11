@@ -1,0 +1,119 @@
+[gd_scene load_steps=17 format=3 uid="uid://0mvgipao601r"]
+
+[ext_resource type="Texture2D" uid="uid://bkiiwldui5r8h" path="res://Home/pxArt (26).png" id="1_8wvww"]
+[ext_resource type="Script" path="res://SCENE/seed_grow.gd" id="1_easc8"]
+[ext_resource type="Texture2D" uid="uid://owofcttkgnn5" path="res://Home/pxArt (25).png" id="2_ksyxd"]
+[ext_resource type="Texture2D" uid="uid://d35q6mlqrtfpi" path="res://Home/pxArt (16).png" id="3_bjl4k"]
+[ext_resource type="Texture2D" uid="uid://c1816reph5ioe" path="res://Home/pxArt (15).png" id="4_4nt7v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lboyp"]
+size = Vector2(41.4729, 15.0425)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hgw04"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8wvww")
+}],
+"loop": true,
+"name": &"growing1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ksyxd")
+}],
+"loop": true,
+"name": &"growing2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_bjl4k")
+}],
+"loop": true,
+"name": &"growing3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_4nt7v")
+}],
+"loop": true,
+"name": &"grown",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_61vw4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cy0eh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yttii"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fd4sd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tw5e8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s1kcg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_am0ox"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6fmxu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xgdmw"]
+
+[node name="seedGrow" type="StaticBody2D"]
+scale = Vector2(5.16, 4.16463)
+script = ExtResource("1_easc8")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-0.581395, 2.47877)
+shape = SubResource("RectangleShape2D_lboyp")
+
+[node name="grow" type="AnimatedSprite2D" parent="."]
+position = Vector2(-0.581406, -20.6501)
+scale = Vector2(0.113178, 0.130624)
+sprite_frames = SubResource("SpriteFrames_hgw04")
+
+[node name="tanam" type="Button" parent="grow"]
+offset_left = -178.0
+offset_top = 123.0
+offset_right = 184.0
+offset_bottom = 239.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_61vw4")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_cy0eh")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_yttii")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_fd4sd")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_tw5e8")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_s1kcg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_am0ox")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_6fmxu")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xgdmw")
+
+[node name="Timer1" type="Timer" parent="."]
+process_callback = 0
+wait_time = 10.0
+one_shot = true
+
+[node name="Timer2" type="Timer" parent="."]
+process_callback = 0
+wait_time = 20.0
+one_shot = true
+
+[node name="Timer3" type="Timer" parent="."]
+process_callback = 0
+wait_time = 30.0
+one_shot = true
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="pressed" from="grow/tanam" to="." method="_on_tanam_pressed"]
+[connection signal="timeout" from="Timer1" to="." method="_on_timer_1_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
+[connection signal="timeout" from="Timer3" to="." method="_on_timer_3_timeout"]
